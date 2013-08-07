@@ -11,23 +11,27 @@
    <![endif]-->
 
    <!-- remove or comment this line if you want to use the local fonts -->
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 
+   <!-- Bootmetro CSS -->
    <link rel="stylesheet" type="text/css" href="assets/css/bootmetro/bootmetro.css">
    <link rel="stylesheet" type="text/css" href="assets/css/bootmetro/bootmetro-charms.css">
    <link rel="stylesheet" type="text/css" href="assets/css/bootmetro/icomoon.css">
+
+   <!-- Bootstrap CSS -->
    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap-responsive.css">
+
+   <!-- jQuery & jQuery UI -->
    <script src="assets/js/libs/jquery/jquery-1.9.1.js"></script>
    <script src="assets/js/libs/jqueryui/jquery-ui.js"></script>
+
+   <!-- Notifications -->
    <script src="assets/js/libs/Notifications/jquery.notify.min.js"></script>
 
-<!-- Zorgportaal CSS -->
-
+   <!-- Zorgportaal CSS -->
    <link rel="stylesheet" type="text/css" href="assets/css/base_styles.css">
 
-<!-- Modernizer JS -->
-
+   <!-- Modernizer JS -->
    <script src="js/libs/Modernizer/modernizr-2.6.1.min.js"></script>
 
 </head>
@@ -46,7 +50,7 @@
                <div class="span4">
                   <div class="instructionTooltipHelp right">
                      <span>Informatie over applicaties</span>
-                        <img src="assets/images/instructionArrowUpRight.png" />
+                        <img src="assets/images/logos/instructions/instructionArrowUpRight.png" />
                   </div>
                </div>
             </div>
@@ -64,23 +68,8 @@
                         
                      </a>
                      <a class="tile wide instructionTooltip">
-                        <img src="assets/images/instructionArrow.png" />
+                        <img src="assets/images/instructions/instructionArrow.png" />
                         <span>Labaanvragen applicatie</span>
-                     </a>
-                     <a class="tile app" >
-                        
-                     </a>
-                     <a class="tile wide" >
-                        
-                     </a>
-                     <a class="tile wide" >
-                        
-                     </a>
-                     <a class="tile wide" >
-                        
-                     </a>
-                     <a class="tile wide" >
-                        
                      </a>
                   </div>
                </div>
@@ -88,12 +77,14 @@
          </div>
       </div>
    </div>
+
    <!--Fullscreen Transitie -->
    <div id="transitie" class="">
       <div id="innerTransitie"><i style="color: white;" class="icon"></i>
       </div>
    </div>
-   <!--- container to hold notifications, and default templates -->
+
+   <!--- Container notificaties -->
    <div id="notifications-container" style="display:none">
       
       <div onclick="fullscreen('', 'rss', 'nieuws');" id="default">
@@ -107,6 +98,7 @@
          <p>#{text}</p>
       </div>
    </div>
+
    <!-- Sidenav Applicaties -->
    <div class="small bg-color-blue" style="display:none;"></div>
    <div style="display: none;" class="side-nav large bg-color-blue">
@@ -160,37 +152,17 @@
          </div>
       </div>
    </div>
-   <!-- Content waarin de iframes geladen worden -->
-   <div id="loadContent">
-   </div> <!-- Einde Load Content --> 
-   
-    <!-- Charms -->  
-      <div id="charms" class="bg-color-blue-green">
-      
-         <div id="theme-charms-section" class="charms-section">
-            <div class="charms-header">
-               <a href="#" class="close-charms win-command">
-                  <i style="color: #FFF; font-size: 20px;" class="icon-arrow-right-2"></i>
-               </a>
-               <h2>opties</h2>
-            </div>
-      
-            <div class="row-fluid">
-               <div class="span12">
-      
-                  <form class="">
-                     <label for="win-theme-select" style="color:white;">Verander thema</label>
-                     <select id="win-theme-select" class="">
-                        <option value="Protopics">IZIT</option>
-                     </select>
-                  </form>
-      
-               </div>
-            </div>
-         </div>
-      
-      </div>
 
+   <!-- Content waarin de iframes geladen worden -->
+
+   <div id="loadContent">
+   </div> 
+
+   <!-- Einde Load Content --> 
+   
+
+   <!-- Modals -->
+      <!-- Patiëntgegevens modal -->
        <div id="patientGegevens" class="modal hide fade">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -223,6 +195,7 @@
           </div>
        </div>
 
+       <!-- E-learning modal -->
        <div id="elearning" class="modal hide fade">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -290,16 +263,18 @@
    <!-- Geladen javascripts -->
    <script type="text/javascript" src="assets/js/libs/jQuery/jquery.mousewheel.js"></script>
    <script type="text/javascript" src="assets/js/libs/jQuery/jquery.scrollTo.js"></script>
+
+   <!-- Bootstrap JS -->
    <script type="text/javascript" src="assets/js/libs/Bootstrap/bootstrap.min.js"></script>
+
+   <!-- Bootmetro JS -->
    <script type="text/javascript" src="assets/js/libs/Bootmetro/bootmetro.js"></script>
    <script type="text/javascript" src="assets/js/libs/Bootmetro/bootmetro-charms.js"></script>
+
+   <!-- Zorgportaal Demo JS bestanden -->
    <script type="text/javascript" src="assets/js/prototype.js"></script>
    <script type="text/javascript" src="assets/js/zorgportaal.js"></script>
    <script type="text/javascript" src="assets/js/page-actions.js"></script>
-   <script type="text/javascript">
-      $('.accordion-body').removeClass('in');
-      behandelplanAccordion();
-   </script>
 
 </body>
 </html>

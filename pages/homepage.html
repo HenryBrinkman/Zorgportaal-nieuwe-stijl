@@ -5,14 +5,21 @@
             <div class="span12">
                <div class="span8 collapsible">
                   <div id="header-container">
-                     <img style="margin-left: 0px; margin-top: 0px; height: 55px;" src="assets/images/protopics-logo.png" />
+                     <img src="assets/images/logos/protopics-logo.png" />
                   </div>
                </div>
                <div class="span4">
-                  <div id="top-info" class="opties pull-right btn-group dropdown">
-                     <button class="btn btn-notification" onclick="toggleNotifications();"><span class="notification-new" style="display: block;">5</span><i class="icon-info-sign"></i>Notificaties </button>
-                     <button id="settings" class="btn"><i class="icon-settings"></i>Opties</button>
-                     <button style="margin-right: -2px;" class="btn dropdown-toggle" id="drop2" data-toggle="dropdown"><i class="icon-help"></i>Help</button>
+                  <div id="top-info" class="navbarButtons pull-right btn-group dropdown">
+                     <button class="btn btn-notification" onclick="toggleNotifications();">
+                        <span class="notification-new" style="display: block;">5</span>
+                        <i class="icon-info-sign"></i>Notificaties 
+                     </button>
+                     <button id="settings" class="btn">
+                        <i class="icon-settings"></i>Opties
+                     </button>
+                     <button class="btn dropdown-toggle group-toggle-left" id="drop2" data-toggle="dropdown">
+                        <i class="icon-help"></i>Help
+                     </button>
                      <ul class="dropdown-menu" aria-labelledby="drop2">
                         <li><a  href="#">Faqs</a></li>
                         <li><a href="#">Teamviewer</a></li>
@@ -20,9 +27,13 @@
                         <li><a href="#" onclick="$('.instructions').show();">Instructies</a></li>
                         <li><a href="#elearning" role="button" data-toggle="modal">E-learning</a></li>
                      </ul>
-                     <button style="margin-left: -1px;" class="btn"><i class="icon-exit"></i>Uitloggen</button>
+                     <button class="btn">
+                        <i class="icon-exit"></i>Uitloggen
+                     </button>
                   </div>
                </div>
+
+               <!-- Notificatie sidebar -->
                <div class="span2 showNotifications" style="display: none;">
                   <div class="updates">
                      <div class="row-fluid">
@@ -64,6 +75,7 @@
                      </div>
                   </div>
                </div>
+               <!-- Einde notificatie sidebar -->
             </div>
          </div>
       </header>
@@ -76,7 +88,7 @@
                   <div id="section1" class="metro-section tile-span-4">
                      <h2>Diensten</h2>
                      <ul class="rij"> 
-                        <li class="tile app applicatie bg-color-blue" href="#">
+                        <li class="tile app applicatie bg-color-blue">
                            <div class="tile-icon">
                               <i class="icon-screen"></i>
                               <h2>Teleview</h2>
@@ -87,7 +99,7 @@
                               </p>
                            </div>
                         </li>
-                        <li class="tile app applicatie bg-color-blue" href="#">
+                        <li class="tile app applicatie bg-color-blue">
                            <div class="tile-icon">
                               <i class="icon-search-2"></i>
                               <h2>Interact</h2>
@@ -98,55 +110,21 @@
                               </p>
                            </div>
                         </li>
-                        <li class="tile app applicatie bg-color-blue" href="#">
+                        <li class="tile app applicatie bg-color-blue">
                            <div class="tile-icon">
                               <i class="icon-lab"></i>
                               <h2>Dienst 3</h2>
                            </div>
                         </li>
-                        <li class="tile app folder bg-color-blue" href="#">
+                        <li class="tile app folder bg-color-blue">
                            <div class="tile-icon">
                               <i class="icon-lab"></i>
                               <h2>Lab</h2>
                            </div>
                         </li>
                      </ul>
-
                      <ul class="rij"> 
-                        <!--<li class="tile widepeek applicatie" onclick="fullscreen('', 'rss', 'nieuws');" >
-                           <div class="sideTitle bg-color-blue">
-                              <i class="icon-rss"></i>
-                              <h1>Nieuws</h1>
-                           </div>
-                           <div class="sideBody">
-                              <div class="SideWideItem">
-                                 <p>Nieuwe vergoeding Menzis<i class="icon-chevron-right pull-right"></i></p>
-                                 <div class="SideWideItemSmall">27-12-2012</div>
-                              </div>
-                              <div class="SideWideItem">
-                                 <p>Tubantia Zorgdebat<i class="icon-chevron-right pull-right"></i></p>
-                                 <div class="SideWideItemSmall">26-12-2012</div>
-                              </div>
-                              <div class="SideWideItem">
-                                 <p>Fijne feestdagen en een  <i class="icon-chevron-right pull-right"></i></p>
-                                 <div class="SideWideItemSmall">25-12-2012</div>
-                              </div>
-                              <div class="SideWideItem">
-                                 <p>Nieuwe versie e-Verwijzen<i class="icon-chevron-right pull-right"></i></p>
-                                 <div class="SideWideItemSmall">23-10-2012</div>
-                              </div>
-                              <div class="SideWideItem">
-                                 <p>Aansluiting MIRA<i class="icon-chevron-right pull-right"></i></p>
-                                 <div class="SideWideItemSmall">26-09-2012</div>
-                              </div>
-                              <div class="SideWideItem">
-                                 <p>Opening pand<i class="icon-chevron-right pull-right"></i></p>
-                                 <div class="SideWideItemSmall">12-08-2012</div>
-                              </div>
-                           </div>
-                        </li> -->
-                     
-                        <li class="tile app applicatie bg-color-blue" href="#" onclick="" >
+                        <li class="tile app applicatie bg-color-blue">
                            <div class="tile-icon">
                               <i class="icon-loop-alt4"></i>
                               <h2>E-Overdracht</h2>
@@ -157,7 +135,7 @@
                               </p>
                            </div>
                         </li>
-                        <li class="tile app applicatie bg-color-blue" onclick="fullscreen('', 'mail', 'e-verwijzen');" href="#">
+                        <li class="tile app applicatie bg-color-blue" onclick="fullscreen('', 'mail', 'e-verwijzen');">
                            <div class="tile-icon">
                               <i class="icon-mail"></i>
                               <h2>E-Verwijzen</h2>
@@ -208,7 +186,7 @@
    <!-- Folder Content -->
    <div class="folderContent">
       <span class="folderName">Folder Name</span>
-      <div class="">
+      <div>
          <a class="tilefolder appfolder bg-color-blue" href="#" onclick="fullscreen('', 'lab', 'orders');">
             <div class="tile-icon">
                <i class="icon-lab"></i>
@@ -239,4 +217,4 @@
          </a>
       </div>
    </div>
-   </div> <!-- Einde Load Content --> 
+</div> <!-- Einde Load Content --> 

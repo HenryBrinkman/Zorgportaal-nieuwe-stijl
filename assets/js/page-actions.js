@@ -45,7 +45,7 @@ function pageReady(page){
 	// Pagina specifieke functies aanroepen.
 	switch(page) {
 		case "pages/login" :
-			$('body').addClass('loginScreenBackground'); 
+			loginscreenBackground(true);
 			break;
 		case "pages/nieuws":			
 			// Weergave actieve applicaties

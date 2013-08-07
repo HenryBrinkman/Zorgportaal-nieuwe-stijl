@@ -45,21 +45,9 @@ button, input, select, textarea {
     font-family: $fontFamily1;
 }
 
-/* Default classes */
-.opties {
-	margin-top: 40px;
-	i {
-		margin-right: 10px;
-	}
-}
-
-.dropup {
-	@include box-shadow(rgba(#666666, 0.5) 1px 1px 5px);
-}
-
 h1 {
-	font-size: 45px;
-	font-weight: 300;
+	font-size: $fontSizeXXXXLarge;
+	font-weight: $fontWeightMedium;
 }
 
 h2 {
@@ -105,4 +93,8 @@ a {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow:hidden;
+}
+
+.dropup {
+	@include box-shadow(rgba(#666666, 0.5) 1px 1px 5px);
 }

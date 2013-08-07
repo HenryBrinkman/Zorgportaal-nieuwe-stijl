@@ -4,8 +4,8 @@ body.loginScreenBackground {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/backgroundLogin.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/backgroundLogin.jpg', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/backgrounds/backgroundLogin.jpg', sizingMethod='scale');
 }
 
 .loginScreen {

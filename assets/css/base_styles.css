@@ -6,7 +6,7 @@
 /*
  * Corrects block display not defined in IE6/7/8/9 & FF3
  */
-/* line 21, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 21, ../sass/globals/_reset.scss */
 article,
 aside,
 details,
@@ -24,7 +24,7 @@ summary {
 /*
  * Corrects inline-block display not defined in IE6/7/8/9 & FF3
  */
-/* line 31, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 31, ../sass/globals/_reset.scss */
 audio,
 canvas,
 video {
@@ -37,7 +37,7 @@ video {
  * Prevents modern browsers from displaying 'audio' without controls
  * Remove excess height in iOS5 devices
  */
-/* line 42, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 42, ../sass/globals/_reset.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -47,7 +47,7 @@ audio:not([controls]) {
  * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
  * Known issue: no IE6 support
  */
-/* line 52, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 52, ../sass/globals/_reset.scss */
 [hidden] {
   display: none;
 }
@@ -61,7 +61,7 @@ audio:not([controls]) {
  * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
-/* line 68, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 68, ../sass/globals/_reset.scss */
 html {
   font-size: 100%;
   /* 1 */
@@ -74,7 +74,7 @@ html {
 /*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
-/* line 82, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 82, ../sass/globals/_reset.scss */
 html,
 button,
 input,
@@ -86,7 +86,7 @@ textarea {
 /*
  * Addresses margins handled incorrectly in IE6/7
  */
-/* line 90, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 90, ../sass/globals/_reset.scss */
 body {
   margin: 0;
 }
@@ -97,7 +97,7 @@ body {
 /*
  * Addresses outline displayed oddly in Chrome
  */
-/* line 103, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 103, ../sass/globals/_reset.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -106,7 +106,7 @@ a:focus {
  * Improves readability when focused and also mouse hovered in all browsers
  * people.opera.com/patrickl/experiments/keyboard/test
  */
-/* line 113, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 113, ../sass/globals/_reset.scss */
 a:hover,
 a:active {
   outline: 0;
@@ -119,37 +119,37 @@ a:active {
  * Addresses font sizes and margins set differently in IE6/7
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
-/* line 127, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 127, ../sass/globals/_reset.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 132, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 132, ../sass/globals/_reset.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
-/* line 137, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 137, ../sass/globals/_reset.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
-/* line 142, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 142, ../sass/globals/_reset.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
-/* line 147, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 147, ../sass/globals/_reset.scss */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
-/* line 152, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 152, ../sass/globals/_reset.scss */
 h6 {
   font-size: 0.75em;
   margin: 2.33em 0;
@@ -158,7 +158,7 @@ h6 {
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
  */
-/* line 161, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 161, ../sass/globals/_reset.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -166,13 +166,13 @@ abbr[title] {
 /*
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
-/* line 170, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 170, ../sass/globals/_reset.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 174, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 174, ../sass/globals/_reset.scss */
 blockquote {
   margin: 1em 40px;
 }
@@ -180,7 +180,7 @@ blockquote {
 /*
  * Addresses styling not present in S5, Chrome
  */
-/* line 182, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 182, ../sass/globals/_reset.scss */
 dfn {
   font-style: italic;
 }
@@ -188,7 +188,7 @@ dfn {
 /*
  * Addresses styling not present in IE6/7/8/9
  */
-/* line 190, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 190, ../sass/globals/_reset.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -197,7 +197,7 @@ mark {
 /*
  * Addresses margins set differently in IE6/7
  */
-/* line 200, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 200, ../sass/globals/_reset.scss */
 p,
 pre {
   margin: 1em 0;
@@ -207,7 +207,7 @@ pre {
  * Corrects font family set oddly in IE6, S4/5, Chrome
  * en.wikipedia.org/wiki/User:Davidgothberg/Test59
  */
-/* line 212, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 212, ../sass/globals/_reset.scss */
 pre,
 code,
 kbd,
@@ -220,7 +220,7 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers
  */
-/* line 222, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 222, ../sass/globals/_reset.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -232,20 +232,20 @@ pre {
  * 2. Addresses quote property not supported in S4
  */
 /* 1 */
-/* line 235, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 235, ../sass/globals/_reset.scss */
 q {
   quotes: none;
 }
 
 /* 2 */
-/* line 242, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 242, ../sass/globals/_reset.scss */
 q:before,
 q:after {
   content: '';
   content: none;
 }
 
-/* line 247, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 247, ../sass/globals/_reset.scss */
 small {
   font-size: 75%;
 }
@@ -254,7 +254,7 @@ small {
  * Prevents sub and sup affecting line-height in all browsers
  * gist.github.com/413930
  */
-/* line 257, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 257, ../sass/globals/_reset.scss */
 sub,
 sup {
   font-size: 75%;
@@ -263,12 +263,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 264, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 264, ../sass/globals/_reset.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 268, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 268, ../sass/globals/_reset.scss */
 sub {
   bottom: -0.25em;
 }
@@ -279,7 +279,7 @@ sub {
 /*
  * Addresses margins set differently in IE6/7
  */
-/* line 284, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 284, ../sass/globals/_reset.scss */
 dl,
 menu,
 ol,
@@ -287,7 +287,7 @@ ul {
   margin: 1em 0;
 }
 
-/* line 288, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 288, ../sass/globals/_reset.scss */
 dd {
   margin: 0 0 0 40px;
 }
@@ -295,7 +295,7 @@ dd {
 /*
  * Addresses paddings set differently in IE6/7
  */
-/* line 298, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 298, ../sass/globals/_reset.scss */
 menu,
 ol,
 ul {
@@ -305,7 +305,7 @@ ul {
 /*
  * Corrects list images handled incorrectly in IE7
  */
-/* line 307, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 307, ../sass/globals/_reset.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -320,7 +320,7 @@ nav ol {
  * 2. Improves image quality when scaled in IE7
  *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
-/* line 323, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 323, ../sass/globals/_reset.scss */
 img {
   border: 0;
   /* 1 */
@@ -331,7 +331,7 @@ img {
 /*
  * Corrects overflow displayed oddly in IE9
  */
-/* line 332, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 332, ../sass/globals/_reset.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -342,7 +342,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE6/7/8/9, S5, O11
  */
-/* line 345, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 345, ../sass/globals/_reset.scss */
 figure {
   margin: 0;
 }
@@ -353,7 +353,7 @@ figure {
 /*
  * Corrects margin displayed oddly in IE6/7
  */
-/* line 358, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 358, ../sass/globals/_reset.scss */
 form {
   margin: 0;
 }
@@ -361,7 +361,7 @@ form {
 /*
  * Define consistent border, margin, and padding
  */
-/* line 366, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 366, ../sass/globals/_reset.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -373,7 +373,7 @@ fieldset {
  * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
-/* line 378, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 378, ../sass/globals/_reset.scss */
 legend {
   border: 0;
   /* 1 */
@@ -389,7 +389,7 @@ legend {
  * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
  * 3. Improves appearance and consistency in all browsers
  */
-/* line 394, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 394, ../sass/globals/_reset.scss */
 button,
 input,
 select,
@@ -407,7 +407,7 @@ textarea {
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
-/* line 406, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 406, ../sass/globals/_reset.scss */
 button,
 input {
   line-height: normal;
@@ -420,7 +420,7 @@ input {
  * 3. Removes inner spacing in IE7 without affecting normal text inputs
  *    Known issue: inner spacing remains in IE6
  */
-/* line 420, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 420, ../sass/globals/_reset.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -436,7 +436,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements
  */
-/* line 431, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 431, ../sass/globals/_reset.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -448,7 +448,7 @@ input[disabled] {
  * 3. Removes excess padding in IE7
       Known issue: excess padding remains in IE6
  */
-/* line 443, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 443, ../sass/globals/_reset.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -465,7 +465,7 @@ input[type="radio"] {
  * 1. Addresses appearance set to searchfield in S5, Chrome
  * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
-/* line 455, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 455, ../sass/globals/_reset.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -478,7 +478,7 @@ input[type="search"] {
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
-/* line 467, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 467, ../sass/globals/_reset.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
@@ -488,7 +488,7 @@ input[type="search"]::-webkit-search-cancel-button {
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-/* line 477, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 477, ../sass/globals/_reset.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -499,7 +499,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
  */
-/* line 487, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 487, ../sass/globals/_reset.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -513,7 +513,7 @@ textarea {
 /*
  * Remove most spacing between table cells
  */
-/* line 501, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_reset.scss */
+/* line 501, ../sass/globals/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -544,12 +544,12 @@ table {
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
-/* line 8, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_ie.scss */
+/* line 8, ../sass/globals/_ie.scss */
 .bg-color-izit {
   background: #dc71ec;
 }
 
-/* line 12, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_ie.scss */
+/* line 12, ../sass/globals/_ie.scss */
 .bg-color-izit-green {
   background: #b1c541;
 }
@@ -561,7 +561,7 @@ table {
 /* -----------------------------------  
    Tile Colors
 ----------------------------------- */
-/* line 9, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 9, ../sass/globals/_tiles.scss */
 .bg-color-blue {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00bdfd), color-stop(100%, #00a5dc));
   background-image: -webkit-linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
@@ -570,7 +570,7 @@ table {
   background-image: linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
 }
 
-/* line 13, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 13, ../sass/globals/_tiles.scss */
 .bg-color-green {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00b45b), color-stop(100%, #008641));
   background-image: -webkit-linear-gradient(top, #00b45b 0%, #008641 100%);
@@ -579,7 +579,7 @@ table {
   background-image: linear-gradient(top, #00b45b 0%, #008641 100%);
 }
 
-/* line 17, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 17, ../sass/globals/_tiles.scss */
 .bg-color-red {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d81d51), color-stop(100%, #bc1c48));
   background-image: -webkit-linear-gradient(top, #d81d51 0%, #bc1c48 100%);
@@ -588,7 +588,7 @@ table {
   background-image: linear-gradient(top, #d81d51 0%, #bc1c48 100%);
 }
 
-/* line 21, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 21, ../sass/globals/_tiles.scss */
 .bg-color-orange {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fc9100), color-stop(100%, #dd7200));
   background-image: -webkit-linear-gradient(top, #fc9100 0%, #dd7200 100%);
@@ -597,7 +597,7 @@ table {
   background-image: linear-gradient(top, #fc9100 0%, #dd7200 100%);
 }
 
-/* line 25, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 25, ../sass/globals/_tiles.scss */
 .bg-color-purple {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7d4df3), color-stop(100%, #603cba));
   background-image: -webkit-linear-gradient(top, #7d4df3 0%, #603cba 100%);
@@ -606,7 +606,7 @@ table {
   background-image: linear-gradient(top, #7d4df3 0%, #603cba 100%);
 }
 
-/* line 29, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 29, ../sass/globals/_tiles.scss */
 .bg-color-izit {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dc71ec), color-stop(100%, #924b9d));
   background-image: -webkit-linear-gradient(top, #dc71ec 0%, #924b9d 100%);
@@ -615,7 +615,7 @@ table {
   background-image: linear-gradient(top, #dc71ec 0%, #924b9d 100%);
 }
 
-/* line 33, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 33, ../sass/globals/_tiles.scss */
 .bg-color-izit-green {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b1c541), color-stop(100%, #92a335));
   background-image: -webkit-linear-gradient(top, #b1c541 0%, #92a335 100%);
@@ -624,12 +624,12 @@ table {
   background-image: linear-gradient(top, #b1c541 0%, #92a335 100%);
 }
 
-/* line 37, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 37, ../sass/globals/_tiles.scss */
 .bg-color-overlay {
   background: rgba(51, 51, 51, 0.5);
 }
 
-/* line 41, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 41, ../sass/globals/_tiles.scss */
 .bg-color-overlay2 {
   background: rgba(51, 51, 51, 0.1);
 }
@@ -637,15 +637,15 @@ table {
 /* -----------------------------------  
    Default Metro Layout
 ----------------------------------- */
-/* line 50, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 50, ../sass/globals/_tiles.scss */
 .metro {
   overflow: hidden;
 }
-/* line 52, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 52, ../sass/globals/_tiles.scss */
 .metro .carousel-control {
   top: 20%;
 }
-/* line 55, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 55, ../sass/globals/_tiles.scss */
 .metro .tile, .metro .folderContent .tilefolder, .folderContent .metro .tilefolder {
   position: relative;
   display: block;
@@ -667,7 +667,7 @@ table {
   -moz-box-shadow: #666666 2px 2px 5px;
   box-shadow: #666666 2px 2px 5px;
 }
-/* line 70, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 70, ../sass/globals/_tiles.scss */
 .metro .tile:hover, .metro .folderContent .tilefolder:hover, .folderContent .metro .tilefolder:hover {
   outline: 0px #999999 solid;
   -webkit-border-radius: 5px;
@@ -676,20 +676,20 @@ table {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 74, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 74, ../sass/globals/_tiles.scss */
 .metro .metro-sections {
   height: auto;
   position: relative;
   overflow: hidden;
   width: 10000px;
 }
-/* line 79, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 79, ../sass/globals/_tiles.scss */
 .metro .metro-sections h2 {
   margin-left: 5px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
-/* line 84, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 84, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section {
   position: relative;
   float: left;
@@ -699,7 +699,7 @@ table {
   margin-right: 75px;
 }
 
-/* line 95, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 95, ../sass/globals/_tiles.scss */
 .scroll {
   -webkit-transition: left 0.6s ease;
   /* here the animation is set on 5 seconds */
@@ -711,49 +711,49 @@ table {
 /* -----------------------------------  
    Default Metro Sections
 ----------------------------------- */
-/* line 105, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 105, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-1 {
   width: 160px;
   margin-left: 0;
 }
 
-/* line 106, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 106, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-2 {
   width: 320px;
   margin-left: 0;
 }
 
-/* line 107, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 107, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-3 {
   width: 480px;
   margin-left: 0;
 }
 
-/* line 108, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 108, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-4 {
   width: 640px;
   margin-left: 0;
 }
 
-/* line 109, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 109, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-5 {
   width: 640px;
   margin-left: 0;
 }
 
-/* line 110, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 110, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-6 {
   width: 800px;
   margin-left: 0;
 }
 
-/* line 111, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 111, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-7 {
   width: 960px;
   margin-left: 0;
 }
 
-/* line 112, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 112, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-8 {
   width: 1120px;
   margin-left: 0;
@@ -762,13 +762,13 @@ table {
 /* -----------------------------------  
    Tile templates
 ----------------------------------- */
-/* line 120, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 120, ../sass/globals/_tiles.scss */
 .metro .tile.app, .metro .folderContent .app.tilefolder, .folderContent .metro .app.tilefolder, .metro .folderContent .tilefolder.appfolder, .folderContent .metro .tilefolder.appfolder, .metro .folderContent .tile.tilefolder.appfolder, .folderContent .metro .tile.tilefolder.appfolder {
   /* Default tile */
   width: 150px;
   height: 150px;
 }
-/* line 123, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 123, ../sass/globals/_tiles.scss */
 .metro .tile.app .image-wrapper, .metro .folderContent .app.tilefolder .image-wrapper, .folderContent .metro .app.tilefolder .image-wrapper, .metro .folderContent .tilefolder.appfolder .image-wrapper, .folderContent .metro .tilefolder.appfolder .image-wrapper {
   display: block;
   margin-top: 20px;
@@ -776,13 +776,13 @@ table {
   text-align: center;
   vertical-align: middle;
 }
-/* line 129, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 129, ../sass/globals/_tiles.scss */
 .metro .tile.app .image-wrapper img, .metro .folderContent .app.tilefolder .image-wrapper img, .folderContent .metro .app.tilefolder .image-wrapper img, .metro .folderContent .tilefolder.appfolder .image-wrapper img, .folderContent .metro .tilefolder.appfolder .image-wrapper img {
   max-width: 80px;
   max-height: 80px;
   margin: 0 auto;
 }
-/* line 135, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 135, ../sass/globals/_tiles.scss */
 .metro .tile.app .tile-icon, .metro .folderContent .app.tilefolder .tile-icon, .folderContent .metro .app.tilefolder .tile-icon, .metro .folderContent .tilefolder.appfolder .tile-icon, .folderContent .metro .tilefolder.appfolder .tile-icon {
   display: block;
   width: 150px;
@@ -792,20 +792,20 @@ table {
   text-align: center;
   vertical-align: middle;
 }
-/* line 143, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 143, ../sass/globals/_tiles.scss */
 .metro .tile.app .tile-icon i, .metro .folderContent .app.tilefolder .tile-icon i, .folderContent .metro .app.tilefolder .tile-icon i, .metro .folderContent .tilefolder.appfolder .tile-icon i, .folderContent .metro .tilefolder.appfolder .tile-icon i {
   font-size: 40px;
   margin-left: -28px;
   margin-bottom: 10px;
 }
-/* line 148, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 148, ../sass/globals/_tiles.scss */
 .metro .tile.app .tile-icon h2, .metro .folderContent .app.tilefolder .tile-icon h2, .folderContent .metro .app.tilefolder .tile-icon h2, .metro .folderContent .tilefolder.appfolder .tile-icon h2, .folderContent .metro .tilefolder.appfolder .tile-icon h2 {
   font-size: 12px;
   font-weight: 300;
   margin: 0;
   padding: 0;
 }
-/* line 155, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 155, ../sass/globals/_tiles.scss */
 .metro .tile.app .tile-notification, .metro .folderContent .app.tilefolder .tile-notification, .folderContent .metro .app.tilefolder .tile-notification, .metro .folderContent .tilefolder.appfolder .tile-notification, .folderContent .metro .tilefolder.appfolder .tile-notification {
   position: absolute;
   bottom: 0;
@@ -813,23 +813,23 @@ table {
   height: 30px;
   padding: 2px 10px;
 }
-/* line 161, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 161, ../sass/globals/_tiles.scss */
 .metro .tile.app .tile-notification p, .metro .folderContent .app.tilefolder .tile-notification p, .folderContent .metro .app.tilefolder .tile-notification p, .metro .folderContent .tilefolder.appfolder .tile-notification p, .folderContent .metro .tilefolder.appfolder .tile-notification p {
   margin: 5px 0 0 0;
   padding: 0;
 }
-/* line 165, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 165, ../sass/globals/_tiles.scss */
 .metro .tile.app .tile-notification i, .metro .folderContent .app.tilefolder .tile-notification i, .folderContent .metro .app.tilefolder .tile-notification i, .metro .folderContent .tilefolder.appfolder .tile-notification i, .folderContent .metro .tilefolder.appfolder .tile-notification i {
   float: right;
   margin-right: 20px;
 }
-/* line 171, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 171, ../sass/globals/_tiles.scss */
 .metro .tile.wide, .metro .folderContent .wide.tilefolder, .folderContent .metro .wide.tilefolder {
   /* Two tiles wide */
   width: 310px;
   height: 150px;
 }
-/* line 174, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 174, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideTitle, .metro .folderContent .wide.tilefolder .sideTitle, .folderContent .metro .wide.tilefolder .sideTitle {
   width: 75px;
   height: 150px;
@@ -839,7 +839,7 @@ table {
   -moz-box-shadow: #666666 1px 0px 4px;
   box-shadow: #666666 1px 0px 4px;
 }
-/* line 180, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 180, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideTitle h1, .metro .folderContent .wide.tilefolder .sideTitle h1, .folderContent .metro .wide.tilefolder .sideTitle h1 {
   color: white;
   text-align: center;
@@ -848,13 +848,13 @@ table {
   margin: 5px 0 0 0;
   padding: 0;
 }
-/* line 188, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 188, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideTitle i, .metro .folderContent .wide.tilefolder .sideTitle i, .folderContent .metro .wide.tilefolder .sideTitle i {
   font-size: 40px;
   text-align: center;
   margin: 50px 0 0 20px;
 }
-/* line 194, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 194, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideBody, .metro .folderContent .wide.tilefolder .sideBody, .folderContent .metro .wide.tilefolder .sideBody {
   width: 232px;
   height: 150px;
@@ -868,7 +868,7 @@ table {
   background-image: -o-linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
   background-image: linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
 }
-/* line 202, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 202, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideBody .SideWideItem, .metro .folderContent .wide.tilefolder .sideBody .SideWideItem, .folderContent .metro .wide.tilefolder .sideBody .SideWideItem {
   width: 215px;
   height: 35px;
@@ -877,16 +877,16 @@ table {
   display: block;
   border-bottom: solid 1px #AAAAAA;
 }
-/* line 209, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 209, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideBody .SideWideItem p, .metro .folderContent .wide.tilefolder .sideBody .SideWideItem p, .folderContent .metro .wide.tilefolder .sideBody .SideWideItem p {
   margin: 0;
   font-size: 16px;
 }
-/* line 212, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 212, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideBody .SideWideItem p i, .metro .folderContent .wide.tilefolder .sideBody .SideWideItem p i, .folderContent .metro .wide.tilefolder .sideBody .SideWideItem p i {
   margin: 10px 0 0 0;
 }
-/* line 218, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 218, ../sass/globals/_tiles.scss */
 .metro .tile.wide .title, .metro .folderContent .wide.tilefolder .title, .folderContent .metro .wide.tilefolder .title {
   width: 310px;
   height: 40px;
@@ -897,7 +897,7 @@ table {
   -moz-box-shadow: #666666 1px 0px 4px;
   box-shadow: #666666 1px 0px 4px;
 }
-/* line 225, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 225, ../sass/globals/_tiles.scss */
 .metro .tile.wide .title h1, .metro .folderContent .wide.tilefolder .title h1, .folderContent .metro .wide.tilefolder .title h1 {
   color: white;
   text-align: center;
@@ -906,12 +906,12 @@ table {
   margin: 0;
   padding: 0;
 }
-/* line 233, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 233, ../sass/globals/_tiles.scss */
 .metro .tile.wide .title i, .metro .folderContent .wide.tilefolder .title i, .folderContent .metro .wide.tilefolder .title i {
   font-size: 20px;
   margin-right: 10px;
 }
-/* line 238, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 238, ../sass/globals/_tiles.scss */
 .metro .tile.wide .body, .metro .folderContent .wide.tilefolder .body, .folderContent .metro .wide.tilefolder .body {
   width: 310px;
   height: 109px;
@@ -924,35 +924,35 @@ table {
   background-image: -o-linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
   background-image: linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
 }
-/* line 245, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 245, ../sass/globals/_tiles.scss */
 .metro .tile.wide .body .WideItem, .metro .folderContent .wide.tilefolder .body .WideItem, .folderContent .metro .wide.tilefolder .body .WideItem {
   color: #333333;
   padding: 0 10px;
   border-top: 1px solid #AAAAAA;
 }
-/* line 249, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 249, ../sass/globals/_tiles.scss */
 .metro .tile.wide .body .WideItem i, .metro .folderContent .wide.tilefolder .body .WideItem i, .folderContent .metro .wide.tilefolder .body .WideItem i {
   margin-left: 10px;
 }
-/* line 255, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 255, ../sass/globals/_tiles.scss */
 .metro .tile.squarepeek, .metro .folderContent .squarepeek.tilefolder, .folderContent .metro .squarepeek.tilefolder {
   /* Two tiles high */
   width: 150px;
   height: 300px;
 }
-/* line 258, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 258, ../sass/globals/_tiles.scss */
 .metro .tile.squarepeek .text-inner, .metro .folderContent .squarepeek.tilefolder .text-inner, .folderContent .metro .squarepeek.tilefolder .text-inner {
   width: 110px;
   height: 110px;
   padding: 20px;
 }
-/* line 264, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 264, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek, .metro .folderContent .widepeek.tilefolder, .folderContent .metro .widepeek.tilefolder {
   /* 2x2 tiles */
   width: 310px;
   height: 300px;
 }
-/* line 267, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 267, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .head, .metro .folderContent .widepeek.tilefolder .head, .folderContent .metro .widepeek.tilefolder .head {
   width: 310px;
   height: 50px;
@@ -960,7 +960,7 @@ table {
   -moz-box-shadow: #666666 0px 1px 4px;
   box-shadow: #666666 0px 1px 4px;
 }
-/* line 271, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 271, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .head h1, .metro .folderContent .widepeek.tilefolder .head h1, .folderContent .metro .widepeek.tilefolder .head h1 {
   color: white;
   text-align: center;
@@ -970,7 +970,7 @@ table {
   padding: 0;
   line-height: 48px;
 }
-/* line 281, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 281, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .body, .metro .folderContent .widepeek.tilefolder .body, .folderContent .metro .widepeek.tilefolder .body {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #e8e8e8));
   background-image: -webkit-linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
@@ -983,7 +983,7 @@ table {
   color: #333333;
   padding: 20px;
 }
-/* line 289, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 289, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideTitle, .metro .folderContent .widepeek.tilefolder .sideTitle, .folderContent .metro .widepeek.tilefolder .sideTitle {
   width: 75px;
   height: 300px;
@@ -993,7 +993,7 @@ table {
   -moz-box-shadow: #666666 1px 0px 4px;
   box-shadow: #666666 1px 0px 4px;
 }
-/* line 295, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 295, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideTitle h1, .metro .folderContent .widepeek.tilefolder .sideTitle h1, .folderContent .metro .widepeek.tilefolder .sideTitle h1 {
   color: white;
   text-align: center;
@@ -1002,13 +1002,13 @@ table {
   margin: 5px 0 0 0;
   padding: 0;
 }
-/* line 303, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 303, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideTitle i, .metro .folderContent .widepeek.tilefolder .sideTitle i, .folderContent .metro .widepeek.tilefolder .sideTitle i {
   font-size: 40px;
   text-align: center;
   margin: 125px 0 0 20px;
 }
-/* line 309, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 309, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideBody, .metro .folderContent .widepeek.tilefolder .sideBody, .folderContent .metro .widepeek.tilefolder .sideBody {
   width: 232px;
   height: 300px;
@@ -1022,7 +1022,7 @@ table {
   background-image: -o-linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
   background-image: linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
 }
-/* line 317, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 317, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideBody .SideWideItem, .metro .folderContent .widepeek.tilefolder .sideBody .SideWideItem, .folderContent .metro .widepeek.tilefolder .sideBody .SideWideItem {
   width: 215px;
   height: 35px;
@@ -1031,16 +1031,16 @@ table {
   display: block;
   border-bottom: solid 1px #AAAAAA;
 }
-/* line 324, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 324, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideBody .SideWideItem p, .metro .folderContent .widepeek.tilefolder .sideBody .SideWideItem p, .folderContent .metro .widepeek.tilefolder .sideBody .SideWideItem p {
   margin: 0;
   font-size: 16px;
 }
-/* line 327, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 327, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideBody .SideWideItem p i, .metro .folderContent .widepeek.tilefolder .sideBody .SideWideItem p i, .folderContent .metro .widepeek.tilefolder .sideBody .SideWideItem p i {
   margin: 10px 0 0 0;
 }
-/* line 333, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 333, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .title, .metro .folderContent .widepeek.tilefolder .title, .folderContent .metro .widepeek.tilefolder .title {
   width: 310px;
   height: 40px;
@@ -1051,7 +1051,7 @@ table {
   -moz-box-shadow: #666666 1px 0px 4px;
   box-shadow: #666666 1px 0px 4px;
 }
-/* line 340, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 340, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .title h1, .metro .folderContent .widepeek.tilefolder .title h1, .folderContent .metro .widepeek.tilefolder .title h1 {
   color: white;
   text-align: center;
@@ -1060,12 +1060,12 @@ table {
   margin: 0;
   padding: 0;
 }
-/* line 348, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 348, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .title i, .metro .folderContent .widepeek.tilefolder .title i, .folderContent .metro .widepeek.tilefolder .title i {
   font-size: 20px;
   margin-right: 10px;
 }
-/* line 353, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 353, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .body, .metro .folderContent .widepeek.tilefolder .body, .folderContent .metro .widepeek.tilefolder .body {
   width: 310px;
   height: 109px;
@@ -1078,49 +1078,49 @@ table {
   background-image: -o-linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
   background-image: linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
 }
-/* line 360, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 360, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .body .WideItem, .metro .folderContent .widepeek.tilefolder .body .WideItem, .folderContent .metro .widepeek.tilefolder .body .WideItem {
   color: #333333;
   padding: 0 10px;
   border-top: 1px solid #AAAAAA;
 }
-/* line 364, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 364, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .body .WideItem i, .metro .folderContent .widepeek.tilefolder .body .WideItem i, .folderContent .metro .widepeek.tilefolder .body .WideItem i {
   margin-left: 10px;
 }
 
-/* line 373, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 373, ../sass/globals/_tiles.scss */
 .footer-container {
   margin-top: 5px;
 }
 
-/* line 377, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 377, ../sass/globals/_tiles.scss */
 .patient-pasfoto {
   width: 75px;
   height: 75px;
   display: block;
   float: left;
 }
-/* line 382, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 382, ../sass/globals/_tiles.scss */
 .patient-pasfoto i {
   margin: 45px 5px 5px 45px;
   text-align: right;
 }
 
-/* line 388, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 388, ../sass/globals/_tiles.scss */
 .patient-geslacht {
   width: 75px;
   height: 75px;
   display: block;
   float: left;
 }
-/* line 393, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 393, ../sass/globals/_tiles.scss */
 .patient-geslacht i {
   margin: 26px;
   text-align: center;
 }
 
-/* line 399, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 399, ../sass/globals/_tiles.scss */
 .patient-naam {
   width: 150px;
   height: 75px;
@@ -1128,11 +1128,11 @@ table {
   float: left;
   text-align: center;
 }
-/* line 405, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 405, ../sass/globals/_tiles.scss */
 .patient-naam h3 {
   margin: 4px 0 0 0;
 }
-/* line 408, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/globals/_tiles.scss */
+/* line 408, ../sass/globals/_tiles.scss */
 .patient-naam p {
   margin: 0;
 }
@@ -1141,14 +1141,14 @@ table {
 /* -----------------------------------  
    Icon styling
 ----------------------------------- */
-/* line 5, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_icons.scss */
+/* line 5, ../sass/sections/_icons.scss */
 .icoon, .icon-chevron-right-white, .icoon-attachment {
   margin: -1px 0 -1px 0;
   display: inline-block;
   vertical-align: text-top;
 }
 
-/* line 12, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_icons.scss */
+/* line 12, ../sass/sections/_icons.scss */
 .icon-user-female,
 .icon-user-male {
   width: 22px;
@@ -1156,39 +1156,39 @@ table {
   background: url("../images/icons/ico-user-female.png") transparent no-repeat 0 0;
 }
 
-/* line 18, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_icons.scss */
+/* line 18, ../sass/sections/_icons.scss */
 .icon-user-female-white {
   width: 22px;
   height: 28px;
   background: url("../images/icons/ico-user-female-white.png") transparent no-repeat 0 0;
 }
 
-/* line 24, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_icons.scss */
+/* line 24, ../sass/sections/_icons.scss */
 .icon-user-male {
   background: url("../images/icons/ico-user-male.png") transparent no-repeat 0 0;
 }
 
-/* line 28, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_icons.scss */
+/* line 28, ../sass/sections/_icons.scss */
 .icon-chevron-right {
   background: url("../images/icons/ico-chevron-right.png") transparent no-repeat 0 0;
   width: 14px;
   height: 14px;
 }
 
-/* line 34, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_icons.scss */
+/* line 34, ../sass/sections/_icons.scss */
 .icon-chevron-right-white {
   margin-top: 3px;
   background: url("../images/icons/ico-chevron-right-white.png") transparent no-repeat 0 0;
 }
 
 /* Om de Bootstrap glyphicons binnen de Topicus mapstructuur correct te laden */
-/* line 42, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_icons.scss */
+/* line 42, ../sass/sections/_icons.scss */
 [class^="icoon-"],
 [class*=" icoon-"] {
   background-image: url("../images/icons/glyphicons-halflings.png");
 }
 
-/* line 50, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_icons.scss */
+/* line 50, ../sass/sections/_icons.scss */
 .icoon-white,
 .dropdown-menu > li > a:hover > [class^="icoon-"].icon-white,
 .dropdown-menu > li > a:hover > [class*=" icoon-"].icon-white,
@@ -1197,7 +1197,7 @@ table {
   background-image: url("../images/icons/glyphicons-halflings-white.png");
 }
 
-/* line 54, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_icons.scss */
+/* line 54, ../sass/sections/_icons.scss */
 .icoon-attachment {
   width: 14px;
   height: 14px;
@@ -1206,13 +1206,13 @@ table {
   background: transparent url(../images/icons/ico-attachment.png) no-repeat 0 0;
 }
 
-/* line 65, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_icons.scss */
+/* line 65, ../sass/sections/_icons.scss */
 .btn-group [class^="icon-"],
 .btn-group [class*=" icon-"] {
   margin-top: 3px;
 }
 
-/* line 70, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_icons.scss */
+/* line 70, ../sass/sections/_icons.scss */
 .notification-new {
   position: absolute;
   top: -12px;
@@ -1229,12 +1229,12 @@ table {
   background: url(../images/icons/ico-notification-new.png) transparent no-repeat 1px 1px;
 }
 
-/* line 1, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 1, ../sass/sections/_notifications.scss */
 .btn-notification {
   position: absolute;
 }
 
-/* line 4, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 4, ../sass/sections/_notifications.scss */
 .ui-notify {
   width: 350px;
   position: fixed;
@@ -1243,7 +1243,7 @@ table {
   z-index: 10000;
 }
 
-/* line 11, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 11, ../sass/sections/_notifications.scss */
 .ui-notify-message {
   padding: 10px;
   margin-bottom: 15px;
@@ -1254,26 +1254,26 @@ table {
   border-radius: 6px;
 }
 
-/* line 16, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 16, ../sass/sections/_notifications.scss */
 .ui-notify-message h1 {
   font-size: 14px;
   margin: 0;
   padding: 0;
 }
 
-/* line 21, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 21, ../sass/sections/_notifications.scss */
 .ui-notify-message p {
   margin: 3px 0;
   padding: 0;
   line-height: 18px;
 }
 
-/* line 26, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 26, ../sass/sections/_notifications.scss */
 .ui-notify-message:last-child {
   margin-bottom: 0;
 }
 
-/* line 29, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 29, ../sass/sections/_notifications.scss */
 .ui-notify-message-style {
   background: #000;
   background: rgba(0, 0, 0, 0.8);
@@ -1282,29 +1282,29 @@ table {
   box-shadow: black 0 0 6px;
 }
 
-/* line 34, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 34, ../sass/sections/_notifications.scss */
 .ui-notify-message-style h1 {
   color: #fff;
   font-weight: bold;
 }
 
-/* line 38, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 38, ../sass/sections/_notifications.scss */
 .ui-notify-message-style p {
   color: #fff;
 }
 
-/* line 41, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 41, ../sass/sections/_notifications.scss */
 .ui-notify-close {
   color: #fff;
   text-decoration: underline;
 }
 
-/* line 45, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 45, ../sass/sections/_notifications.scss */
 .ui-notify-click {
   cursor: pointer;
 }
 
-/* line 48, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 48, ../sass/sections/_notifications.scss */
 .ui-notify-cross {
   margin-top: -4px;
   float: right;
@@ -1316,24 +1316,23 @@ table {
   padding: 2px;
 }
 
-/* line 58, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 58, ../sass/sections/_notifications.scss */
 .ui-notify-cross:hover {
   color: #ffffab;
 }
 
-/* line 61, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 61, ../sass/sections/_notifications.scss */
 .ui-notify-cross:active {
   position: relative;
   top: 1px;
 }
 
-/* line 65, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 65, ../sass/sections/_notifications.scss */
 .showNotifications {
   right: 0;
   top: 0;
   height: 100%;
   position: absolute;
-  background-image: url("assets/images/FolderContentBackground.png") repeat;
   background-color: #444444;
   display: block;
   -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px 1px inset;
@@ -1342,20 +1341,20 @@ table {
   margin: 0 0 0 10px;
   color: #AAA;
 }
-/* line 76, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 76, ../sass/sections/_notifications.scss */
 .showNotifications .category {
   background: #333;
   border-bottom: 1px solid #555;
 }
-/* line 80, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 80, ../sass/sections/_notifications.scss */
 .showNotifications .category p {
   margin: 5%;
 }
-/* line 83, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 83, ../sass/sections/_notifications.scss */
 .showNotifications .category i {
   margin-right: 5%;
 }
-/* line 86, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 86, ../sass/sections/_notifications.scss */
 .showNotifications .category a {
   float: right;
   text-align: right;
@@ -1363,11 +1362,11 @@ table {
   color: #AAA;
   font-size: 9px;
 }
-/* line 93, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 93, ../sass/sections/_notifications.scss */
 .showNotifications .category a:hover {
   color: #fff;
 }
-/* line 96, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 96, ../sass/sections/_notifications.scss */
 .showNotifications .category .erase {
   padding: 2px 8px;
   margin-top: -5px;
@@ -1379,55 +1378,55 @@ table {
   -o-border-radius: 30px;
   border-radius: 30px;
 }
-/* line 104, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 104, ../sass/sections/_notifications.scss */
 .showNotifications .content {
   border-bottom: 1px solid #555;
 }
-/* line 106, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 106, ../sass/sections/_notifications.scss */
 .showNotifications .content p {
   color: #FFF;
   margin: 5%;
 }
-/* line 110, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 110, ../sass/sections/_notifications.scss */
 .showNotifications .content span {
   float: right;
   text-align: right;
   font-size: 9px;
 }
-/* line 116, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_notifications.scss */
+/* line 116, ../sass/sections/_notifications.scss */
 .showNotifications .content:hover {
   background: #222;
 }
 
 /* Load pages sections */
-/* line 1, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 1, ../sass/sections/_login.scss */
 body.loginScreenBackground {
-  background: url(../images/backgroundLogin.jpg) no-repeat center center fixed;
+  background: url(../images/backgrounds/backgroundLogin.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/backgroundLogin.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/backgroundLogin.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/backgrounds/backgroundLogin.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/backgrounds/backgroundLogin.jpg', sizingMethod='scale')";
 }
 
-/* line 11, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 11, ../sass/sections/_login.scss */
 .loginScreen {
   margin: 100px auto 0;
   padding: 10px;
 }
-/* line 14, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 14, ../sass/sections/_login.scss */
 .loginScreen .logo {
   width: 80%;
   margin: 0 auto;
   position: relative;
 }
-/* line 18, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 18, ../sass/sections/_login.scss */
 .loginScreen .logo img {
   margin: 0 auto;
   position: relative;
 }
-/* line 23, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 23, ../sass/sections/_login.scss */
 .loginScreen .loginBackground {
   margin: 20px 0;
   display: block;
@@ -1444,19 +1443,19 @@ body.loginScreenBackground {
   -moz-box-shadow: rgba(51, 51, 51, 0.6) 0 0 5px 1px inset;
   box-shadow: rgba(51, 51, 51, 0.6) 0 0 5px 1px inset;
 }
-/* line 32, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 32, ../sass/sections/_login.scss */
 .loginScreen .loginBackground .form-horizontal {
   margin-top: -10px;
 }
-/* line 35, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 35, ../sass/sections/_login.scss */
 .loginScreen .loginBackground .control-group {
   margin: 0;
 }
-/* line 37, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 37, ../sass/sections/_login.scss */
 .loginScreen .loginBackground .control-group .controls {
   margin: 10px 0 0 0;
 }
-/* line 39, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 39, ../sass/sections/_login.scss */
 .loginScreen .loginBackground .control-group .controls #inputEmail {
   -moz-border-radius-bottomleft: 0px;
   -webkit-border-bottom-left-radius: 0px;
@@ -1465,7 +1464,7 @@ body.loginScreenBackground {
   -webkit-border-bottom-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-/* line 42, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 42, ../sass/sections/_login.scss */
 .loginScreen .loginBackground .control-group .controls #inputPassword {
   margin: -15px 0 0;
   -moz-border-radius-topleft: 0px;
@@ -1475,20 +1474,20 @@ body.loginScreenBackground {
   -webkit-border-top-right-radius: 0px;
   border-top-right-radius: 0px;
 }
-/* line 46, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 46, ../sass/sections/_login.scss */
 .loginScreen .loginBackground .control-group .controls input {
   width: 98%;
   padding: 0 0 0 5px;
 }
-/* line 50, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 50, ../sass/sections/_login.scss */
 .loginScreen .loginBackground .control-group .controls .btn {
   width: 93%;
 }
-/* line 56, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 56, ../sass/sections/_login.scss */
 .loginScreen a.loginWith {
   color: #fff;
 }
-/* line 58, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_login.scss */
+/* line 58, ../sass/sections/_login.scss */
 .loginScreen a.loginWith:hover {
   color: #17323A;
 }
@@ -1497,12 +1496,12 @@ body.loginScreenBackground {
 /* -----------------------------------  
    DEMO SCSS, moet nog in de juist secties verdeeld worden
 ----------------------------------- */
-/* line 4, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 4, ../sass/sections/_demo.scss */
 html {
   height: 100%;
 }
 
-/* line 8, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 8, ../sass/sections/_demo.scss */
 body {
   height: 100%;
   overflow: hidden;
@@ -1510,52 +1509,61 @@ body {
   padding: 0;
 }
 
-/* line 16, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 16, ../sass/sections/_demo.scss */
 .user-information span {
   margin-left: 30px;
   text-align: left;
 }
-/* line 19, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 19, ../sass/sections/_demo.scss */
 .user-information span b {
   text-align: right;
 }
 
-/* line 25, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 25, ../sass/sections/_demo.scss */
+.navbarButtons {
+  margin-top: 40px;
+}
+/* line 27, ../sass/sections/_demo.scss */
+.navbarButtons i {
+  margin-right: 10px;
+}
+
+/* line 32, ../sass/sections/_demo.scss */
 #transitie {
   display: block;
   position: absolute;
   z-index: 7000;
 }
 
-/* line 31, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 38, ../sass/sections/_demo.scss */
 #innerTransitie {
   position: absolute;
   left: 42%;
   top: 45%;
 }
-/* line 35, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 42, ../sass/sections/_demo.scss */
 #innerTransitie i {
   font-size: 200px;
 }
 
-/* line 40, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 47, ../sass/sections/_demo.scss */
 #header-container {
   margin-top: 25px;
 }
-/* line 42, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
-#header-container img {
+/* line 49, ../sass/sections/_demo.scss */
+#header-container > img {
   margin: 0;
   height: 55px;
 }
 
-/* line 48, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 55, ../sass/sections/_demo.scss */
 #everwijzen {
   width: 90%;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 54, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 61, ../sass/sections/_demo.scss */
 .side-nav {
   left: 0px;
   width: 10px;
@@ -1571,20 +1579,20 @@ body {
   -moz-box-shadow: #aaaaaa 4px 0px 5px;
   box-shadow: #aaaaaa 4px 0px 5px;
 }
-/* line 66, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 73, ../sass/sections/_demo.scss */
 .side-nav i {
   color: white;
   text-align: center;
   margin: 40px 10px 0 20px;
   font-size: 30px;
 }
-/* line 72, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 79, ../sass/sections/_demo.scss */
 .side-nav p {
   text-align: center;
   color: #FFFFFF;
   width: 75px;
 }
-/* line 77, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 84, ../sass/sections/_demo.scss */
 .side-nav .dashboardknop {
   width: 100%;
   border-bottom: 1px solid #FFF;
@@ -1592,43 +1600,43 @@ body {
   cursor: pointer;
   display: none;
 }
-/* line 85, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 92, ../sass/sections/_demo.scss */
 .side-nav .dashboardknop:hover {
   width: 100%;
   border-bottom: 1px solid #FFF;
   padding-bottom: 10px;
   background: rgba(51, 51, 51, 0.5);
 }
-/* line 91, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 98, ../sass/sections/_demo.scss */
 .side-nav .home {
   display: none;
 }
-/* line 94, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 101, ../sass/sections/_demo.scss */
 .side-nav .active {
   display: none;
 }
-/* line 97, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 104, ../sass/sections/_demo.scss */
 .side-nav span {
   float: right;
   margin: 5px 5px;
 }
-/* line 101, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 108, ../sass/sections/_demo.scss */
 .side-nav.large {
   width: 75px;
 }
-/* line 103, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 110, ../sass/sections/_demo.scss */
 .side-nav.large .dashboardknop {
   display: none;
 }
-/* line 106, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 113, ../sass/sections/_demo.scss */
 .side-nav.large .home {
   display: block;
 }
-/* line 109, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 116, ../sass/sections/_demo.scss */
 .side-nav.large .active {
   display: block;
 }
-/* line 112, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 119, ../sass/sections/_demo.scss */
 .side-nav.large .selected {
   width: 100%;
   border-bottom: 1px solid #FFF;
@@ -1636,18 +1644,18 @@ body {
   background: rgba(51, 51, 51, 0.5);
 }
 
-/* line 121, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 128, ../sass/sections/_demo.scss */
 #charms {
   -webkit-box-shadow: #aaaaaa -4px 0px 5px;
   -moz-box-shadow: #aaaaaa -4px 0px 5px;
   box-shadow: #aaaaaa -4px 0px 5px;
 }
-/* line 123, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 130, ../sass/sections/_demo.scss */
 #charms i {
   margin-top: 20px;
 }
 
-/* line 128, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 135, ../sass/sections/_demo.scss */
 .close-charms:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00bdfd), color-stop(100%, #00a5dc));
   background-image: -webkit-linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
@@ -1657,7 +1665,7 @@ body {
   margin-top: 300px;
 }
 
-/* line 133, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 140, ../sass/sections/_demo.scss */
 .modal-header {
   border-bottom: 0;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00bdfd), color-stop(100%, #00a5dc));
@@ -1675,31 +1683,31 @@ body {
   -moz-box-shadow: rgba(102, 102, 102, 0.5) 0px 1px 4px;
   box-shadow: rgba(102, 102, 102, 0.5) 0px 1px 4px;
 }
-/* line 139, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 146, ../sass/sections/_demo.scss */
 .modal-header h3 {
   color: #FFFFFF;
 }
 
-/* line 145, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 152, ../sass/sections/_demo.scss */
 .modal-body h3 {
   margin-top: 0;
 }
-/* line 148, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 155, ../sass/sections/_demo.scss */
 .modal-body p {
   padding: 10px 0 0 20px;
   border-top: 1px solid #EEEEEE;
 }
-/* line 152, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 159, ../sass/sections/_demo.scss */
 .modal-body span {
   float: right;
 }
 
-/* line 157, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 164, ../sass/sections/_demo.scss */
 .modal-footer {
   background-color: #F5F5F5;
 }
 
-/* line 161, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 168, ../sass/sections/_demo.scss */
 .persoonsgegevens {
   width: 45%;
   margin-right: 5%;
@@ -1707,7 +1715,7 @@ body {
   float: left;
 }
 
-/* line 168, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 175, ../sass/sections/_demo.scss */
 .BSN {
   width: 40%;
   padding-left: 5%;
@@ -1715,21 +1723,21 @@ body {
   float: left;
 }
 
-/* line 175, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 182, ../sass/sections/_demo.scss */
 .titelBackground1 {
   color: #00a5dc;
   margin: -15px -40px 0 -15px;
   padding: 15px 25px 1px 15px;
 }
 
-/* line 181, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 188, ../sass/sections/_demo.scss */
 .titelBackground2 {
   color: #00a5dc;
   margin: -15px -40px 0 -15px;
   padding: 15px 25px 1px 15px;
 }
 
-/* line 187, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 194, ../sass/sections/_demo.scss */
 iframe {
   margin: 0 auto;
   padding: 0;
@@ -1743,17 +1751,17 @@ iframe {
   margin-left: 50px;
 }
 
-/* line 202, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 209, ../sass/sections/_demo.scss */
 #loadContent #everwijzen img {
   margin-left: 50px;
   margin-top: 50px;
 }
 
-/* line 211, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 218, ../sass/sections/_demo.scss */
 #elearning i {
   display: block;
 }
-/* line 215, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 222, ../sass/sections/_demo.scss */
 #elearning .accordion-heading .activeElearning {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00b45b), color-stop(100%, #008641));
   background-image: -webkit-linear-gradient(top, #00b45b 0%, #008641 100%);
@@ -1762,12 +1770,12 @@ iframe {
   background-image: linear-gradient(top, #00b45b 0%, #008641 100%);
   color: #FFF;
 }
-/* line 219, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 226, ../sass/sections/_demo.scss */
 #elearning .accordion-heading a {
   color: #333333;
   text-decoration: none;
 }
-/* line 224, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 231, ../sass/sections/_demo.scss */
 #elearning .span6 {
   padding: 5px;
   border: 1px solid #EEEEEE;
@@ -1779,7 +1787,7 @@ iframe {
   border-radius: 5px;
 }
 
-/* line 235, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 242, ../sass/sections/_demo.scss */
 .instructions {
   display: none;
   width: 100%;
@@ -1789,17 +1797,17 @@ iframe {
   top: 0;
   z-index: 5000;
 }
-/* line 244, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 251, ../sass/sections/_demo.scss */
 .instructions .metro .tile, .instructions .metro .folderContent .tilefolder, .folderContent .instructions .metro .tilefolder {
   -webkit-box-shadow: rgba(255, 255, 255, 0) 4px 0px 5px;
   -moz-box-shadow: rgba(255, 255, 255, 0) 4px 0px 5px;
   box-shadow: rgba(255, 255, 255, 0) 4px 0px 5px;
 }
-/* line 249, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 256, ../sass/sections/_demo.scss */
 .instructions h2 {
   visibility: hidden;
 }
-/* line 252, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 259, ../sass/sections/_demo.scss */
 .instructions .instructionTooltip {
   position: absolute;
   top: -13px;
@@ -1807,42 +1815,42 @@ iframe {
   display: block;
   color: #000000;
 }
-/* line 258, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 265, ../sass/sections/_demo.scss */
 .instructions .instructionTooltip img {
   float: left;
   margin-top: 10px;
 }
-/* line 262, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 269, ../sass/sections/_demo.scss */
 .instructions .instructionTooltip span {
   display: block;
   float: left;
   margin-top: 5px;
   margin-left: 5px;
 }
-/* line 269, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 276, ../sass/sections/_demo.scss */
 .instructions .instructionTooltipHelp {
   margin-top: 80px;
   margin-right: 140px;
   display: block;
   color: #000000;
 }
-/* line 274, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 281, ../sass/sections/_demo.scss */
 .instructions .instructionTooltipHelp span {
   margin-top: 13px;
   margin-right: 5px;
   display: block;
   float: left;
 }
-/* line 281, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 288, ../sass/sections/_demo.scss */
 .instructions .instructionTooltipNieuws {
   color: #000000;
 }
-/* line 283, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 290, ../sass/sections/_demo.scss */
 .instructions .instructionTooltipNieuws img {
   margin-top: 13px;
 }
 
-/* line 288, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 295, ../sass/sections/_demo.scss */
 .rij ul li {
   display: inline-block;
   margin: 0;
@@ -1851,21 +1859,21 @@ iframe {
   list-style: none;
 }
 
-/* line 296, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 303, ../sass/sections/_demo.scss */
 .rij, .folderContent {
   width: 100%;
   padding: 5px;
   overflow: hidden;
 }
 
-/* line 301, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 308, ../sass/sections/_demo.scss */
 .rij {
   height: auto;
 }
 
-/* line 305, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 312, ../sass/sections/_demo.scss */
 .folderContent {
-  background-image: url("assets/images/FolderContentBackground.png") repeat;
+  background-image: url("assets/images/backgrounds/FolderContentBackground.png") repeat;
   background-color: #444444;
   float: left;
   height: 200px;
@@ -1881,7 +1889,7 @@ iframe {
   width: 97%;
   margin: 0 0 0 10px;
 }
-/* line 317, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 324, ../sass/sections/_demo.scss */
 .folderContent .tilefolder.appfolder {
   -webkit-box-shadow: #282828 1px 0px 4px;
   -moz-box-shadow: #282828 1px 0px 4px;
@@ -1889,14 +1897,14 @@ iframe {
   margin-left: 40px;
 }
 
-/* line 325, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 332, ../sass/sections/_demo.scss */
 .folderName {
   margin-left: 5px;
   color: #fff;
   font-size: 15px;
 }
 
-/* line 331, /Users/eigenaar/Desktop/Prototypes/Zorgportaal 2.0/Zorgportaal V2 Algemeen/assets/sass/sections/_demo.scss */
+/* line 338, ../sass/sections/_demo.scss */
 .placeholderTile {
   height: 145px;
   width: 145px;
@@ -1909,6 +1917,11 @@ iframe {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+}
+
+/* line 349, ../sass/sections/_demo.scss */
+.group-toggle-left {
+  margin-right: -2px;
 }
 
 /* -----------------------------------  
@@ -1933,40 +1946,23 @@ button, input, select, textarea {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-/* Default classes */
-/* line 49, ../sass/base_styles.scss */
-.opties {
-  margin-top: 40px;
-}
-/* line 51, ../sass/base_styles.scss */
-.opties i {
-  margin-right: 10px;
-}
-
-/* line 56, ../sass/base_styles.scss */
-.dropup {
-  -webkit-box-shadow: rgba(102, 102, 102, 0.5) 1px 1px 5px;
-  -moz-box-shadow: rgba(102, 102, 102, 0.5) 1px 1px 5px;
-  box-shadow: rgba(102, 102, 102, 0.5) 1px 1px 5px;
-}
-
-/* line 60, ../sass/base_styles.scss */
+/* line 48, ../sass/base_styles.scss */
 h1 {
   font-size: 45px;
   font-weight: 300;
 }
 
-/* line 65, ../sass/base_styles.scss */
+/* line 53, ../sass/base_styles.scss */
 h2 {
   margin-bottom: 5px;
 }
 
-/* line 69, ../sass/base_styles.scss */
+/* line 57, ../sass/base_styles.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 73, ../sass/base_styles.scss */
+/* line 61, ../sass/base_styles.scss */
 a {
   text-decoration: none;
 }
@@ -1974,39 +1970,46 @@ a {
 /* -----------------------------------  
    Default classes
 ----------------------------------- */
-/* line 80, ../sass/base_styles.scss */
+/* line 68, ../sass/base_styles.scss */
 .floatleft, .left {
   float: left;
 }
 
-/* line 84, ../sass/base_styles.scss */
+/* line 72, ../sass/base_styles.scss */
 .floatright, .right {
   float: right;
 }
 
-/* line 88, ../sass/base_styles.scss */
+/* line 76, ../sass/base_styles.scss */
 .clear {
   clear: both;
 }
 
-/* line 92, ../sass/base_styles.scss */
+/* line 80, ../sass/base_styles.scss */
 .fill {
   min-height: 1px;
 }
 
-/* line 96, ../sass/base_styles.scss */
+/* line 84, ../sass/base_styles.scss */
 .normal {
   font-weight: normal;
 }
 
-/* line 100, ../sass/base_styles.scss */
+/* line 88, ../sass/base_styles.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 104, ../sass/base_styles.scss */
+/* line 92, ../sass/base_styles.scss */
 .nowrap {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+/* line 98, ../sass/base_styles.scss */
+.dropup {
+  -webkit-box-shadow: rgba(102, 102, 102, 0.5) 1px 1px 5px;
+  -moz-box-shadow: rgba(102, 102, 102, 0.5) 1px 1px 5px;
+  box-shadow: rgba(102, 102, 102, 0.5) 1px 1px 5px;
 }

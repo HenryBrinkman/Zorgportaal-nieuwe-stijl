@@ -72,6 +72,8 @@ function hideSideNav(status){
 
 // Prototype: E-learning collapse
 function behandelplanAccordion() {
+    $('.accordion-body').removeClass('in');
+
     $('.accordion').on('show', function (e) {
          $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('activeElearning');
          $(e.target).prev('.accordion-heading').find('.accordion-toggle i').removeClass('icon-chevron-down');

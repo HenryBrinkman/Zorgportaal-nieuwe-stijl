@@ -22,6 +22,13 @@ body {
 	}
 }
 
+.navbarButtons {
+	margin-top: 40px;
+	i {
+		margin-right: 10px;
+	}
+}
+
 #transitie {
 	display: block;
 	position: absolute;
@@ -39,7 +46,7 @@ body {
 
 #header-container {
 	margin-top: 25px;
-	img {
+	> img {
 		margin: 0;
 		height: 55px;
 	}
@@ -303,7 +310,7 @@ iframe {
 }
 
 .folderContent { 
-	background-image: url('assets/images/FolderContentBackground.png') repeat;
+	background-image: url('assets/images/backgrounds/FolderContentBackground.png') repeat;
 	background-color: #444444;
 	float:left;
 	height:200px;
@@ -336,4 +343,9 @@ iframe {
 	border: 4px dashed #eeeeee;
 	float: left;
 	@include border-radius(5px);
+}
+
+// Dropdown-toggles buttongroup
+.group-toggle-left {
+	margin-right: -2px;
 }
