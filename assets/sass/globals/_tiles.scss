@@ -1,0 +1,413 @@
+/* -----------------------------------  
+   Zorgportaal Tiles
+----------------------------------- */
+
+/* -----------------------------------  
+   Tile Colors
+----------------------------------- */
+
+.bg-color-blue {
+   @include background-image(linear-gradient(top, $tileBlueGradient1 0%, $tileBlueGradient2 100%));
+}
+
+.bg-color-green {
+   @include background-image(linear-gradient(top, $tileGreenGradient1 0%, $tileGreenGradient2 100%));
+}
+
+.bg-color-red {
+   @include background-image(linear-gradient(top, $tileRedGradient1 0%, $tileRedGradient2 100%));
+}
+
+.bg-color-orange {
+   @include background-image(linear-gradient(top, $tileOrangeGradient1 0%, $tileOrangeGradient2 100%));
+}
+
+.bg-color-purple {
+   @include background-image(linear-gradient(top, $tilePurpleGradient1 0%, $tilePurpleGradient2 100%));
+}
+
+.bg-color-izit {
+	@include background-image(linear-gradient(top, $tileIZITGradient1 0%, $tileIZITGradient2 100%));
+}
+
+.bg-color-izit-green {
+	@include background-image(linear-gradient(top, $tileIZITGreenGradient1 0%, $tileIZITGreenGradient2 100%));
+}
+
+.bg-color-overlay {
+	background: $tileOverlayColorDarken;
+}
+
+.bg-color-overlay2 {
+	background: $tileOverlayColorDarken2;
+}
+
+
+/* -----------------------------------  
+   Default Metro Layout
+----------------------------------- */
+
+.metro {
+   overflow: hidden;
+   .carousel-control {
+   		top: 20%;
+   }
+   .tile {
+	   position: relative;
+	   display: block;
+	   float: left;
+	   margin: 5px;
+	   padding: 0;
+	   width: 150px;
+	   height: 150px;
+	   color: $fontColorMain;
+	   cursor: pointer;
+	   overflow: hidden;
+	   text-decoration: none;
+	   @include border-radius(5px);
+	   @include box-shadow(rgba(#666666, 1) 2px 2px 5px);
+   }
+   .tile:hover {
+   		outline: 0px $tileBorderMain solid;
+      	@include border-radius(5px);
+   }
+   .metro-sections {
+   		 height: auto;
+		 position: relative;
+		 overflow: hidden;
+		 width: 10000px;
+		 h2 {
+		 	margin-left: 5px;
+		 	font-family: $fontFamily1;
+		 	font-weight: 300;
+		 }
+		 .metro-section {
+		 	position: relative;
+			float: left;
+			/*width: 810px !important;*/
+			width: auto;
+			height: auto;
+			margin-right: 75px;
+		 }
+   }
+}
+
+.scroll {
+   -webkit-transition:left 0.6s ease;  /* here the animation is set on 5 seconds */
+      -moz-transition:left 0.6s ease;  
+        -o-transition:left 0.6s ease;
+           transition:left 0.6s ease;
+}
+
+/* -----------------------------------  
+   Default Metro Sections
+----------------------------------- */
+.metro .metro-sections .metro-section.tile-span-1 { width: 160px; margin-left: 0;}
+.metro .metro-sections .metro-section.tile-span-2 { width: 320px; margin-left: 0;}
+.metro .metro-sections .metro-section.tile-span-3 { width: 480px; margin-left: 0;}
+.metro .metro-sections .metro-section.tile-span-4 { width: 640px; margin-left: 0;}
+.metro .metro-sections .metro-section.tile-span-5 { width: 640px; margin-left: 0;}
+.metro .metro-sections .metro-section.tile-span-6 { width: 800px; margin-left: 0;}
+.metro .metro-sections .metro-section.tile-span-7 { width: 960px; margin-left: 0;}
+.metro .metro-sections .metro-section.tile-span-8 { width: 1120px; margin-left: 0;}
+
+/* -----------------------------------  
+   Tile templates
+----------------------------------- */
+
+.metro {
+	.tile {
+		&.app {      /* Default tile */
+			width: 150px;
+			height: 150px;
+			.image-wrapper {
+				display: block;
+				margin-top: 20px;
+				padding: 8px 0;
+				text-align: center;
+				vertical-align: middle;
+				img {
+					max-width: 80px;
+					max-height: 80px;
+					margin: 0 auto;
+				}
+			}
+			.tile-icon {
+				display: block;
+	   			width: 150px;
+	   			height: 80px;
+	   			margin-top: 45px;
+	   			padding: 8px 0;
+	   			text-align: center;
+	   			vertical-align: middle;
+	   			i {
+	   				font-size: 40px;
+	   				margin-left: -28px;
+	   				margin-bottom: 10px;
+	   			}
+	   			h2 {
+	   				font-size: $fontSizeSmall;
+	   				font-weight: 300;
+	   				margin: 0;
+	   				padding: 0;
+	   			}
+			}
+			.tile-notification {
+				position: absolute;
+      			bottom: 0;
+      			width: 150px;
+      			height: 30px;
+      			padding: 2px 10px;
+	   			p {
+	   				margin: 5px 0 0 0;
+	   				padding: 0;	   			
+	   			}
+	   			i {
+	   				float: right;
+	   				margin-right: 20px;
+	   			}
+			}
+		}
+		&.wide {       /* Two tiles wide */
+			width: 310px;
+			height: 150px;
+			.sideTitle {
+				width: 75px;
+				height: 150px;
+				display: block;
+				float: left;
+				@include box-shadow(rgba(#666666, 1) 1px 0px 4px);
+				h1 {
+					color: $fontColorMain;
+					text-align: center;
+					font-weight: 300;
+					font-size: 15px;
+					margin: 5px 0 0 0;
+					padding: 0;
+				}
+				i {
+					font-size: 40px;
+					text-align: center;
+					margin: 50px 0 0 20px;
+				}
+			}
+			.sideBody {
+				width: 232px;
+				height: 150px;
+				display: block;
+				float: left;
+				margin-left: 3px;
+				color: #333333;
+				@include background-image(linear-gradient(top, $tileBodyGradient1 0%, $tileBodyGradient2 100%));
+				.SideWideItem {
+					width: 215px;
+					height: 35px;
+					float: right;
+					padding: 7px 10px;
+					display: block;
+					border-bottom: solid 1px #AAAAAA;
+					p {
+						margin: 0;
+						font-size: 16px;
+						i {
+							margin: 10px 0 0 0;
+						}
+					}
+				}
+			}
+			.title {
+				width: 310px;
+				height: 40px;
+				display: block;
+				float: left;
+				text-align: center;
+				@include box-shadow(rgba(#666666, 1) 1px 0px 4px);
+				h1 {
+					color: $fontColorMain;
+					text-align: center;
+					font-weight: 500;
+					font-size: 15px;
+					margin: 0;
+					padding: 0;
+				}
+				i {
+					font-size: 20px;
+					margin-right: 10px;
+				}
+			}
+			.body {
+				width: 310px;
+				height: 109px;
+				display: block;
+				float: left;
+				margin-top: 3px;
+				@include background-image(linear-gradient(top, $tileBodyGradient1 0%, $tileBodyGradient2 100%));
+				.WideItem {
+					color: #333333;
+					padding: 0 10px;
+					border-top: 1px solid #AAAAAA;
+					i {
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+		&.squarepeek {  /* Two tiles high */
+			width: 150px;
+			height: 300px;
+			.text-inner {
+				width: 110px;
+				height: 110px;
+				padding: 20px;
+			}
+		}
+		&.widepeek {   /* 2x2 tiles */
+			width: 310px;
+			height: 300px;
+			.head {
+				width: 310px;
+				height: 50px;
+				@include box-shadow(rgba(#666666, 1) 0px 1px 4px);
+				h1 {
+					color: $fontColorMain;
+					text-align: center;
+					font-weight: 500;
+					font-size: 20px;
+					margin: 0;
+					padding: 0;
+					line-height: 48px;
+				}
+			}
+			.body {
+				@include background-image(linear-gradient(top, $tileBodyGradient1 0%, $tileBodyGradient2 100%));
+				width: 310px;
+				margin-top: 5px;
+				height: 240px;
+				color: $fontColorSecondary;
+				padding: 20px;
+			}
+			.sideTitle {
+				width: 75px;
+				height: 300px;
+				display: block;
+				float: left;
+				@include box-shadow(rgba(#666666, 1) 1px 0px 4px);
+				h1 {
+					color: $fontColorMain;
+					text-align: center;
+					font-weight: 300;
+					font-size: 15px;
+					margin: 5px 0 0 0;
+					padding: 0;
+				}
+				i {
+					font-size: 40px;
+					text-align: center;
+					margin: 125px 0 0 20px;
+				}
+			}
+			.sideBody {
+				width: 232px;
+				height: 300px;
+				display: block;
+				float: left;
+				margin-left: 3px;
+				color: #333333;
+				@include background-image(linear-gradient(top, $tileBodyGradient1 0%, $tileBodyGradient2 100%));
+				.SideWideItem {
+					width: 215px;
+					height: 35px;
+					float: right;
+					padding: 7px 10px;
+					display: block;
+					border-bottom: solid 1px #AAAAAA;
+					p {
+						margin: 0;
+						font-size: 16px;
+						i {
+							margin: 10px 0 0 0;
+						}
+					}
+				}
+			}
+			.title {
+				width: 310px;
+				height: 40px;
+				display: block;
+				float: left;
+				text-align: center;
+				@include box-shadow(rgba(#666666, 1) 1px 0px 4px);
+				h1 {
+					color: $fontColorMain;
+					text-align: center;
+					font-weight: 500;
+					font-size: 15px;
+					margin: 0;
+					padding: 0;
+				}
+				i {
+					font-size: 20px;
+					margin-right: 10px;
+				}
+			}
+			.body {
+				width: 310px;
+				height: 109px;
+				display: block;
+				float: left;
+				margin-top: 3px;
+				@include background-image(linear-gradient(top, $tileBodyGradient1 0%, $tileBodyGradient2 100%));
+				.WideItem {
+					color: #333333;
+					padding: 0 10px;
+					border-top: 1px solid #AAAAAA;
+					i {
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-container {
+	margin-top: 5px;
+}
+
+.patient-pasfoto {
+	width: 75px;
+	height: 75px;
+	display: block;
+	float: left;
+	i {
+		margin: 45px 5px 5px 45px;		
+		text-align: right;
+	}
+}
+
+.patient-geslacht {
+	width: 75px;
+	height: 75px;
+	display: block;
+	float: left;
+	i {
+		margin: 26px;
+		text-align: center;
+	}
+}
+
+.patient-naam {
+	width: 150px;
+	height: 75px;
+	display: block;
+	float: left;
+	text-align: center;
+	h3 {
+		margin: 4px 0 0 0;
+	}
+	p {
+		margin: 0;
+	}
+}
+
+

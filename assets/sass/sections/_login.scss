@@ -1,0 +1,63 @@
+body.loginScreenBackground {
+	background: url(../images/backgroundLogin.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/backgroundLogin.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/backgroundLogin.jpg', sizingMethod='scale')";
+}
+
+.loginScreen {
+	margin: 100px auto 0;
+	padding: 10px;
+	.logo {
+			width: 80%;
+			margin: 0 auto;
+			position: relative;
+		img {
+			margin: 0 auto;
+			position: relative;
+		}
+	}
+	.loginBackground {
+		margin: 20px 0;
+		display: block;
+		position: relative;
+		padding: 20px;
+		background: #1A8EB4;
+		border: 1px solid #09739B;
+		@include border-radius(10px);
+		@include box-shadow(rgba(#333, 0.6) 0 0 5px 1px inset);
+		.form-horizontal {
+			margin-top: -10px;
+		}
+		.control-group {
+			margin: 0;
+			.controls {
+				margin: 10px 0 0 0;
+				#inputEmail {
+					@include border-bottom-radius(0px);
+				}
+				#inputPassword {
+					margin: -15px 0 0;
+					@include border-top-radius(0px);
+				}
+				input {
+					width: 98%;
+					padding: 0 0 0 5px;
+				}
+				.btn {
+					width: 93%;
+				}
+			}
+		}
+	}
+	a.loginWith {
+		color: #fff;
+		&:hover {
+			color: #17323A;
+		}
+	}
+}
+

@@ -1,0 +1,84 @@
+/* -----------------------------------  
+   Icon styling
+----------------------------------- */
+
+.icoon {
+	margin: -1px 0 -1px 0;
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+.icon-user-female,
+.icon-user-male {
+    width: 22px;
+    height: 28px;
+    background: url("../images/icons/ico-user-female.png") transparent no-repeat 0 0;
+}
+
+.icon-user-female-white {
+    width: 22px;
+    height: 28px;
+    background: url("../images/icons/ico-user-female-white.png") transparent no-repeat 0 0;
+}
+
+.icon-user-male {
+    background: url("../images/icons/ico-user-male.png") transparent no-repeat 0 0;
+}
+
+.icon-chevron-right {
+    background: url("../images/icons/ico-chevron-right.png") transparent no-repeat 0 0;
+    width: 14px;
+    height: 14px;
+}
+
+.icon-chevron-right-white {
+    @extend .icoon;
+    margin-top: 3px;
+    background: url("../images/icons/ico-chevron-right-white.png") transparent no-repeat 0 0;
+}
+
+/* Om de Bootstrap glyphicons binnen de Topicus mapstructuur correct te laden */
+[class^="icoon-"], 
+[class*=" icoon-"] { 
+    background-image: url("../images/icons/glyphicons-halflings.png"); 
+}
+
+.icoon-white,
+.dropdown-menu > li > a:hover > [class^="icoon-"].icon-white, 
+.dropdown-menu > li > a:hover > [class*=" icoon-"].icon-white, 
+.dropdown-menu > .active > a > [class^="icoon-"].icon-white, 
+.dropdown-menu > .active > a > [class*=" icoon-"].icon-white {
+    background-image: url("../images/icons/glyphicons-halflings-white.png");
+}
+
+.icoon-attachment {
+    @extend .icoon;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    margin-left: 10px;
+    background: transparent url(../images/icons/ico-attachment.png) no-repeat 0 0;
+}
+
+.btn-group {
+    [class^="icon-"], 
+    [class*=" icon-"]  {
+        margin-top: 3px;
+    }
+}
+
+.notification-new {
+    position: absolute;
+    top: -12px;
+    right: 108px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 22px;
+    color: white;
+    font-size: $fontSizeXMini;
+    font-weight: bold;
+    text-align: center;
+    line-height: $fontLineHeightLarge;
+    background: url(../images/icons/ico-notification-new.png) transparent no-repeat 1px 1px;
+}

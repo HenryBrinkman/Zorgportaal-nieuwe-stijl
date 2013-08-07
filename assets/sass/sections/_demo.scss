@@ -1,0 +1,339 @@
+/* -----------------------------------  
+   DEMO SCSS, moet nog in de juist secties verdeeld worden
+----------------------------------- */
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.user-information {
+	span {
+		margin-left: 30px;
+		text-align: left;
+		b {
+			text-align: right;
+		}
+	}
+}
+
+#transitie {
+	display: block;
+	position: absolute;
+	z-index: 7000;
+}
+
+#innerTransitie {
+	position: absolute;
+	left: 42%;
+	top: 45%;
+	i {
+		font-size: 200px;
+	}
+}
+
+#header-container {
+	margin-top: 25px;
+	img {
+		margin: 0;
+		height: 55px;
+	}
+}
+
+#everwijzen {
+	width: 90%;
+	position: relative;
+	margin: 0 auto;
+}
+
+.side-nav {
+	left: 0px;
+	width: 10px;
+	height: 100%;
+	display: block;
+	position: absolute;
+	z-index: 6500;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	@include box-shadow(rgba(#AAAAAA, 1) 4px 0px 5px);
+	i {
+		color: white;
+		text-align: center;
+		margin: 40px 10px 0 20px;
+		font-size: 30px;
+	}
+	p {
+		text-align: center;
+		color: #FFFFFF;
+		width: 75px;
+	}
+	.dashboardknop {
+		width: 100%;
+		border-bottom: 1px solid #FFF;
+		padding-bottom: 10px;
+		cursor: pointer;
+		display: none;
+	}
+
+	.dashboardknop:hover {
+		width: 100%;
+		border-bottom: 1px solid #FFF;
+		padding-bottom: 10px;
+		background: $tileOverlayColorDarken;
+	}
+	.home {
+		display: none;
+	}
+	.active {
+		display: none;
+	}
+	span {
+		float: right;
+		margin: 5px 5px;
+	}
+	&.large {
+		width: 75px;
+		.dashboardknop {
+			display: none;
+		}
+		.home {
+			display: block;
+		}
+		.active {
+			display: block;
+		}
+		.selected {
+			width: 100%;
+			border-bottom: 1px solid #FFF;
+			padding-bottom: 10px;
+			background: $tileOverlayColorDarken;
+		}
+	}
+}
+
+#charms {
+	@include box-shadow(rgba(#AAAAAA, 1) -4px 0px 5px);
+	i {
+		margin-top: 20px;
+	}
+}
+
+.close-charms:hover {
+	@include background-image(linear-gradient(top, $tileBlueGradient1 0%, $tileBlueGradient2 100%));
+	margin-top: 300px;
+}
+
+.modal-header {
+	border-bottom: 0;
+	@include background-image(linear-gradient(top, $tileBlueGradient1 0%, $tileBlueGradient2 100%));
+	@include border-top-left-radius(5px); 
+	@include border-top-right-radius(5px);
+	@include box-shadow(rgba(#666666, 0.5) 0px 1px 4px); 
+	h3 {
+		color: #FFFFFF;
+	}
+}
+
+.modal-body {
+	h3{
+		margin-top: 0;
+	}
+	p{
+		padding: 10px 0 0 20px;
+		border-top: 1px solid #EEEEEE;
+	}
+	span {
+		float: right;
+	}
+}
+
+.modal-footer {
+	background-color: #F5F5F5;
+}
+
+.persoonsgegevens {
+	width: 45%;
+	margin-right: 5%;
+	position: relative;
+	float: left;
+}
+
+.BSN {
+	width: 40%;
+	padding-left: 5%;
+	position: relative;
+	float: left;
+}
+
+.titelBackground1 {
+	color: $tileBlueGradient2;
+	margin: -15px -40px 0 -15px;
+	padding: 15px 25px 1px 15px;
+}
+
+.titelBackground2 {
+	color: $tileBlueGradient2;
+	margin: -15px -40px 0 -15px;
+	padding: 15px 25px 1px 15px;
+}
+
+iframe {
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 6000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-left: 50px;
+}
+
+#loadContent {
+	#everwijzen {
+		img {
+			margin-left: 50px;
+			margin-top: 50px;
+		}
+	}
+}
+
+// E-learning modal
+#elearning {
+	i {
+		display: block;
+	}
+	.accordion-heading {
+		.activeElearning {
+			@include background-image(linear-gradient(top, $tileGreenGradient1 0%, $tileGreenGradient2 100%));
+			color: #FFF;
+		}
+	a {
+		color: $fontColorSecondary;
+		text-decoration: none;
+	}
+	}
+	.span6 {
+		padding: 5px;
+		border: 1px solid #EEEEEE;
+		margin-bottom: 5px;
+		@include border-radius(5px); 
+	}
+}
+
+
+// Instructies voor gebruiker
+
+.instructions {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 5000;
+	.metro {
+		.tile {
+			@include box-shadow(rgba(#FFF, 0) 4px 0px 5px);
+		}
+	}
+
+	h2 {
+		visibility: hidden;
+	}
+	.instructionTooltip {
+		position: absolute;
+		top: -13px;
+		left: 148px;
+		display: block;
+		color: #000000;
+		img {
+			float: left;
+			margin-top: 10px;
+		}
+		span {
+			display: block;
+			float:left;
+			margin-top: 5px;
+			margin-left: 5px;
+		}
+	}
+	.instructionTooltipHelp {
+		margin-top: 80px;
+		margin-right: 140px;
+		display: block;
+		color: #000000;
+		span {
+			margin-top: 13px;
+			margin-right: 5px;
+			display: block;
+			float:left;
+		}
+	}
+	.instructionTooltipNieuws {
+		color: #000000;
+		img {
+			margin-top: 13px;
+		}
+	}
+}
+.rij ul li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+}
+
+.rij, .folderContent { 
+	width:100%; 
+	padding:5px; 
+	overflow:hidden; 
+}
+.rij { 
+	height:auto;
+}
+
+.folderContent { 
+	background-image: url('assets/images/FolderContentBackground.png') repeat;
+	background-color: #444444;
+	float:left;
+	height:200px;
+	display: block;
+	@include box-shadow(rgba(#000, 0.6) 0 0 4px 1px inset); 
+	@include border-radius(5px);
+	width: 97%;
+	margin: 0 0 0 10px;
+	.tilefolder {
+		@extend .tile;
+		&.appfolder {
+			@extend .app;
+			@include box-shadow(rgba(#282828, 1) 1px 0px 4px);
+			margin-left: 40px;
+		}
+	} 
+}
+
+.folderName { 
+	margin-left: 5px;
+	color: #fff;
+	font-size: $fontSizeLarge;
+}
+
+.placeholderTile {
+	height: 145px;
+	width: 145px;
+	margin: 5px;
+	display: block;
+	border: 4px dashed #eeeeee;
+	float: left;
+	@include border-radius(5px);
+}

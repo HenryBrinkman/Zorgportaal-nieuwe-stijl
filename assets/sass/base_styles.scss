@@ -1,0 +1,108 @@
+// Zorgportaal Nieuwe Stijl
+// Author: Henry Brinkman
+// Imports
+
+/* Load reset stylesheet */
+@import "globals/reset";
+
+/* Load the variables used in the CSS */
+@import "globals/base";
+
+/* Load IE stylesheet */
+@import "globals/ie";
+
+/* Load layout */
+@import "globals/tiles";
+
+/* Load sections */
+@import "sections/icons";
+@import "sections/notifications";
+
+/* Load pages sections */
+@import "sections/login";
+
+/* DEMO SCSS */
+@import "sections/demo";
+
+
+/* -----------------------------------  
+   Basic styling
+----------------------------------- */
+
+html, body { 
+	font-family: $fontFamily1; 
+	font-size: $fontSizeSmall;
+	background: $backgroundBody;
+}
+
+* { 
+	margin: 0; 
+	padding: 0;
+}
+
+/* Default classes: Forms (override style for reset.scss) */
+button, input, select, textarea {
+    font-family: $fontFamily1;
+}
+
+/* Default classes */
+.opties {
+	margin-top: 40px;
+	i {
+		margin-right: 10px;
+	}
+}
+
+.dropup {
+	@include box-shadow(rgba(#666666, 0.5) 1px 1px 5px);
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: 300;
+}
+
+h2 {
+	margin-bottom: 5px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* -----------------------------------  
+   Default classes
+----------------------------------- */
+.floatleft, .left { 
+	float: left; 
+}
+
+.floatright, .right { 
+	float: right; 
+}
+
+.clear { 
+	clear: both; 
+}
+
+.fill { 
+	min-height: 1px; 
+}
+
+.normal { 
+	font-weight: normal; 
+}
+
+.bold { 
+	font-weight:bold; 
+}
+
+.nowrap {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow:hidden;
+}

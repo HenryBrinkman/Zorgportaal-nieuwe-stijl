@@ -1,0 +1,75 @@
+/* ----------------------------------- 
+	Zorgportaal Nieuwe stijl - Theme variables
+----------------------------------- */
+@import "compass/utilities";
+@import "compass/typography";
+@import "compass/css3";
+
+/* -----------------------------------  
+   Application variables
+----------------------------------- */
+
+$fontFamily1: "Open Sans", Arial, Helvetica, sans-serif;
+$fontFamily2: Verdana, Arial, Helvetica, sans-serif;
+
+$fontSizeXMini: 9px;
+$fontSizeMini: 10px;
+$fontSizeXSmall: 11px;
+$fontSizeSmall: 12px;
+$fontSizeMedium: 13px;
+$fontSizeXMedium: 14px;
+$fontSizeLarge: 15px;
+$fontSizeXLarge: 18px;
+$fontSizeXXLarge: 24px;
+$fontSizeXXXLarge: 28px;
+
+$fontLineHeightSmall: 16px;
+$fontLineHeightMedium: 18px;
+$fontLineHeightLarge: 20px;
+$fontLineHeightXLarge: 25px;
+
+/* -----------------------------------  
+   Background
+----------------------------------- */
+
+$backgroundBody: #FFFFFF;
+
+/* -----------------------------------
+    Color Palet: Algemeen
+------------------------------------*/
+
+$fontColorMain: #FFFFFF;
+$fontColorSecondary: #333333;
+
+/* -----------------------------------
+    Color Palet: Tiles
+------------------------------------*/
+
+$tileBlueGradient1: #00BDFD;
+$tileBlueGradient2: #00A5DC;
+$tileGreenGradient1: #00B45B;
+$tileGreenGradient2: #008641;
+$tileRedGradient1: #D81D51;
+$tileRedGradient2: #BC1C48;
+$tileOrangeGradient1: #FC9100;
+$tileOrangeGradient2: #DD7200;
+$tilePurpleGradient1: #7D4DF3;
+$tilePurpleGradient2: #603CBA;
+
+$tileIZITGradient1: #DC71EC;
+$tileIZITGradient2: #924b9d;
+$tileIZITGreenGradient1: #B1C541;
+$tileIZITGreenGradient2: #92A335;
+
+$tileBodyGradient1: #FAFAFA;
+$tileBodyGradient2: #E8E8E8;
+
+$tileOverlayColor: #333333;
+$tileOverlayColorDarken: rgba($tileOverlayColor, 0.5);
+$tileOverlayColorDarken2: rgba($tileOverlayColor, 0.1);
+
+/* -----------------------------------
+    Color Palet: Tileborders
+------------------------------------*/
+
+$tileBorderMain: #999999;

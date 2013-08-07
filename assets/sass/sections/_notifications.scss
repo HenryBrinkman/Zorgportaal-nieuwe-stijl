@@ -1,0 +1,119 @@
+.btn-notification {
+	position: absolute;
+}
+.ui-notify { 
+	width:350px; 
+	position:fixed; 
+	top:10px; 
+	right:10px;
+	z-index: 10000;
+}
+.ui-notify-message { 
+	padding:10px; 
+	margin-bottom:15px; 
+	@include border-radius(6px);
+}
+.ui-notify-message h1 { 
+	font-size:14px; 
+	margin:0; 
+	padding:0; 
+}
+.ui-notify-message p { 
+	margin:3px 0; 
+	padding:0; 
+	line-height:18px;
+}
+.ui-notify-message:last-child { 
+	margin-bottom:0;
+}
+.ui-notify-message-style { 
+	background:#000; 
+	background:rgba(0,0,0,0.8); 
+	@include box-shadow(#000 0 0 6px);
+}
+.ui-notify-message-style h1 { 
+	color:#fff; 
+	font-weight:bold;
+}
+.ui-notify-message-style p { 
+	color:#fff;
+}
+.ui-notify-close { 
+	color:#fff; 
+	text-decoration:underline;
+}
+.ui-notify-click { 
+	cursor:pointer;
+}
+.ui-notify-cross { 
+	margin-top:-4px; 
+	float:right; 
+	cursor:pointer; 
+	text-decoration:none; 
+	font-size:12px; 
+	font-weight:bold; 
+	text-shadow:0 1px 1px #fff;
+	padding:2px;
+}
+.ui-notify-cross:hover { 
+	color:#ffffab;
+}
+.ui-notify-cross:active { 
+	position:relative; 
+	top:1px;
+}
+.showNotifications {
+	right: 0;
+	top: 0;
+	height: 100%;
+	position: absolute;
+	background-image: url('assets/images/FolderContentBackground.png') repeat;
+	background-color: #444444;
+	display: block;
+	@include box-shadow(rgba(#000, 0.6) 0 0 4px 1px inset); 
+	margin: 0 0 0 10px;
+	color: #AAA;
+	.category {
+		background: #333;
+		border-bottom: 1px solid #555;
+		//@include box-shadow(#333333 2px 3px 4px);
+		p {
+			margin: 5%;
+		}
+		i {
+			margin-right: 5%;
+		}
+		a {
+			float: right;
+			text-align: right;
+			cursor: pointer;
+			color: #AAA;
+			font-size: $fontSizeXMini;
+		}
+		a:hover {
+			color: #fff;
+		}
+		.erase {
+			padding: 2px 8px;
+			margin-top: -5px;
+			background: #222;
+			border: 1px solid #555;
+			@include border-radius(30px);
+		}
+	}
+	.content {
+		border-bottom: 1px solid #555;
+		p {
+			color: #FFF;
+			margin: 5%;
+		}
+		span {
+			float: right;
+			text-align: right;
+			font-size: $fontSizeXMini;
+		}	
+	}	
+	.content:hover {
+		background: #222;
+	}
+}

@@ -1,0 +1,242 @@
+<div id="loadContent">
+      <!-- Header -->
+      <header id="nav-bar" class="container-fluid">
+         <div class="row-fluid">
+            <div class="span12">
+               <div class="span8 collapsible">
+                  <div id="header-container">
+                     <img style="margin-left: 0px; margin-top: 0px; height: 55px;" src="assets/images/protopics-logo.png" />
+                  </div>
+               </div>
+               <div class="span4">
+                  <div id="top-info" class="opties pull-right btn-group dropdown">
+                     <button class="btn btn-notification" onclick="toggleNotifications();"><span class="notification-new" style="display: block;">5</span><i class="icon-info-sign"></i>Notificaties </button>
+                     <button id="settings" class="btn"><i class="icon-settings"></i>Opties</button>
+                     <button style="margin-right: -2px;" class="btn dropdown-toggle" id="drop2" data-toggle="dropdown"><i class="icon-help"></i>Help</button>
+                     <ul class="dropdown-menu" aria-labelledby="drop2">
+                        <li><a  href="#">Faqs</a></li>
+                        <li><a href="#">Teamviewer</a></li>
+                        <li><a href="#">Mail</a></li>
+                        <li><a href="#" onclick="$('.instructions').show();">Instructies</a></li>
+                        <li><a href="#elearning" role="button" data-toggle="modal">E-learning</a></li>
+                     </ul>
+                     <button style="margin-left: -1px;" class="btn"><i class="icon-exit"></i>Uitloggen</button>
+                  </div>
+               </div>
+               <div class="span2 showNotifications" style="display: none;">
+                  <div class="updates">
+                     <div class="row-fluid">
+                        <div class="span12 category">
+                           <p><i class="icon-settings"></i>Updates<a class="erase" onclick="$('.updates').hide();" href="#">Wissen</a></p>
+                        </div>
+                     </div>
+                     <div class="row-fluid">
+                        <div class="span12 content">
+                           <p>Zorgportaal update 2.342 <span>Vandaag</span></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="nieuws">
+                     <div class="row-fluid">
+                        <div class="span12 category">
+                           <p><i class="icon-rss"></i>Nieuws<a class="erase" onclick="$('.nieuws').hide();" href="#">Wissen</a></p>
+                        </div>
+                     </div>
+                     <div class="row-fluid">
+                        <div class="span12 content">
+                           <p onclick="fullscreen('', 'rss', 'nieuws');">Pilot ketenzorg ouderen succesvol <span>16-04-2013</span></p>
+                        </div>
+                     </div>
+                     <div class="row-fluid">
+                        <div class="span12 content">
+                           <p onclick="fullscreen('', 'rss', 'nieuws');">Fontein neemt ZWIP van Protopics.. <span>04-04-2013</span></p>
+                        </div>
+                     </div>
+                     <div class="row-fluid">
+                        <div class="span12 content">
+                           <p onclick="fullscreen('', 'rss', 'nieuws');">Protopics KIS introduceert .. <span>07-02-2013</span></p>
+                        </div>
+                     </div>
+                     <div class="row-fluid">
+                        <div class="span12 content">
+                           <p onclick="fullscreen('', 'rss', 'nieuws');">Samenwerking Eerstelijns Zorg Uithoorn kiest Protopics <span>01-02-2013</span></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      
+      <!-- Tiles -->
+      <div class="container-fluid">
+         <div class="row-fluid">
+            <div class="metro span12">
+               <div class="metro-sections">
+                  <div id="section1" class="metro-section tile-span-4">
+                     <h2>Diensten</h2>
+                     <ul class="rij"> 
+                        <li class="tile app applicatie bg-color-blue" href="#">
+                           <div class="tile-icon">
+                              <i class="icon-screen"></i>
+                              <h2>Teleview</h2>
+                           </div>
+                           <div class="tile-notification bg-color-overlay">
+                              <p>3 Open Orders
+                                 <i class="icon-chevron-right-white"></i>
+                              </p>
+                           </div>
+                        </li>
+                        <li class="tile app applicatie bg-color-blue" href="#">
+                           <div class="tile-icon">
+                              <i class="icon-search-2"></i>
+                              <h2>Interact</h2>
+                           </div>
+                           <div class="tile-notification bg-color-overlay">
+                              <p>2 Resultaten
+                                 <i class="icon-chevron-right-white"></i>
+                              </p>
+                           </div>
+                        </li>
+                        <li class="tile app applicatie bg-color-blue" href="#">
+                           <div class="tile-icon">
+                              <i class="icon-lab"></i>
+                              <h2>Dienst 3</h2>
+                           </div>
+                        </li>
+                        <li class="tile app folder bg-color-blue" href="#">
+                           <div class="tile-icon">
+                              <i class="icon-lab"></i>
+                              <h2>Lab</h2>
+                           </div>
+                        </li>
+                     </ul>
+
+                     <ul class="rij"> 
+                        <!--<li class="tile widepeek applicatie" onclick="fullscreen('', 'rss', 'nieuws');" >
+                           <div class="sideTitle bg-color-blue">
+                              <i class="icon-rss"></i>
+                              <h1>Nieuws</h1>
+                           </div>
+                           <div class="sideBody">
+                              <div class="SideWideItem">
+                                 <p>Nieuwe vergoeding Menzis<i class="icon-chevron-right pull-right"></i></p>
+                                 <div class="SideWideItemSmall">27-12-2012</div>
+                              </div>
+                              <div class="SideWideItem">
+                                 <p>Tubantia Zorgdebat<i class="icon-chevron-right pull-right"></i></p>
+                                 <div class="SideWideItemSmall">26-12-2012</div>
+                              </div>
+                              <div class="SideWideItem">
+                                 <p>Fijne feestdagen en een  <i class="icon-chevron-right pull-right"></i></p>
+                                 <div class="SideWideItemSmall">25-12-2012</div>
+                              </div>
+                              <div class="SideWideItem">
+                                 <p>Nieuwe versie e-Verwijzen<i class="icon-chevron-right pull-right"></i></p>
+                                 <div class="SideWideItemSmall">23-10-2012</div>
+                              </div>
+                              <div class="SideWideItem">
+                                 <p>Aansluiting MIRA<i class="icon-chevron-right pull-right"></i></p>
+                                 <div class="SideWideItemSmall">26-09-2012</div>
+                              </div>
+                              <div class="SideWideItem">
+                                 <p>Opening pand<i class="icon-chevron-right pull-right"></i></p>
+                                 <div class="SideWideItemSmall">12-08-2012</div>
+                              </div>
+                           </div>
+                        </li> -->
+                     
+                        <li class="tile app applicatie bg-color-blue" href="#" onclick="" >
+                           <div class="tile-icon">
+                              <i class="icon-loop-alt4"></i>
+                              <h2>E-Overdracht</h2>
+                           </div>
+                           <div class="tile-notification bg-color-overlay">
+                              <p>2  Transfers
+                                 <i class="icon-chevron-right-white"></i>
+                              </p>
+                           </div>
+                        </li>
+                        <li class="tile app applicatie bg-color-blue" onclick="fullscreen('', 'mail', 'e-verwijzen');" href="#">
+                           <div class="tile-icon">
+                              <i class="icon-mail"></i>
+                              <h2>E-Verwijzen</h2>
+                           </div>
+                           <div class="tile-notification bg-color-overlay">
+                              <p>2 Berichten
+                                 <i class="icon-chevron-right-white"></i>
+                              </p>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div id="section2" class="metro-section tile-span-4">
+                     <h2>Patiënt</h2>
+                     <ul class="rij">
+                        <li class="tile app applicatie bg-color-green" href="#patientGegevens" role="button" data-toggle="modal">
+                           <div class="patient-naam">
+                              <h3>Van Galen</h3>
+                              <p>Annemarie</p>
+                              <p>BSN: 363123402</p>
+                           </div>
+                           <div class="patient-geslacht">
+                              <i class="icon-user-female-white"></i>
+                           </div>
+                           <div class="patient-pasfoto">
+                              <i class="icon-new-window"></i>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div> 
+            </div>
+         </div>
+      </div>
+
+   <!-- Footer -->
+      <footer class="container-fluid">
+         <div class="row-fluid footer-container">
+            <div class="span8 collapsible"></div>
+            <div class="span4">
+               <div class="pull-right user-information">
+                  <span class="pull-right">ingelogd als: <b>F. Freriks</b></span><br>
+                  <span class="pull-right">Rol: <b>Systeembeheerder</b></span>
+               </div>
+            </div>
+         </div>
+      </footer>
+   <!-- Folder Content -->
+   <div class="folderContent">
+      <span class="folderName">Folder Name</span>
+      <div class="">
+         <a class="tilefolder appfolder bg-color-blue" href="#" onclick="fullscreen('', 'lab', 'orders');">
+            <div class="tile-icon">
+               <i class="icon-lab"></i>
+               <h2>Lab Aanvragen</h2>
+            </div>
+            <div class="tile-notification bg-color-overlay">
+               <p>3 Open Orders
+                  <i class="icon-chevron-right-white"></i>
+               </p>
+            </div>
+         </a>
+         <a class="tilefolder appfolder bg-color-blue" href="#" onclick="fullscreen('', 'lab', 'resultaten');">
+            <div class="tile-icon">
+               <i class="icon-lab"></i>
+               <h2>Lab Resultaten</h2>
+            </div>
+            <div class="tile-notification bg-color-overlay">
+               <p>2 Resultaten
+                  <i class="icon-chevron-right-white"></i>
+               </p>
+            </div>
+         </a>
+         <a class="tilefolder appfolder bg-color-blue" href="#" onclick="fullscreen('', 'lab', 'aanvragen');">
+            <div class="tile-icon">
+               <i class="icon-lab"></i>
+               <h2>Lab Uitslagen</h2>
+            </div>
+         </a>
+      </div>
+   </div>
+   </div> <!-- Einde Load Content --> 
