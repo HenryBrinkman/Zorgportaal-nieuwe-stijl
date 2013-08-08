@@ -1,0 +1,231 @@
+/* ----------------------------------------------
+ *  PROTOPICS KIS TABLE HEADERS CSS
+ *  Created by:		Topicus Zorg
+ *  Designer:		Marcel Hageman
+ *  Styleguide:		See accompanying SVN repo.
+ *  ------------------------------------------
+ *  This document is intended for programmers
+ *  to easily define their own table header widths.
+ *  All table-header widths are to be defined in here.
+---------------------------------------------- */
+
+$width_datum: 67px;
+$width_icon: 20px; /* kolom met alleen <i> icoontje erin */
+$width_iconbutton: 38px; /* kolom met btn-small en daarop een <i> icoontje */
+$width_zorgverlenerType: 110px;
+
+th.smallLabel { width: 25px; } /* small, maar zodanig dat de eerste letter van de header wel zichtbaar wordt: Attentie -> A... */
+
+th, td {
+    min-width: 15px;
+
+    &.editlink { width: $width_iconbutton; }
+    &.datum,
+    &[class*="datum"],
+    &[class*="Datum"],
+    &.ozsBirthday { width: $width_datum; }
+    &.activatieHeader {
+    	width: 90px; 
+    }
+}
+
+th.datum, th.beginDatum, th.geboorteDatum, th.ozsBirthday { width: $width_datum; }
+
+th.small { width: $width_thSmall; }
+th.medium { width: $width_thMedium; }
+th.large { width: $width_thLarge; }
+th.auto { width: auto; }
+th.export { width: 90px; }
+th.icpc, th.icpccode { width: 50px; }
+th.geslacht, th.geslachtMV { width: 50px; }
+th.postcode { width: 75px; }
+th.volledigeHuisaanduiding { width: 75px; }
+th.actief { width: 35px; }
+th.verwijderen, th.kolomVerwijder,
+td.verwijderen, td.kolomVerwijder { width: $width_icon; }
+th.iconlink { width: $width_icon; }
+th.beheerder { width: 35px; }
+th.naam { width: 240px; }
+th.nowrap { white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.center { text-align: center !important;}
+
+/* -----------------------------------
+   Collapsilble table columns
+   This table has no THEAD, so the style
+   is applied to the TD-tags.
+----------------------------------- */
+td.collapsible_buttoncolumn { width: 35px; }
+
+/* -----------------------------------
+   Defaults
+----------------------------------- */
+th.tijd { width: 50px; }
+th.datumtijd {width: 110px;}
+th.minuten { width: 70px; }
+th.checkbox,
+td.checkbox { width: 50px; }
+th.delete { width: $width_icon; }
+th.contact { width: 80px; }
+th.agbcode { width: 100px; }
+th.zorggroep, th.zorggroepNaam { width: 150px; }
+th.zorgprogramma, th.zorgprogrammaNaam { width: 120px; }
+th.zorgprogrammas { width: 200px; }
+th.contactDefinitie { width: 150px; }
+th.acties { width: 140px; }
+th.aan { width: 100px; }
+th.aanZorgverlenerType,
+th.laatsteAuteurType { width: $width_zorgverlenerType; }
+th.patientNaamLabel { width: 175px; }
+th.werklijstStatus_een_dropdown { width: 225px; }
+th.werklijstStatus_twee_dropdowns { width: 450px; }
+
+/* -----------------------------------
+   Verwezen patienten
+----------------------------------- */
+th.verwijzingsDatum { width: $width_datum; }
+th.Afsluiten, th.Open { width: 50px; }
+th.verwijzer, th.naamVolledig { width: 160px; }
+th.naamVolledigMetVoorletters { width: 175px; }
+th.medewerker { width: 150px; }
+
+/* -----------------------------------
+   Demo table
+----------------------------------- */
+th.voornaam { width: 100px; }
+th.achternaam { width: 120px; }
+th.leeftijd { width: 30px; }
+th.bsn { width: 90px; }
+th.huisarts { width: 40px; }
+th.telefoonnummer { width: 100px; }
+
+/* -----------------------------------
+   Contacten
+----------------------------------- */
+th.contact { width: auto; }
+th.historie { width: $width_icon; }
+th.verwijderlink { width: $width_icon; }
+th.einddatum,th.begindatum { width: 70px; }
+th.statusdatum { width: $width_datum; }
+th.min,th.max { width: 35px; }
+th.contacten_onderzoek { width: 340px; }
+th.contacten_button { width: 30px; }
+th.zorggroup_type { width: 100px; }
+th.grafiek { width: $width_icon; }
+th.kolomOmhoog { width: $width_icon; }
+th.kolomOmlaag { width: $width_icon; }
+th.warnings { width: $width_icon; }
+th.versie { width: 50px; }
+
+/* -----------------------------------
+   Persoonsgegevens
+----------------------------------- */
+th.uitschrijfreden { width: 220px; }
+th.toelichting, td.toelichting { float: none !important; clear: none !important; width: 100px !important; }
+th.toelichting_large { width: 220px; }
+
+/* -----------------------------------
+   Widgets
+----------------------------------- */
+.widget th.datum { width: 70px; }
+
+/* -----------------------------------
+   Rapportage patient waarden
+----------------------------------- */
+th.huisnummer { width: 100px; }
+th.externalImageLinkColumn { width: $width_icon; }
+th.custom_meetwaarde { width: 50px; }
+
+/* -----------------------------------
+   Signaallijst
+----------------------------------- */
+/*
+.signaalLijst th.postcode { width: 60px; }
+.signaalLijst th.ozis { width: 40px; }
+.signaalLijst th.icpc { width: 40px; }
+*/
+
+/* -----------------------------------
+   Beheer contacten
+----------------------------------- */
+.contactDefinities th.naam { width: 240px; }
+
+/* -----------------------------------
+   Beheer formulieren
+----------------------------------- */
+
+th.condities { width: 20px; }
+th.verwijzingen { width: 20px; }
+th.acties { width: 140px; }
+
+/* -------------------
+   Beheer applicatie
+---------------------- */
+th.cachenaam { width: 350px; }
+th.sessienaam { width: 200px; }
+
+/* ---------------------------
+   Beheer declaratiecriteria
+------------------------------ */
+th.declaratiecriteriaLabel { width: 80px; }
+th.prestatiecode { width: 80px; }
+th.forceId { width: 53px; }
+
+/* ---------------------------
+   Beheer aandachtsgebieden
+------------------------------ */
+th.aanpak,
+th.risico { width: 80px; }
+.aandachtsgebied-list th.omschrijving { width: 200px; }
+.aandachtsgebied-list th.zorgprogrammas { width: auto; }
+
+/* ---------------------------
+   Beheer zorgroep
+------------------------------ */
+th.aanpakMethode { width: 280px; }
+th.conditieOperator { width: 20px; }
+
+
+/* -------------------
+   Behandelplan tabellen
+---------------------- */
+th.activiteitVoortgang { width: 90px; }
+th.auteur { width: 150px; }
+div.doel th.voortgangtoelichting { width: auto !important; }
+table.protopics td.voortgangtoelichting { white-space: normal; }
+th.percentage { width: 70px; }
+
+/* ------------------------
+   Medicatie voorschrijven
+--------------------------- */
+th.produktNmmemo { width: 90px; }
+th.produktNaam { width: auto; }
+th.produktPharmaceutischeVorm { width: 120px; }
+th.produktSterkte { width: 90px; }
+
+/* ----------------------
+   Medicatie overzichten
+------------------------- */
+th.productNaam { width: auto; }
+th.hoeveelheid { width: 70px; }
+th.chronisch { width: 50px; }
+th.gebruiksvoorschrift { width: 50px; }
+
+/* ----------------------
+   Episodenoverzicht
+------------------------- */
+th.soortMnem { width: 30px; }
+th.episode { width: 100px; }
+
+/* -----------------------
+    Meetwaardenoverzicht
+   ----------------------- */
+table.meetwaarden {
+    th, td {
+        &.meetwaarde { width: auto; @media screen and ($widthName: $tableBreakpointMedium) {width: 100px;} }
+        &.datum,
+        &.waarde { width: $width_datum; }
+        &.min,
+        &.max { width: 35px; @media screen and ($widthName: $tableBreakpointMedium) { display: none;} }
+
+    }
+}

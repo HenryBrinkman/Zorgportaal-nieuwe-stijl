@@ -156,9 +156,9 @@ body {
 		padding: 10px 0 0 20px;
 		border-top: 1px solid #EEEEEE;
 	}
-	span {
-		float: right;
-	}
+	// span {
+	// 	float: right;
+	// }
 }
 
 .modal-footer {
@@ -310,7 +310,7 @@ iframe {
 }
 
 .folderContent { 
-	background-image: url('assets/images/backgrounds/FolderContentBackground.png') repeat;
+	background-image: url('../images/backgrounds/FolderContentBackground.png') repeat;
 	background-color: #444444;
 	float:left;
 	height:200px;

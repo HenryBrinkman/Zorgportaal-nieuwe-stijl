@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 $(function(){
     // Prototype: Load default page
-    showContent('login', 'pages');
+    showContent('beheer', 'pages');
 });
 
 // Pagina laden
@@ -102,6 +102,14 @@ function pageReady(page){
 			dragndrop();
 			notifications();
 			$('body').removeClass('loginScreenBackground');
+			break;
+		case "pages/beheer":
+		// Weergave actieve applicaties
+			initSelected();
+			behandelplanAccordion();
+			hideSideNav('stop');
+			uitklappenFolder();
+			dragndrop();
 			break;
 		default:
 			hideSideNav('stop');

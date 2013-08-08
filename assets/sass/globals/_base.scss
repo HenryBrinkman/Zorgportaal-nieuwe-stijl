@@ -44,22 +44,29 @@ $backgroundBody: #FFFFFF;
 $fontColorMain: #FFFFFF;
 $fontColorSecondary: #333333;
 
+$mainColorLight: #00BDFD; /* Light Blue */
+$mainColorDark: #00A5DC; /* Dark blue */
+$supportColor: #00B45B; /* Dark greenish blue */
+$darkerGrey: #bebebe; /* Dark grey */
+$lightGrey: #e6e6e6; /* Light grey */
+$mainGrey: #333; /* Grey */
+
 /* -----------------------------------
     Color Palet: Tiles
 ------------------------------------*/
 
-$tileBlueGradient1: #00BDFD;
-$tileBlueGradient2: #00A5DC;
-$tileGreenGradient1: #00B45B;
-$tileGreenGradient2: #008641;
-$tileRedGradient1: #D81D51;
-$tileRedGradient2: #BC1C48;
-$tileOrangeGradient1: #FC9100;
-$tileOrangeGradient2: #DD7200;
-$tilePurpleGradient1: #7D4DF3;
-$tilePurpleGradient2: #603CBA;
+$tileBlueGradient1: #00BDFD; /* Light blue */
+$tileBlueGradient2: #00A5DC; /* Dark blue */
+$tileGreenGradient1: #00B45B; /* Light green */
+$tileGreenGradient2: #008641; /* Dark green */
+$tileRedGradient1: #D81D51; /* Light red */
+$tileRedGradient2: #BC1C48; /* Dark red */
+$tileOrangeGradient1: #FC9100; /* Light orange */
+$tileOrangeGradient2: #DD7200; /* Dark orange */
+$tilePurpleGradient1: #7D4DF3; /* Light purple */
+$tilePurpleGradient2: #603CBA; /* Dark purple */
 
-$tileIZITGradient1: #DC71EC;
+$tileIZITGradient1: #DC71EC; 
 $tileIZITGradient2: #924b9d;
 $tileIZITGreenGradient1: #B1C541;
 $tileIZITGreenGradient2: #92A335;
@@ -76,3 +83,143 @@ $tileOverlayColorDarken2: rgba($tileOverlayColor, 0.1);
 ------------------------------------*/
 
 $tileBorderMain: #999999;
+
+/* -----------------------------------  
+  Question & Answer widths
+----------------------------------- */
+
+$responsiveLabelWidthSmall: 25%;
+$responsiveLabelWidth: 35%;
+$responsiveAnswerPaddingSmall: 30%;
+$responsiveAnswerPadding: 40%;
+
+/* -----------------------------------  
+  Formulieren
+----------------------------------- */
+
+$defaultLabelWidthSmall: 150px;
+$defaultLabelWidthMedium: 210px;
+$defaultLabelWidthLarge: 280px;
+$defaultBorderRadius: 3;
+
+$inputWidth: 100%; /* Default width */
+$inputWidthSmall: 25%; /* Small width */
+$inputWidthMedium: 50%; /* Medium width */
+$inputWidthLarge: 75%; /* Large width */
+
+$formSectionBorder: 1px solid #ccc; /* Grey */
+$formSectionShadowColor: #000; /* Black */
+$formTitleColor1: $mainColorDark;  /* Blue */ 
+$formTitleColor2: #555; /* Light grey */
+$formTextColor: #333; /* Grey */
+$formBackgroundColor1: #fff;  /* White */
+$formBackgroundColor2: #e6e6e6; /* Grey */
+$formPrimaryColor: #1e4b6e; /* Blue */
+$formSecondaryColor: $mainColorDark;  /* Blue */ 
+$formInvalidColor: #990000; /* Red */
+
+$formButtonColor1: #333; /* Grey */
+$formButtonColor2: #fff; /* White */
+$formButtonColor3: #666; /* Light grey */
+$formButtonGradient1: $mainColorLight; /* Light blue */
+$formButtonGradient2: $mainColorDark;  /* Blue */ 
+$formButtonHoverColor1: #008EBD; /* Dark blue */
+$formButtonHoverColor2: #ddd; /* Light grey */
+$formBorderColor1: #bbb; /* Dark grey */
+$formBorderColor2: #eee; /* Light grey */
+$formBorderColor3: #ddd; /* Grey */
+$formBorderColor4: $mainColorDark;  /* Green */ 
+
+/* -----------------------------------  
+  Tabellen
+----------------------------------- */
+
+$widthName: max-width;
+$tableBreakpointXSmall: 800px;
+$tableBreakPointSmall: 1024px;
+$tableBreakpointSmaller: 1240px;
+$tableBreakpointSmallMedium: 1279px;
+$tableBreakpointMedium: 1350px;
+$tableBreakpointLarge: 1600px;
+
+$tableBorderRadius: 4px;
+$tableBorderColor1: #ccc; /* Light grey */
+$tableBorderColor2: $mainColorDark; /* Green */
+$tableBorderColor3: #fff; /* White */
+$tableColor1: #fff; /* White */
+$tableColor2: #333; /* Grey */
+$tableColor3: #666; /* Light grey */
+$tableColor4: #000; /* Black */
+$tableColor5: $mainColorLight; /* Light blue */
+$tableColor6: $mainColorDark; /* Dark blue */
+$tableColor7: #1e4b6e; /* Blue */
+$tableColor7: #1e4b6e; /* Blue */
+$tableBackgroundColor1: #eee; /* Grey */
+$tableDropdownTextColor1: #ddd; /* Grey */
+
+/* -----------------------------------  
+  Table header variables
+----------------------------------- */
+
+$width_datum: 67px;
+$width_icon: 20px; //* kolom met alleen <i< icoontje erin */
+$width_iconbutton: 38px; //* Kolom met btn-small en daarop een <i> icoontje */
+$width_zorgverlenertype: 110px;
+
+$width_thSmall: 20px;
+$width_thMedium: 80px;
+$width_thLarge: 140px;
+
+/* -----------------------------------  
+  Select2
+----------------------------------- */
+
+$select2Width: 100%; /* Default width */
+$select2WidthSmall: 25%; /* Small width */
+$select2WidthMedium: 50%; /* Medium width */
+$select2WidthLarge: 75%; /* Large width */
+
+$select2BorderColor1: #aaa; /* Dark grey */
+
+/* -----------------------------------  
+  Custom selection accordion
+----------------------------------- */
+
+$dataSelectionTopBorder: 1px solid #B3C15D;
+$dataSelectionBottomBorder: 1px solid #627000;
+
+$dataSelectionGradientColor1: #889C00;
+$dataSelectionGradientColor2: #788A00;
+
+$dataSelectionHoverColor: #586500;
+
+/* -----------------------------------  
+   Dialogs
+----------------------------------- */
+
+$dialogColor1: #1e4b6e; /* Blue */
+$dialogDropshadowColor1: #000;  /* Black */ 
+$dialogBorder1: #111; /* Dark color */
+$dialogBorder2: #ccc; /* Light color */
+$dialogTextColor1: #fff; /* White */
+$dialogTextColor2: #9dbb12; /* Green */
+$dialogOverlayColor1: #000; /* Black */
+
+
+/* -----------------------------------  
+   Footer
+----------------------------------- */
+
+$iconbarWidth: 160px; /* Width of the first column (same as sidenav width) */
+
+$footerColor1: #333; /* Grey */
+$footerColor2: #666; /* Light grey */
+$footerColor3: #fff; /* White */
+$footerColor4: #1e4b6e; /* Blue */
+$footerColor5: #bbb; /* Light grey */
+$footerBorder1: solid 1px $footerColor1; /* Grey */
+$footerBorder2: solid 1px $footerColor2; /* Light grey */
+$footerGradient1: $tileBlueGradient1;  /* Light blue */ 
+$footerGradient2: $tileBlueGradient2;  /* blue */ 
+$footerHoverColor1: #008EBD; /* Dark blue */
+$footerHoverColor2: #bbb; /* Light grey */

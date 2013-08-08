@@ -532,12 +532,114 @@ table {
 /* -----------------------------------
     Color Palet: Algemeen
 ------------------------------------*/
+/* Light Blue */
+/* Dark blue */
+/* Dark greenish blue */
+/* Dark grey */
+/* Light grey */
+/* Grey */
 /* -----------------------------------
     Color Palet: Tiles
 ------------------------------------*/
+/* Light blue */
+/* Dark blue */
+/* Light green */
+/* Dark green */
+/* Light red */
+/* Dark red */
+/* Light orange */
+/* Dark orange */
+/* Light purple */
+/* Dark purple */
 /* -----------------------------------
     Color Palet: Tileborders
 ------------------------------------*/
+/* -----------------------------------  
+  Question & Answer widths
+----------------------------------- */
+/* -----------------------------------  
+  Formulieren
+----------------------------------- */
+/* Default width */
+/* Small width */
+/* Medium width */
+/* Large width */
+/* Grey */
+/* Black */
+/* Blue */
+/* Light grey */
+/* Grey */
+/* White */
+/* Grey */
+/* Blue */
+/* Blue */
+/* Red */
+/* Grey */
+/* White */
+/* Light grey */
+/* Light blue */
+/* Blue */
+/* Dark blue */
+/* Light grey */
+/* Dark grey */
+/* Light grey */
+/* Grey */
+/* Green */
+/* -----------------------------------  
+  Tabellen
+----------------------------------- */
+/* Light grey */
+/* Green */
+/* White */
+/* White */
+/* Grey */
+/* Light grey */
+/* Black */
+/* Light blue */
+/* Dark blue */
+/* Blue */
+/* Blue */
+/* Grey */
+/* Grey */
+/* -----------------------------------  
+  Table header variables
+----------------------------------- */
+/* -----------------------------------  
+  Select2
+----------------------------------- */
+/* Default width */
+/* Small width */
+/* Medium width */
+/* Large width */
+/* Dark grey */
+/* -----------------------------------  
+  Custom selection accordion
+----------------------------------- */
+/* -----------------------------------  
+   Dialogs
+----------------------------------- */
+/* Blue */
+/* Black */
+/* Dark color */
+/* Light color */
+/* White */
+/* Green */
+/* Black */
+/* -----------------------------------  
+   Footer
+----------------------------------- */
+/* Width of the first column (same as sidenav width) */
+/* Grey */
+/* Light grey */
+/* White */
+/* Blue */
+/* Light grey */
+/* Grey */
+/* Light grey */
+/* Light blue */
+/* blue */
+/* Dark blue */
+/* Light grey */
 /* Load IE stylesheet */
 /* Welcome to Compass. Use this file to write IE specific override styles.
  * Import this file using the following HTML or equivalent:
@@ -1137,6 +1239,2083 @@ table {
   margin: 0;
 }
 
+/* Load shared */
+/* ----------------------------------------------
+ *  PROTOPICS KIS TABLE HEADERS CSS
+ *  Created by:		Topicus Zorg
+ *  Designer:		Marcel Hageman
+ *  Styleguide:		See accompanying SVN repo.
+ *  ------------------------------------------
+ *  This document is intended for programmers
+ *  to easily define their own table header widths.
+ *  All table-header widths are to be defined in here.
+---------------------------------------------- */
+/* kolom met alleen <i> icoontje erin */
+/* kolom met btn-small en daarop een <i> icoontje */
+/* line 17, ../sass/shared/_table-headers.scss */
+th.smallLabel {
+  width: 25px;
+}
+
+/* small, maar zodanig dat de eerste letter van de header wel zichtbaar wordt: Attentie -> A... */
+/* line 19, ../sass/shared/_table-headers.scss */
+th, td {
+  min-width: 15px;
+}
+/* line 22, ../sass/shared/_table-headers.scss */
+th.editlink, td.editlink {
+  width: 38px;
+}
+/* line 26, ../sass/shared/_table-headers.scss */
+th.datum, th[class*="datum"], th[class*="Datum"], th.ozsBirthday, td.datum, td[class*="datum"], td[class*="Datum"], td.ozsBirthday {
+  width: 67px;
+}
+/* line 27, ../sass/shared/_table-headers.scss */
+th.activatieHeader, td.activatieHeader {
+  width: 90px;
+}
+
+/* line 32, ../sass/shared/_table-headers.scss */
+th.datum, th.beginDatum, th.geboorteDatum, th.ozsBirthday {
+  width: 67px;
+}
+
+/* line 34, ../sass/shared/_table-headers.scss */
+th.small {
+  width: 20px;
+}
+
+/* line 35, ../sass/shared/_table-headers.scss */
+th.medium {
+  width: 80px;
+}
+
+/* line 36, ../sass/shared/_table-headers.scss */
+th.large {
+  width: 140px;
+}
+
+/* line 37, ../sass/shared/_table-headers.scss */
+th.auto {
+  width: auto;
+}
+
+/* line 38, ../sass/shared/_table-headers.scss */
+th.export {
+  width: 90px;
+}
+
+/* line 39, ../sass/shared/_table-headers.scss */
+th.icpc, th.icpccode {
+  width: 50px;
+}
+
+/* line 40, ../sass/shared/_table-headers.scss */
+th.geslacht, th.geslachtMV {
+  width: 50px;
+}
+
+/* line 41, ../sass/shared/_table-headers.scss */
+th.postcode {
+  width: 75px;
+}
+
+/* line 42, ../sass/shared/_table-headers.scss */
+th.volledigeHuisaanduiding {
+  width: 75px;
+}
+
+/* line 43, ../sass/shared/_table-headers.scss */
+th.actief {
+  width: 35px;
+}
+
+/* line 45, ../sass/shared/_table-headers.scss */
+th.verwijderen, th.kolomVerwijder,
+td.verwijderen, td.kolomVerwijder {
+  width: 20px;
+}
+
+/* line 46, ../sass/shared/_table-headers.scss */
+th.iconlink {
+  width: 20px;
+}
+
+/* line 47, ../sass/shared/_table-headers.scss */
+th.beheerder {
+  width: 35px;
+}
+
+/* line 48, ../sass/shared/_table-headers.scss */
+th.naam {
+  width: 240px;
+}
+
+/* line 49, ../sass/shared/_table-headers.scss */
+th.nowrap {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* line 50, ../sass/shared/_table-headers.scss */
+.center {
+  text-align: center !important;
+}
+
+/* -----------------------------------
+   Collapsilble table columns
+   This table has no THEAD, so the style
+   is applied to the TD-tags.
+----------------------------------- */
+/* line 57, ../sass/shared/_table-headers.scss */
+td.collapsible_buttoncolumn {
+  width: 35px;
+}
+
+/* -----------------------------------
+   Defaults
+----------------------------------- */
+/* line 62, ../sass/shared/_table-headers.scss */
+th.tijd {
+  width: 50px;
+}
+
+/* line 63, ../sass/shared/_table-headers.scss */
+th.datumtijd {
+  width: 110px;
+}
+
+/* line 64, ../sass/shared/_table-headers.scss */
+th.minuten {
+  width: 70px;
+}
+
+/* line 66, ../sass/shared/_table-headers.scss */
+th.checkbox,
+td.checkbox {
+  width: 50px;
+}
+
+/* line 67, ../sass/shared/_table-headers.scss */
+th.delete {
+  width: 20px;
+}
+
+/* line 68, ../sass/shared/_table-headers.scss */
+th.contact {
+  width: 80px;
+}
+
+/* line 69, ../sass/shared/_table-headers.scss */
+th.agbcode {
+  width: 100px;
+}
+
+/* line 70, ../sass/shared/_table-headers.scss */
+th.zorggroep, th.zorggroepNaam {
+  width: 150px;
+}
+
+/* line 71, ../sass/shared/_table-headers.scss */
+th.zorgprogramma, th.zorgprogrammaNaam {
+  width: 120px;
+}
+
+/* line 72, ../sass/shared/_table-headers.scss */
+th.zorgprogrammas {
+  width: 200px;
+}
+
+/* line 73, ../sass/shared/_table-headers.scss */
+th.contactDefinitie {
+  width: 150px;
+}
+
+/* line 74, ../sass/shared/_table-headers.scss */
+th.acties {
+  width: 140px;
+}
+
+/* line 75, ../sass/shared/_table-headers.scss */
+th.aan {
+  width: 100px;
+}
+
+/* line 77, ../sass/shared/_table-headers.scss */
+th.aanZorgverlenerType,
+th.laatsteAuteurType {
+  width: 110px;
+}
+
+/* line 78, ../sass/shared/_table-headers.scss */
+th.patientNaamLabel {
+  width: 175px;
+}
+
+/* line 79, ../sass/shared/_table-headers.scss */
+th.werklijstStatus_een_dropdown {
+  width: 225px;
+}
+
+/* line 80, ../sass/shared/_table-headers.scss */
+th.werklijstStatus_twee_dropdowns {
+  width: 450px;
+}
+
+/* -----------------------------------
+   Verwezen patienten
+----------------------------------- */
+/* line 85, ../sass/shared/_table-headers.scss */
+th.verwijzingsDatum {
+  width: 67px;
+}
+
+/* line 86, ../sass/shared/_table-headers.scss */
+th.Afsluiten, th.Open {
+  width: 50px;
+}
+
+/* line 87, ../sass/shared/_table-headers.scss */
+th.verwijzer, th.naamVolledig {
+  width: 160px;
+}
+
+/* line 88, ../sass/shared/_table-headers.scss */
+th.naamVolledigMetVoorletters {
+  width: 175px;
+}
+
+/* line 89, ../sass/shared/_table-headers.scss */
+th.medewerker {
+  width: 150px;
+}
+
+/* -----------------------------------
+   Demo table
+----------------------------------- */
+/* line 94, ../sass/shared/_table-headers.scss */
+th.voornaam {
+  width: 100px;
+}
+
+/* line 95, ../sass/shared/_table-headers.scss */
+th.achternaam {
+  width: 120px;
+}
+
+/* line 96, ../sass/shared/_table-headers.scss */
+th.leeftijd {
+  width: 30px;
+}
+
+/* line 97, ../sass/shared/_table-headers.scss */
+th.bsn {
+  width: 90px;
+}
+
+/* line 98, ../sass/shared/_table-headers.scss */
+th.huisarts {
+  width: 40px;
+}
+
+/* line 99, ../sass/shared/_table-headers.scss */
+th.telefoonnummer {
+  width: 100px;
+}
+
+/* -----------------------------------
+   Contacten
+----------------------------------- */
+/* line 104, ../sass/shared/_table-headers.scss */
+th.contact {
+  width: auto;
+}
+
+/* line 105, ../sass/shared/_table-headers.scss */
+th.historie {
+  width: 20px;
+}
+
+/* line 106, ../sass/shared/_table-headers.scss */
+th.verwijderlink {
+  width: 20px;
+}
+
+/* line 107, ../sass/shared/_table-headers.scss */
+th.einddatum, th.begindatum {
+  width: 70px;
+}
+
+/* line 108, ../sass/shared/_table-headers.scss */
+th.statusdatum {
+  width: 67px;
+}
+
+/* line 109, ../sass/shared/_table-headers.scss */
+th.min, th.max {
+  width: 35px;
+}
+
+/* line 110, ../sass/shared/_table-headers.scss */
+th.contacten_onderzoek {
+  width: 340px;
+}
+
+/* line 111, ../sass/shared/_table-headers.scss */
+th.contacten_button {
+  width: 30px;
+}
+
+/* line 112, ../sass/shared/_table-headers.scss */
+th.zorggroup_type {
+  width: 100px;
+}
+
+/* line 113, ../sass/shared/_table-headers.scss */
+th.grafiek {
+  width: 20px;
+}
+
+/* line 114, ../sass/shared/_table-headers.scss */
+th.kolomOmhoog {
+  width: 20px;
+}
+
+/* line 115, ../sass/shared/_table-headers.scss */
+th.kolomOmlaag {
+  width: 20px;
+}
+
+/* line 116, ../sass/shared/_table-headers.scss */
+th.warnings {
+  width: 20px;
+}
+
+/* line 117, ../sass/shared/_table-headers.scss */
+th.versie {
+  width: 50px;
+}
+
+/* -----------------------------------
+   Persoonsgegevens
+----------------------------------- */
+/* line 122, ../sass/shared/_table-headers.scss */
+th.uitschrijfreden {
+  width: 220px;
+}
+
+/* line 123, ../sass/shared/_table-headers.scss */
+th.toelichting, td.toelichting {
+  float: none !important;
+  clear: none !important;
+  width: 100px !important;
+}
+
+/* line 124, ../sass/shared/_table-headers.scss */
+th.toelichting_large {
+  width: 220px;
+}
+
+/* -----------------------------------
+   Widgets
+----------------------------------- */
+/* line 129, ../sass/shared/_table-headers.scss */
+.widget th.datum {
+  width: 70px;
+}
+
+/* -----------------------------------
+   Rapportage patient waarden
+----------------------------------- */
+/* line 134, ../sass/shared/_table-headers.scss */
+th.huisnummer {
+  width: 100px;
+}
+
+/* line 135, ../sass/shared/_table-headers.scss */
+th.externalImageLinkColumn {
+  width: 20px;
+}
+
+/* line 136, ../sass/shared/_table-headers.scss */
+th.custom_meetwaarde {
+  width: 50px;
+}
+
+/* -----------------------------------
+   Signaallijst
+----------------------------------- */
+/*
+.signaalLijst th.postcode { width: 60px; }
+.signaalLijst th.ozis { width: 40px; }
+.signaalLijst th.icpc { width: 40px; }
+*/
+/* -----------------------------------
+   Beheer contacten
+----------------------------------- */
+/* line 150, ../sass/shared/_table-headers.scss */
+.contactDefinities th.naam {
+  width: 240px;
+}
+
+/* -----------------------------------
+   Beheer formulieren
+----------------------------------- */
+/* line 156, ../sass/shared/_table-headers.scss */
+th.condities {
+  width: 20px;
+}
+
+/* line 157, ../sass/shared/_table-headers.scss */
+th.verwijzingen {
+  width: 20px;
+}
+
+/* line 158, ../sass/shared/_table-headers.scss */
+th.acties {
+  width: 140px;
+}
+
+/* -------------------
+   Beheer applicatie
+---------------------- */
+/* line 163, ../sass/shared/_table-headers.scss */
+th.cachenaam {
+  width: 350px;
+}
+
+/* line 164, ../sass/shared/_table-headers.scss */
+th.sessienaam {
+  width: 200px;
+}
+
+/* ---------------------------
+   Beheer declaratiecriteria
+------------------------------ */
+/* line 169, ../sass/shared/_table-headers.scss */
+th.declaratiecriteriaLabel {
+  width: 80px;
+}
+
+/* line 170, ../sass/shared/_table-headers.scss */
+th.prestatiecode {
+  width: 80px;
+}
+
+/* line 171, ../sass/shared/_table-headers.scss */
+th.forceId {
+  width: 53px;
+}
+
+/* ---------------------------
+   Beheer aandachtsgebieden
+------------------------------ */
+/* line 177, ../sass/shared/_table-headers.scss */
+th.aanpak,
+th.risico {
+  width: 80px;
+}
+
+/* line 178, ../sass/shared/_table-headers.scss */
+.aandachtsgebied-list th.omschrijving {
+  width: 200px;
+}
+
+/* line 179, ../sass/shared/_table-headers.scss */
+.aandachtsgebied-list th.zorgprogrammas {
+  width: auto;
+}
+
+/* ---------------------------
+   Beheer zorgroep
+------------------------------ */
+/* line 184, ../sass/shared/_table-headers.scss */
+th.aanpakMethode {
+  width: 280px;
+}
+
+/* line 185, ../sass/shared/_table-headers.scss */
+th.conditieOperator {
+  width: 20px;
+}
+
+/* -------------------
+   Behandelplan tabellen
+---------------------- */
+/* line 191, ../sass/shared/_table-headers.scss */
+th.activiteitVoortgang {
+  width: 90px;
+}
+
+/* line 192, ../sass/shared/_table-headers.scss */
+th.auteur {
+  width: 150px;
+}
+
+/* line 193, ../sass/shared/_table-headers.scss */
+div.doel th.voortgangtoelichting {
+  width: auto !important;
+}
+
+/* line 194, ../sass/shared/_table-headers.scss */
+table.protopics td.voortgangtoelichting {
+  white-space: normal;
+}
+
+/* line 195, ../sass/shared/_table-headers.scss */
+th.percentage {
+  width: 70px;
+}
+
+/* ------------------------
+   Medicatie voorschrijven
+--------------------------- */
+/* line 200, ../sass/shared/_table-headers.scss */
+th.produktNmmemo {
+  width: 90px;
+}
+
+/* line 201, ../sass/shared/_table-headers.scss */
+th.produktNaam {
+  width: auto;
+}
+
+/* line 202, ../sass/shared/_table-headers.scss */
+th.produktPharmaceutischeVorm {
+  width: 120px;
+}
+
+/* line 203, ../sass/shared/_table-headers.scss */
+th.produktSterkte {
+  width: 90px;
+}
+
+/* ----------------------
+   Medicatie overzichten
+------------------------- */
+/* line 208, ../sass/shared/_table-headers.scss */
+th.productNaam {
+  width: auto;
+}
+
+/* line 209, ../sass/shared/_table-headers.scss */
+th.hoeveelheid {
+  width: 70px;
+}
+
+/* line 210, ../sass/shared/_table-headers.scss */
+th.chronisch {
+  width: 50px;
+}
+
+/* line 211, ../sass/shared/_table-headers.scss */
+th.gebruiksvoorschrift {
+  width: 50px;
+}
+
+/* ----------------------
+   Episodenoverzicht
+------------------------- */
+/* line 216, ../sass/shared/_table-headers.scss */
+th.soortMnem {
+  width: 30px;
+}
+
+/* line 217, ../sass/shared/_table-headers.scss */
+th.episode {
+  width: 100px;
+}
+
+/* -----------------------
+    Meetwaardenoverzicht
+   ----------------------- */
+/* line 224, ../sass/shared/_table-headers.scss */
+table.meetwaarden th.meetwaarde, table.meetwaarden td.meetwaarde {
+  width: auto;
+}
+@media screen and (max-width: 1350px) {
+  /* line 224, ../sass/shared/_table-headers.scss */
+  table.meetwaarden th.meetwaarde, table.meetwaarden td.meetwaarde {
+    width: 100px;
+  }
+}
+/* line 226, ../sass/shared/_table-headers.scss */
+table.meetwaarden th.datum, table.meetwaarden th.waarde, table.meetwaarden td.datum, table.meetwaarden td.waarde {
+  width: 67px;
+}
+/* line 228, ../sass/shared/_table-headers.scss */
+table.meetwaarden th.min, table.meetwaarden th.max, table.meetwaarden td.min, table.meetwaarden td.max {
+  width: 35px;
+}
+@media screen and (max-width: 1350px) {
+  /* line 228, ../sass/shared/_table-headers.scss */
+  table.meetwaarden th.min, table.meetwaarden th.max, table.meetwaarden td.min, table.meetwaarden td.max {
+    display: none;
+  }
+}
+
+/* -----------------------------------  
+  	Tables styling
+----------------------------------- */
+/* line 5, ../sass/shared/_tables.scss */
+.table {
+  margin-bottom: 15px;
+  border: none;
+  table-layout: fixed;
+}
+
+/* line 12, ../sass/shared/_tables.scss */
+.meetwaardenScrolltable.table {
+  table-layout: auto;
+}
+/* line 15, ../sass/shared/_tables.scss */
+.meetwaardenScrolltable table {
+  table-layout: auto;
+}
+
+/* line 21, ../sass/shared/_tables.scss */
+.table th,
+.table td {
+  border-top: 1px solid #cccccc;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/* line 25, ../sass/shared/_tables.scss */
+.table th.checkbox input[type=checkbox],
+.table td.checkbox input[type=checkbox] {
+  margin-left: 0;
+}
+/* line 29, ../sass/shared/_tables.scss */
+.table th .clickable,
+.table td .clickable {
+  cursor: pointer;
+}
+
+/* line 34, ../sass/shared/_tables.scss */
+.table th {
+  font-size: 11px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+  color: white;
+  font-weight: normal;
+  text-shadow: rgba(255, 255, 255, 0.25) 1px 1px 0;
+  /* Generated by: colorzilla.com/gradient-editor */
+  background-color: #00bdfd;
+  /* Old browsers */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00bdfd), color-stop(100%, #00a5dc));
+  background-image: -webkit-linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
+  background-image: -moz-linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
+  background-image: -o-linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
+  background-image: linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
+}
+/* line 44, ../sass/shared/_tables.scss */
+.table th a {
+  color: #333333;
+}
+
+/* line 49, ../sass/shared/_tables.scss */
+.table.clickable tbody tr td {
+  cursor: pointer;
+}
+
+/* line 54, ../sass/shared/_tables.scss */
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 10px;
+}
+
+/* line 58, ../sass/shared/_tables.scss */
+.table-bordered {
+  border-bottom: 1px solid #cccccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 65, ../sass/shared/_tables.scss */
+.table-bordered th {
+  border-left: solid 1px rgba(255, 255, 255, 0.5);
+}
+/* line 67, ../sass/shared/_tables.scss */
+.table-bordered th:first-child, .table-bordered th:last-child {
+  border-right: 0 x solid #00a5dc;
+}
+/* line 71, ../sass/shared/_tables.scss */
+.table-bordered th [class^="icon-"],
+.table-bordered th [class*=" icon-"] {
+  margin-top: 3px;
+}
+/* line 75, ../sass/shared/_tables.scss */
+.table-bordered th[class^="wicket_"], .table-bordered th[class*=" wicket_"] {
+  cursor: pointer;
+}
+/* line 81, ../sass/shared/_tables.scss */
+.table-bordered th.wicket_orderUp a, .table-bordered th.wicket_orderDown a, .table-bordered th:hover a {
+  text-shadow: rgba(0, 0, 0, 0.25) 1px 1px 0;
+  color: white;
+}
+/* line 86, ../sass/shared/_tables.scss */
+.table-bordered th a:hover {
+  text-decoration: none;
+}
+/* line 89, ../sass/shared/_tables.scss */
+.table-bordered th.icons {
+  width: 10px;
+}
+
+/* line 94, ../sass/shared/_tables.scss */
+.table-bordered td {
+  border-left: 1px solid #cccccc;
+}
+/* line 96, ../sass/shared/_tables.scss */
+.table-bordered td:last-child {
+  border-right: 1px solid #cccccc;
+}
+/* line 99, ../sass/shared/_tables.scss */
+.table-bordered td a {
+  color: #1e4b6e;
+}
+/* line 102, ../sass/shared/_tables.scss */
+.table-bordered td a:hover {
+  text-decoration: none;
+}
+/* line 106, ../sass/shared/_tables.scss */
+.table-bordered td [class^="icon-chevron"],
+.table-bordered td [class*=" icon-chevron"] {
+  margin-top: 0px;
+}
+
+/* line 112, ../sass/shared/_tables.scss */
+.table-bordered thead:first-child tr:first-child th:first-child,
+.table-bordered tbody:first-child tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+/* line 119, ../sass/shared/_tables.scss */
+.table-bordered thead:first-child tr:first-child th:last-child,
+.table-bordered tbody:first-child tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+
+/* line 127, ../sass/shared/_tables.scss */
+.table-bordered thead:last-child tr:last-child th:first-child,
+.table-bordered tbody:last-child tr:last-child td:first-child,
+.table-bordered tfoot:last-child tr:last-child td:first-child {
+  -webkit-border-radius: 0 0 0 4px;
+  -moz-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+
+/* line 138, ../sass/shared/_tables.scss */
+.table-bordered thead:last-child tr:last-child th:last-child,
+.table-bordered tbody:last-child tr:last-child td:last-child,
+.table-bordered tfoot:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+
+/* line 147, ../sass/shared/_tables.scss */
+.table-bordered caption + thead tr:first-child th:first-child,
+.table-bordered caption + tbody tr:first-child td:first-child,
+.table-bordered colgroup + thead tr:first-child th:first-child,
+.table-bordered colgroup + tbody tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+/* line 156, ../sass/shared/_tables.scss */
+.table-bordered caption + thead tr:first-child th:last-child,
+.table-bordered caption + tbody tr:first-child td:last-child,
+.table-bordered colgroup + thead tr:first-child th:last-child,
+.table-bordered colgroup + tbody tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+/* line 163, ../sass/shared/_tables.scss */
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th {
+  background-color: #eeeeee;
+}
+
+/* line 168, ../sass/shared/_tables.scss */
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: rgba(0, 189, 253, 0.25);
+}
+
+/* Medicatie zoekresultaten: door allergie geblokkeerde medicijnen */
+/* line 173, ../sass/shared/_tables.scss */
+.table-striped tbody tr.blokkade td {
+  background-color: #ffaaaa;
+}
+
+/* line 177, ../sass/shared/_tables.scss */
+.table-hover tbody tr.blokkade:hover td {
+  background-color: #ffdddd;
+}
+
+/* line 180, ../sass/shared/_tables.scss */
+.table-contacten tr {
+  cursor: pointer;
+}
+
+/* Toon aantal */
+/* line 186, ../sass/shared/_tables.scss */
+.toon-aantal .btn {
+  margin-bottom: -1px;
+  padding: 4px 10px;
+  min-width: 160px;
+  font-size: 14px;
+}
+/* line 191, ../sass/shared/_tables.scss */
+.toon-aantal .btn .icon-chevron-up {
+  margin: 3px 0 0 10px;
+  float: right;
+}
+/* line 196, ../sass/shared/_tables.scss */
+.toon-aantal .dropdown-menu {
+  margin: 0 0 1px -1px;
+  border-radius: 4px 4px 0 0;
+}
+/* line 200, ../sass/shared/_tables.scss */
+.toon-aantal .dropdown-menu li a {
+  padding: 3px 10px 3px 10px;
+  color: #333333;
+  font-size: 13px;
+}
+/* line 204, ../sass/shared/_tables.scss */
+.toon-aantal .dropdown-menu li a i {
+  margin-right: 5px;
+}
+/* line 206, ../sass/shared/_tables.scss */
+.toon-aantal .dropdown-menu li.active a, .toon-aantal .dropdown-menu li a:hover {
+  color: #333333;
+  background: #dddddd;
+}
+
+/* Totaal aantal */
+/* line 215, ../sass/shared/_tables.scss */
+.totaal-aantal {
+  color: #666666;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* line 222, ../sass/shared/_tables.scss */
+.controle {
+  font-weight: 800;
+  color: #00a5dc;
+  text-decoration: underline;
+}
+
+/* line 229, ../sass/shared/_tables.scss */
+.selected td {
+  background-color: #E2E3BD !important;
+}
+
+/* line 240, ../sass/shared/_tables.scss */
+.even td:first-child {
+  border: 0 none !important;
+  border-top: 1px solid #BBB !important;
+  border-left: 1px solid #BBB !important;
+}
+
+/* -----------------------------------  
+  	Forms styling
+----------------------------------- */
+/* line 5, ../sass/shared/_forms.scss */
+div.question {
+  margin: 0 0 10px;
+  float: left;
+  clear: both;
+  width: 100%;
+  box-sizing: border-box;
+  /* Lijsten */
+  /* Breedte input velden, selects */
+  /* Verplichte velden */
+}
+/* line 12, ../sass/shared/_forms.scss */
+div.question > label {
+  margin-top: 3px;
+  float: left;
+  width: 35%;
+  cursor: default;
+  font-size: 13px;
+  line-height: 20px;
+}
+@media screen and (min-width: 1300px) {
+  /* line 12, ../sass/shared/_forms.scss */
+  div.question > label {
+    width: 25%;
+  }
+}
+/* line 22, ../sass/shared/_forms.scss */
+div.question > label.green {
+  font-size: 15px;
+  line-height: 25px;
+  color: #00a5dc;
+}
+/* line 27, ../sass/shared/_forms.scss */
+div.question > label.clearFloat {
+  float: none;
+}
+/* line 32, ../sass/shared/_forms.scss */
+div.question a {
+  color: #666666;
+}
+/* line 34, ../sass/shared/_forms.scss */
+div.question a:hover {
+  text-decoration: none;
+}
+/* line 39, ../sass/shared/_forms.scss */
+div.question div.answer {
+  overflow: visible;
+  padding: 0 34px 0 40%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1300px) {
+  /* line 39, ../sass/shared/_forms.scss */
+  div.question div.answer {
+    padding: 0 34px 0 30%;
+  }
+}
+/* line 47, ../sass/shared/_forms.scss */
+div.question div.answer.value-only {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+}
+/* line 54, ../sass/shared/_forms.scss */
+div.question ul.answer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 40%;
+  outline: none;
+}
+@media screen and (min-width: 1300px) {
+  /* line 54, ../sass/shared/_forms.scss */
+  div.question ul.answer {
+    padding: 0 34px 0 30%;
+  }
+}
+/* line 62, ../sass/shared/_forms.scss */
+div.question ul.answer.value-only {
+  font-weight: bold;
+}
+/* line 69, ../sass/shared/_forms.scss */
+div.question .vertical li,
+div.question .vertical li label {
+  width: 100%;
+  display: block;
+  cursor: default;
+}
+/* line 71, ../sass/shared/_forms.scss */
+div.question .answer li input[type=radio],
+div.question .answer li input[type=checkbox] {
+  float: left;
+  margin: 3px 5px 2px 0;
+  overflow: hidden;
+  font-size: 13px;
+}
+/* line 72, ../sass/shared/_forms.scss */
+div.question .answer label {
+  font-size: 13px;
+  cursor: default;
+}
+/* line 75, ../sass/shared/_forms.scss */
+div.question ul.answer.horizontal li {
+  margin-right: 10px;
+  float: left;
+  padding: 0;
+}
+/* line 84, ../sass/shared/_forms.scss */
+div.question.input-radio label, div.question.input-radio a, div.question.input-checkbox label, div.question.input-checkbox a {
+  font-size: 13px;
+  cursor: default;
+}
+/* line 85, ../sass/shared/_forms.scss */
+div.question.input-radio > label, div.question.input-checkbox > label {
+  line-height: 18px;
+  cursor: default;
+}
+/* line 86, ../sass/shared/_forms.scss */
+div.question.input-radio i, div.question.input-checkbox i {
+  margin: 0 5px 0 0;
+}
+/* line 89, ../sass/shared/_forms.scss */
+div.question.input-checkbox .form-icon {
+  padding: 0 0 2px 0;
+}
+/* line 97, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text],
+div.question div.answer textarea,
+div.question div.answer select,
+div.question div.answer textarea {
+  padding: 3px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 24px;
+  font-size: 13px;
+  /* Maxlength: input width classes */
+  /* Bootstrap: input width classes */
+}
+/* line 105, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text][maxlength="1"],
+div.question div.answer textarea[maxlength="1"],
+div.question div.answer select[maxlength="1"],
+div.question div.answer textarea[maxlength="1"] {
+  width: 20px;
+}
+/* line 106, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text][maxlength="2"],
+div.question div.answer textarea[maxlength="2"],
+div.question div.answer select[maxlength="2"],
+div.question div.answer textarea[maxlength="2"] {
+  width: 28px;
+}
+/* line 107, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text][maxlength="3"],
+div.question div.answer textarea[maxlength="3"],
+div.question div.answer select[maxlength="3"],
+div.question div.answer textarea[maxlength="3"] {
+  width: 36px;
+}
+/* line 108, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text][maxlength="4"],
+div.question div.answer textarea[maxlength="4"],
+div.question div.answer select[maxlength="4"],
+div.question div.answer textarea[maxlength="4"] {
+  width: 44px;
+}
+/* line 109, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text][maxlength="5"],
+div.question div.answer textarea[maxlength="5"],
+div.question div.answer select[maxlength="5"],
+div.question div.answer textarea[maxlength="5"] {
+  width: 52px;
+}
+/* line 110, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text][maxlength="6"],
+div.question div.answer textarea[maxlength="6"],
+div.question div.answer select[maxlength="6"],
+div.question div.answer textarea[maxlength="6"] {
+  width: 60px;
+}
+/* line 111, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text][maxlength="7"],
+div.question div.answer textarea[maxlength="7"],
+div.question div.answer select[maxlength="7"],
+div.question div.answer textarea[maxlength="7"] {
+  width: 68px;
+}
+/* line 112, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text][maxlength="8"],
+div.question div.answer textarea[maxlength="8"],
+div.question div.answer select[maxlength="8"],
+div.question div.answer textarea[maxlength="8"] {
+  width: 76px;
+}
+/* line 113, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text][maxlength="9"],
+div.question div.answer textarea[maxlength="9"],
+div.question div.answer select[maxlength="9"],
+div.question div.answer textarea[maxlength="9"] {
+  width: 84px;
+}
+/* line 114, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text][maxlength="10"],
+div.question div.answer textarea[maxlength="10"],
+div.question div.answer select[maxlength="10"],
+div.question div.answer textarea[maxlength="10"] {
+  width: 92px;
+}
+/* line 115, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text][maxlength="26"],
+div.question div.answer textarea[maxlength="26"],
+div.question div.answer select[maxlength="26"],
+div.question div.answer textarea[maxlength="26"] {
+  width: 234px;
+}
+/* line 118, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text].input-mini,
+div.question div.answer textarea.input-mini,
+div.question div.answer select.input-mini,
+div.question div.answer textarea.input-mini {
+  width: 60px;
+}
+/* line 121, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text].input-small,
+div.question div.answer textarea.input-small,
+div.question div.answer select.input-small,
+div.question div.answer textarea.input-small {
+  width: 90px;
+}
+/* line 124, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text].input-medium,
+div.question div.answer textarea.input-medium,
+div.question div.answer select.input-medium,
+div.question div.answer textarea.input-medium {
+  width: 150px;
+}
+/* line 127, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text].input-large,
+div.question div.answer textarea.input-large,
+div.question div.answer select.input-large,
+div.question div.answer textarea.input-large {
+  width: 210px;
+}
+/* line 130, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text].input-xlarge,
+div.question div.answer textarea.input-xlarge,
+div.question div.answer select.input-xlarge,
+div.question div.answer textarea.input-xlarge {
+  width: 270px;
+}
+/* line 133, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text].input-xxlarge,
+div.question div.answer textarea.input-xxlarge,
+div.question div.answer select.input-xxlarge,
+div.question div.answer textarea.input-xxlarge {
+  width: 530px;
+}
+/* line 137, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text]:focus,
+div.question div.answer textarea:focus,
+div.question div.answer select:focus,
+div.question div.answer textarea:focus {
+  z-index: auto;
+}
+/* line 141, ../sass/shared/_forms.scss */
+div.question div.answer textarea {
+  height: auto;
+}
+/* line 145, ../sass/shared/_forms.scss */
+div.question.invalid label {
+  color: #990000;
+}
+/* line 147, ../sass/shared/_forms.scss */
+div.question.invalid input[type=text], div.question.invalid select {
+  border: 1px solid #990000;
+  color: #990000;
+}
+
+/* line 154, ../sass/shared/_forms.scss */
+.span6 .question.small > label {
+  width: 150px;
+  cursor: default;
+}
+@media screen and (max-width: 800px) {
+  /* line 154, ../sass/shared/_forms.scss */
+  .span6 .question.small > label {
+    width: 100px;
+  }
+}
+/* line 162, ../sass/shared/_forms.scss */
+.span6 .question.small div.answer {
+  padding: 0 34px 0 190px;
+}
+/* line 166, ../sass/shared/_forms.scss */
+.span6 .question.small ul.answer {
+  padding: 0 0 0 190px;
+}
+
+/* line 172, ../sass/shared/_forms.scss */
+.question.ExtraSmall > label {
+  cursor: default;
+  width: 100px;
+}
+/* line 176, ../sass/shared/_forms.scss */
+.question.ExtraSmall .answer {
+  padding: 0 0 0 100px;
+}
+
+/* line 184, ../sass/shared/_forms.scss */
+div.question.no-label div.answer,
+div.question.no-icons div.answer,
+div.question.no-label ul.answer {
+  padding: 0;
+}
+
+/* line 187, ../sass/shared/_forms.scss */
+div.question.datumTotDatum > label {
+  width: 10%;
+}
+/* line 190, ../sass/shared/_forms.scss */
+div.question.datumTotDatum .answer {
+  padding: 0 34px 0 15%;
+}
+/* line 192, ../sass/shared/_forms.scss */
+div.question.datumTotDatum .answer .input-append {
+  margin: 0 3%;
+}
+
+/* -----------------------------------
+  	Forms blokken
+----------------------------------- */
+/* line 202, ../sass/shared/_forms.scss */
+input, textarea, select, .uneditable-input {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  -ms-border-radius: 3;
+  -o-border-radius: 3;
+  border-radius: 3;
+}
+
+/* line 206, ../sass/shared/_forms.scss */
+.btn {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  -ms-border-radius: 3;
+  -o-border-radius: 3;
+  border-radius: 3;
+}
+/* line 208, ../sass/shared/_forms.scss */
+.btn.btn-primary {
+  background-image: none;
+}
+/* line 211, ../sass/shared/_forms.scss */
+.btn.btn-toevoegen {
+  margin-bottom: 15px;
+}
+
+/* line 216, ../sass/shared/_forms.scss */
+.btn-top {
+  margin-top: 0px;
+}
+
+/* Formulier blokken */
+/* line 221, ../sass/shared/_forms.scss */
+.formulieren {
+  margin: 20px 10px 30px 20px;
+  clear: both;
+}
+/* line 224, ../sass/shared/_forms.scss */
+.formulieren.fixed-section {
+  margin-bottom: 0;
+}
+/* line 227, ../sass/shared/_forms.scss */
+.formulieren.after-fixed-section {
+  margin-top: 0;
+}
+
+/* Formulier base styles */
+/* line 233, ../sass/shared/_forms.scss */
+.form-container-base-styles, .form-section .form-container {
+  border: 1px solid #cccccc;
+  background-color: white;
+  -webkit-border-radius: 3px 3px 0 3px;
+  -moz-border-radius: 3px 3px 0 3px;
+  -ms-border-radius: 3px 3px 0 3px;
+  -o-border-radius: 3px 3px 0 3px;
+  border-radius: 3px 3px 0 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 3px;
+}
+
+/* line 240, ../sass/shared/_forms.scss */
+.shade-base-styles, .form-section .shade {
+  position: relative;
+  bottom: -5px;
+  width: 100%;
+  height: 5px;
+  background: url(../images/bg-shade-corner.png) no-repeat bottom right;
+}
+
+/* line 248, ../sass/shared/_forms.scss */
+h2.form-title {
+  margin: 0 0 15px 0;
+  font: 1 normal Verdana, Arial, Helvetica, sans-serif;
+  color: #00a5dc;
+}
+
+/* line 254, ../sass/shared/_forms.scss */
+.form-section {
+  margin: 0 5px 10px 0;
+}
+/* line 256, ../sass/shared/_forms.scss */
+.form-section .form-container {
+  padding: 15px;
+}
+/* line 259, ../sass/shared/_forms.scss */
+.form-section .form-container.collapsibleContainer {
+  margin: 0 20px 0 0;
+}
+/* line 261, ../sass/shared/_forms.scss */
+.form-section .form-container.collapsibleContainer > .form-container {
+  padding: 10px;
+}
+/* line 266, ../sass/shared/_forms.scss */
+.form-section .step-info {
+  margin: 0 0 0 5px;
+  font-weight: normal;
+}
+/* line 270, ../sass/shared/_forms.scss */
+.form-section hr {
+  margin: 10px 0 15px 0;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid transparent;
+}
+/* line 275, ../sass/shared/_forms.scss */
+.form-section .shade {
+  bottom: 1px;
+}
+/* line 278, ../sass/shared/_forms.scss */
+.form-section .shade.collapseShade {
+  right: 20px;
+}
+/* line 282, ../sass/shared/_forms.scss */
+.form-section .divider {
+  margin: 0;
+  height: 0;
+  border-top: solid 1px #bbbbbb;
+  border-bottom: solid 1px #eeeeee;
+}
+/* line 290, ../sass/shared/_forms.scss */
+.form-section .collapsible.open span {
+  display: block;
+}
+/* line 296, ../sass/shared/_forms.scss */
+.form-section .collapsible span {
+  display: none;
+}
+/* line 300, ../sass/shared/_forms.scss */
+.form-section .scroller-popup {
+  max-height: 500px;
+  overflow: hidden;
+}
+/* line 304, ../sass/shared/_forms.scss */
+.form-section .grey {
+  background-color: #E6E6E6;
+}
+/* line 306, ../sass/shared/_forms.scss */
+.form-section .grey h3.form-sub-header {
+  color: #555555;
+}
+/* line 309, ../sass/shared/_forms.scss */
+.form-section .grey h4.form-sub-header {
+  margin: 0 0 20px 0;
+  color: #555555;
+  font-size: 18px;
+}
+/* line 314, ../sass/shared/_forms.scss */
+.form-section .grey hr {
+  border-top: 1px solid #bbbbbb;
+}
+
+/* line 320, ../sass/shared/_forms.scss */
+.grey {
+  background-color: #E6E6E6;
+}
+/* line 322, ../sass/shared/_forms.scss */
+.grey h3.form-sub-header {
+  color: #555555;
+}
+/* line 325, ../sass/shared/_forms.scss */
+.grey h4.form-sub-header {
+  margin: 0 0 20px 0;
+  color: #555555;
+  font-size: 18px;
+}
+/* line 330, ../sass/shared/_forms.scss */
+.grey hr {
+  border-top: 1px solid #bbbbbb;
+}
+
+/* line 335, ../sass/shared/_forms.scss */
+h3.form-sub-header {
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  line-height: 18px;
+  color: #00a5dc;
+}
+
+/* line 341, ../sass/shared/_forms.scss */
+h4.form-sub-header {
+  margin: 0;
+  color: #555555;
+  line-height: 18px;
+  font-size: 18px;
+}
+
+/* line 347, ../sass/shared/_forms.scss */
+h5.form-sub-header {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #555555;
+}
+
+/* line 354, ../sass/shared/_forms.scss */
+a:hover {
+  text-decoration: none;
+}
+/* line 356, ../sass/shared/_forms.scss */
+a:hover h3.form-sub-header {
+  text-decoration: none;
+}
+/* line 359, ../sass/shared/_forms.scss */
+a:hover h4.form-sub-header:hover {
+  text-decoration: none;
+}
+/* line 362, ../sass/shared/_forms.scss */
+a:hover h5.form-sub-header {
+  text-decoration: none;
+}
+
+/* -----------------------------------  
+	Paginering formulieren (bullets)   
+----------------------------------- */
+/* line 370, ../sass/shared/_forms.scss */
+ul.form-steps {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  float: right;
+  margin-right: 60px;
+}
+/* line 49, ../../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
+ul.form-steps li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+}
+/* line 375, ../sass/shared/_forms.scss */
+ul.form-steps li {
+  margin: 10px 5px;
+}
+/* line 378, ../sass/shared/_forms.scss */
+ul.form-steps .bullet {
+  padding: 2px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #1e4b6e;
+}
+/* line 386, ../sass/shared/_forms.scss */
+ul.form-steps .bullet .inner {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 395, ../sass/shared/_forms.scss */
+ul.form-steps li.active .bullet .inner {
+  background-color: #1e4b6e;
+}
+
+/* -----------------------------------  
+   Buttons
+----------------------------------- */
+/* line 407, ../sass/shared/_forms.scss */
+.buttons .btn [class^="icon-"],
+.buttons .btn [class*=" icon-"] {
+  margin: 1px 6px 0 -3px;
+}
+/* line 411, ../sass/shared/_forms.scss */
+.buttons .btn:hover {
+  background-color: #dddddd;
+  /* Old browsers */
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFDDDDDD', endColorstr='#FFDDDDDD');
+  /* IE6-9 */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(top, #dddddd 0%, #dddddd 100%);
+  background-image: -moz-linear-gradient(top, #dddddd 0%, #dddddd 100%);
+  background-image: -o-linear-gradient(top, #dddddd 0%, #dddddd 100%);
+  background-image: linear-gradient(top, #dddddd 0%, #dddddd 100%);
+}
+/* line 416, ../sass/shared/_forms.scss */
+.buttons .btn-primary {
+  color: white;
+  border-color: #00a5dc;
+  text-shadow: rgba(255, 255, 255, 0.25) 1px 1px 0;
+  /* Generated by: colorzilla.com/gradient-editor */
+  background-color: #00bdfd;
+  /* Old browsers */
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00BDFD', endColorstr='#FF00A5DC');
+  /* IE6-9 */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00bdfd), color-stop(100%, #00a5dc));
+  background-image: -webkit-linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
+  background-image: -moz-linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
+  background-image: -o-linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
+  background-image: linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
+}
+/* line 425, ../sass/shared/_forms.scss */
+.buttons .btn-primary:hover {
+  color: #333333;
+  /* Generated by: colorzilla.com/gradient-editor */
+  background-color: #008ebd;
+  /* Old browsers */
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF008EBD', endColorstr='#FF008EBD');
+  /* IE6-9 */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #008ebd), color-stop(100%, #008ebd));
+  background-image: -webkit-linear-gradient(top, #008ebd 0%, #008ebd 100%);
+  background-image: -moz-linear-gradient(top, #008ebd 0%, #008ebd 100%);
+  background-image: -o-linear-gradient(top, #008ebd 0%, #008ebd 100%);
+  background-image: linear-gradient(top, #008ebd 0%, #008ebd 100%);
+}
+
+/* -----------------------------------  
+   Formulier specifieke styling
+----------------------------------- */
+/* line 438, ../sass/shared/_forms.scss */
+.profiel-foto-container {
+  margin-bottom: -10px;
+}
+/* line 440, ../sass/shared/_forms.scss */
+.profiel-foto-container div.question .profiel-foto-afbeelding {
+  padding: 2px;
+  width: 60px;
+  background-color: white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px;
+}
+/* line 446, ../sass/shared/_forms.scss */
+.profiel-foto-container div.question .profiel-foto-afbeelding img.profielfoto {
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 451, ../sass/shared/_forms.scss */
+.profiel-foto-container div.answer.profiel-foto-upload {
+  margin-top: 25px;
+}
+
+/* -----------------------------------  
+   Afwijkende invulvelden
+----------------------------------- */
+/* line 460, ../sass/shared/_forms.scss */
+div.question div.answer input.number {
+  width: 40px;
+  margin-right: 5px;
+}
+/* line 461, ../sass/shared/_forms.scss */
+div.question div.answer input[type=text].txt-anders {
+  width: 240px;
+}
+/* line 462, ../sass/shared/_forms.scss */
+div.question div.answer label.eenheid {
+  margin-right: 10px;
+}
+
+/* line 467, ../sass/shared/_forms.scss */
+.bloeddruk .invoer {
+  float: left;
+}
+/* line 468, ../sass/shared/_forms.scss */
+.bloeddruk .multiselect {
+  float: left;
+  margin-right: 5px;
+}
+
+/* line 477, ../sass/shared/_forms.scss */
+div.question div.answer .input-prepend,
+div.question div.answer .input-append {
+  margin: 0 39px 0 0;
+}
+/* line 479, ../sass/shared/_forms.scss */
+div.question div.answer .input-prepend input[type=text],
+div.question div.answer .input-append input[type=text] {
+  width: 100%;
+}
+/* line 481, ../sass/shared/_forms.scss */
+div.question div.answer .input-prepend input[type=text].datum,
+div.question div.answer .input-append input[type=text].datum {
+  width: 80px;
+}
+/* line 482, ../sass/shared/_forms.scss */
+div.question div.answer .input-prepend input[type=text].tijd,
+div.question div.answer .input-append input[type=text].tijd {
+  width: 55px;
+}
+/* line 483, ../sass/shared/_forms.scss */
+div.question div.answer .input-prepend input[type=text].small,
+div.question div.answer .input-append input[type=text].small {
+  width: 25%;
+}
+/* line 484, ../sass/shared/_forms.scss */
+div.question div.answer .input-prepend input[type=text].medium,
+div.question div.answer .input-append input[type=text].medium {
+  width: 50%;
+}
+/* line 485, ../sass/shared/_forms.scss */
+div.question div.answer .input-prepend input[type=text].large,
+div.question div.answer .input-append input[type=text].large {
+  width: 75%;
+}
+/* line 487, ../sass/shared/_forms.scss */
+div.question div.answer .input-prepend button,
+div.question div.answer .input-append button {
+  padding: 4px 10px 4px 10px;
+  width: 40px;
+  height: 24px;
+  line-height: 10px;
+}
+/* line 492, ../sass/shared/_forms.scss */
+div.question div.answer .input-prepend button [class^="icon-"], div.question div.answer .input-prepend button [class*=" icon-"],
+div.question div.answer .input-append button [class^="icon-"],
+div.question div.answer .input-append button [class*=" icon-"] {
+  margin: 0 0 0 1px;
+}
+/* line 495, ../sass/shared/_forms.scss */
+div.question div.answer .input-prepend.input-append {
+  margin: 0 78px 0 0;
+}
+
+/* line 503, ../sass/shared/_forms.scss */
+div.question div.answer .multiselect {
+  padding: 5px 0 0 0;
+  height: auto;
+}
+
+/* Datum / tijd */
+/* line 511, ../sass/shared/_forms.scss */
+.tijd-invoer .datum {
+  float: left;
+  margin-right: 5px !important;
+}
+/* line 514, ../sass/shared/_forms.scss */
+.tijd-invoer .datum input {
+  margin-right: 0 !important;
+}
+
+/* -----------------------------------  
+   Meerdere antwoord columns
+----------------------------------- */
+/* line 522, ../sass/shared/_forms.scss */
+.column .heading {
+  display: block;
+  margin-right: 10px;
+  border-bottom: 1px solid;
+  padding-bottom: 3px;
+  font-weight: bold;
+}
+
+/* -----------------------------------  
+   Vraag met mogelijkheid tot toevoegen van antwoorden
+----------------------------------- */
+/* line 527, ../sass/shared/_forms.scss */
+div.answer .meerdere-antwoorden {
+  width: 100%;
+}
+/* line 529, ../sass/shared/_forms.scss */
+div.answer .meerdere-antwoorden .meerdere-antwoorden-row {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+}
+/* line 534, ../sass/shared/_forms.scss */
+div.answer .meerdere-antwoorden .meerdere-antwoorden-row > input[type="text"] {
+  float: left;
+  width: 42%;
+  margin-right: 5px;
+}
+/* line 541, ../sass/shared/_forms.scss */
+div.answer .meerdere-antwoorden select {
+  width: 200px;
+}
+/* line 545, ../sass/shared/_forms.scss */
+div.answer .meerdere-antwoorden .button.small {
+  float: left;
+  margin-top: 0;
+}
+
+/* -----------------------------------  
+   Formulier onder tabel
+----------------------------------- */
+/* line 554, ../sass/shared/_forms.scss */
+.edit-tabel-form {
+  float: left;
+  width: 100%;
+  background-color: #fefefe;
+  border: 1px dotted #bababa;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 555, ../sass/shared/_forms.scss */
+.edit-tabel-form .inner {
+  padding: 10px;
+}
+/* line 559, ../sass/shared/_forms.scss */
+.edit-tabel-form table {
+  margin-bottom: 20px;
+}
+
+/* -----------------------------------  
+   Plugin: Select2 
+----------------------------------- */
+/* line 570, ../sass/shared/_forms.scss */
+.select2-container {
+  float: left;
+  width: 100%;
+}
+/* line 573, ../sass/shared/_forms.scss */
+.select2-container.small {
+  width: 25%;
+}
+/* line 574, ../sass/shared/_forms.scss */
+.select2-container.medium {
+  width: 50%;
+}
+/* line 575, ../sass/shared/_forms.scss */
+.select2-container.large {
+  width: 75%;
+}
+
+/* line 578, ../sass/shared/_forms.scss */
+.select2-drop {
+  color: #333333;
+}
+/* line 581, ../sass/shared/_forms.scss */
+.select2-drop .select2-search input[type="text"] {
+  font-size: 13px;
+  line-height: 16px;
+}
+/* line 586, ../sass/shared/_forms.scss */
+.select2-drop.select2-drop-active {
+  border-top: solid 1px #aaaaaa;
+}
+/* line 588, ../sass/shared/_forms.scss */
+.select2-drop.select2-drop-active .select2-search {
+  margin: 5px 0 0 0;
+}
+/* line 590, ../sass/shared/_forms.scss */
+.select2-drop.select2-drop-active.select2-drop-above {
+  border-bottom: solid 1px #aaaaaa;
+}
+/* line 592, ../sass/shared/_forms.scss */
+.select2-drop.select2-drop-active.select2-drop-above .select2-search {
+  margin: 0;
+}
+/* line 594, ../sass/shared/_forms.scss */
+.select2-drop .select2-results .select2-highlighted {
+  background-color: #00a5dc;
+}
+/* line 597, ../sass/shared/_forms.scss */
+.select2-drop .select2-result-sub {
+  padding: 0;
+}
+
+/* -------------------------------------
+     Palette
+   ------------------------------------ */
+/* line 605, ../sass/shared/_forms.scss */
+table.palette {
+  border: 0;
+  width: 90%;
+}
+/* line 609, ../sass/shared/_forms.scss */
+table.palette td.header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #555555;
+  padding: 2px;
+}
+/* line 618, ../sass/shared/_forms.scss */
+table.palette td.pane {
+  width: 45%;
+}
+/* line 621, ../sass/shared/_forms.scss */
+table.palette td.pane select {
+  height: auto;
+  width: 100%;
+}
+/* line 627, ../sass/shared/_forms.scss */
+table.palette td.buttons {
+  text-align: center;
+  width: 60px;
+}
+/* line 631, ../sass/shared/_forms.scss */
+table.palette td.buttons .icon {
+  margin: -1px 0 -1px 0;
+}
+
+/* line 638, ../sass/shared/_forms.scss */
+.accordion-inner table.palette {
+  width: 100%;
+}
+
+/* -------------------------------------
+    Data-selection accordion
+------------------------------------ */
+/* line 646, ../sass/shared/_forms.scss */
+.data-selection {
+  cursor: pointer;
+}
+/* line 648, ../sass/shared/_forms.scss */
+.data-selection .data-selection-item:first-child {
+  border-top: 0;
+  border-bottom: 1px solid #627000;
+  -moz-border-radius-topleft: 2px;
+  -webkit-border-top-left-radius: 2px;
+  border-top-left-radius: 2px;
+  -moz-border-radius-topright: 2px;
+  -webkit-border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+/* line 653, ../sass/shared/_forms.scss */
+.data-selection .data-selection-item {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #889c00), color-stop(100%, #788a00));
+  background-image: -webkit-linear-gradient(top, #889c00 0%, #788a00 100%);
+  background-image: -moz-linear-gradient(top, #889c00 0%, #788a00 100%);
+  background-image: -o-linear-gradient(top, #889c00 0%, #788a00 100%);
+  background-image: linear-gradient(top, #889c00 0%, #788a00 100%);
+  border-top: 1px solid #b3c15d;
+  border-bottom: 1px solid #627000;
+}
+/* line 657, ../sass/shared/_forms.scss */
+.data-selection .data-selection-item p {
+  margin: 0.5em 0;
+  color: #FFF;
+  text-shadow: rgba(0, 0, 0, 0.25) 1px 1px 0;
+}
+/* line 662, ../sass/shared/_forms.scss */
+.data-selection .data-selection-item i {
+  margin: 0.5em;
+}
+/* line 666, ../sass/shared/_forms.scss */
+.data-selection .data-selection-item:hover {
+  background: #586500;
+}
+/* line 669, ../sass/shared/_forms.scss */
+.data-selection .data-selection-item:last-child {
+  -moz-border-radius-bottomleft: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top: 1px solid #b3c15d;
+  border-bottom: 0;
+}
+/* line 674, ../sass/shared/_forms.scss */
+.data-selection input {
+  margin: 8px;
+}
+/* line 677, ../sass/shared/_forms.scss */
+.data-selection .data-selection-inner {
+  border: 1px solid #bebebe;
+  border-bottom: 0;
+  border-top: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 5px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 5px inset;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 5px inset;
+  background: #e6e6e6;
+}
+/* line 683, ../sass/shared/_forms.scss */
+.data-selection .data-selection-inner .data-selection-inner-item {
+  border-bottom: 1px solid #bebebe;
+}
+/* line 685, ../sass/shared/_forms.scss */
+.data-selection .data-selection-inner .data-selection-inner-item p {
+  margin: 0.5em 0;
+  color: #333333;
+}
+/* line 691, ../sass/shared/_forms.scss */
+.data-selection .data-selection-pagination {
+  background: #EEEEEE;
+}
+/* line 693, ../sass/shared/_forms.scss */
+.data-selection .data-selection-pagination .pagination {
+  margin: 8px 0 5px;
+}
+/* line 695, ../sass/shared/_forms.scss */
+.data-selection .data-selection-pagination .pagination ul {
+  margin: 1px 0;
+  padding: 0;
+}
+/* line 698, ../sass/shared/_forms.scss */
+.data-selection .data-selection-pagination .pagination ul a {
+  background-color: #F5F5F5;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+  border-color: #bebebe;
+  color: #333333;
+  cursor: pointer;
+}
+/* line 704, ../sass/shared/_forms.scss */
+.data-selection .data-selection-pagination .pagination ul a:hover, .data-selection .data-selection-pagination .pagination ul a:focus, .data-selection .data-selection-pagination .pagination ul a:active, .data-selection .data-selection-pagination .pagination ul a.disabled {
+  color: #333333;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6e6e6), color-stop(100%, #e6e6e6));
+  background-image: -webkit-linear-gradient(top, #e6e6e6 0%, #e6e6e6 100%);
+  background-image: -moz-linear-gradient(top, #e6e6e6 0%, #e6e6e6 100%);
+  background-image: -o-linear-gradient(top, #e6e6e6 0%, #e6e6e6 100%);
+  background-image: linear-gradient(top, #e6e6e6 0%, #e6e6e6 100%);
+}
+/* line 708, ../sass/shared/_forms.scss */
+.data-selection .data-selection-pagination .pagination ul a.active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a5dc), color-stop(100%, #00a5dc));
+  background-image: -webkit-linear-gradient(top, #00a5dc 0%, #00a5dc 100%);
+  background-image: -moz-linear-gradient(top, #00a5dc 0%, #00a5dc 100%);
+  background-image: -o-linear-gradient(top, #00a5dc 0%, #00a5dc 100%);
+  background-image: linear-gradient(top, #00a5dc 0%, #00a5dc 100%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 1px 2px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 1px 2px inset;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 1px 2px inset;
+}
+
+/* line 1, ../sass/shared/_buttons.scss */
+.buttons {
+  margin: 10px;
+}
+/* line 3, ../sass/shared/_buttons.scss */
+.buttons .btn {
+  margin-left: 8px;
+  padding: 4px 20px 4px 20px;
+}
+/* line 7, ../sass/shared/_buttons.scss */
+.buttons .btn-primary {
+  color: white;
+  text-shadow: rgba(255, 255, 255, 0.25) 1px 1px 0;
+  /* Generated by: colorzilla.com/gradient-editor */
+  background-color: #00bdfd;
+  /* Old browsers */
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00BDFD', endColorstr='#FF00A5DC');
+  /* IE6-9 */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00bdfd), color-stop(100%, #00a5dc));
+  background-image: -webkit-linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
+  background-image: -moz-linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
+  background-image: -o-linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
+  background-image: linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
+}
+/* line 15, ../sass/shared/_buttons.scss */
+.buttons .btn-primary:hover {
+  color: white;
+  /* Generated by: colorzilla.com/gradient-editor */
+  background-color: #008ebd;
+  /* Old browsers */
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF008EBD', endColorstr='#FF008EBD');
+  /* IE6-9 */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #008ebd), color-stop(100%, #008ebd));
+  background-image: -webkit-linear-gradient(top, #008ebd 0%, #008ebd 100%);
+  background-image: -moz-linear-gradient(top, #008ebd 0%, #008ebd 100%);
+  background-image: -o-linear-gradient(top, #008ebd 0%, #008ebd 100%);
+  background-image: linear-gradient(top, #008ebd 0%, #008ebd 100%);
+}
+
+/* line 24, ../sass/shared/_buttons.scss */
+.breadCrumbArrow {
+  pointer: cursor;
+  float: left;
+  margin: 1px 0 10px -20px;
+  height: 40px;
+  width: 140px;
+  display: block;
+  font-size: 10px;
+  background: url("../images/buttons/breadCrumb.png") no-repeat;
+}
+/* line 25, ../sass/shared/_buttons.scss */
+.breadCrumbArrow:first-child {
+  margin: 0;
+}
+/* line 36, ../sass/shared/_buttons.scss */
+.breadCrumbArrow span {
+  width: 130px;
+  float: left;
+  text-align: center;
+  color: #666666;
+  margin-top: 8px;
+  margin-left: 3px;
+}
+/* line 44, ../sass/shared/_buttons.scss */
+.breadCrumbArrow.first {
+  background: url("../images/buttons/breadCrumbFirst.png") no-repeat;
+}
+/* line 46, ../sass/shared/_buttons.scss */
+.breadCrumbArrow.first span {
+  margin-top: 10px;
+  margin-left: 0;
+}
+/* line 51, ../sass/shared/_buttons.scss */
+.breadCrumbArrow.active {
+  background: url("../images/buttons/breadCrumbActive.png") no-repeat;
+  margin-top: 1px;
+}
+/* line 54, ../sass/shared/_buttons.scss */
+.breadCrumbArrow.active span {
+  color: #FFF;
+}
+/* line 57, ../sass/shared/_buttons.scss */
+.breadCrumbArrow.active.first {
+  background: url("../images/buttons/breadCrumbFirstActive.png") no-repeat;
+}
+/* line 59, ../sass/shared/_buttons.scss */
+.breadCrumbArrow.active.first span {
+  color: #FFF;
+}
+
+/* line 2, ../sass/shared/_modals.scss */
+.modal.largeModal {
+  margin-left: -560px;
+  width: 1120px;
+}
+/* line 6, ../sass/shared/_modals.scss */
+.modal .breadCrumbs {
+  min-height: 50px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
 /* Load sections */
 /* -----------------------------------  
    Icon styling
@@ -1697,10 +3876,6 @@ body {
   padding: 10px 0 0 20px;
   border-top: 1px solid #EEEEEE;
 }
-/* line 159, ../sass/sections/_demo.scss */
-.modal-body span {
-  float: right;
-}
 
 /* line 164, ../sass/sections/_demo.scss */
 .modal-footer {
@@ -1873,7 +4048,7 @@ iframe {
 
 /* line 312, ../sass/sections/_demo.scss */
 .folderContent {
-  background-image: url("assets/images/backgrounds/FolderContentBackground.png") repeat;
+  background-image: url("../images/backgrounds/FolderContentBackground.png") repeat;
   background-color: #444444;
   float: left;
   height: 200px;
@@ -1927,42 +4102,42 @@ iframe {
 /* -----------------------------------  
    Basic styling
 ----------------------------------- */
-/* line 32, ../sass/base_styles.scss */
+/* line 39, ../sass/base_styles.scss */
 html, body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 12px;
   background: white;
 }
 
-/* line 38, ../sass/base_styles.scss */
+/* line 45, ../sass/base_styles.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
 /* Default classes: Forms (override style for reset.scss) */
-/* line 44, ../sass/base_styles.scss */
+/* line 51, ../sass/base_styles.scss */
 button, input, select, textarea {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-/* line 48, ../sass/base_styles.scss */
+/* line 55, ../sass/base_styles.scss */
 h1 {
   font-size: 45px;
   font-weight: 300;
 }
 
-/* line 53, ../sass/base_styles.scss */
+/* line 60, ../sass/base_styles.scss */
 h2 {
   margin-bottom: 5px;
 }
 
-/* line 57, ../sass/base_styles.scss */
+/* line 64, ../sass/base_styles.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 61, ../sass/base_styles.scss */
+/* line 68, ../sass/base_styles.scss */
 a {
   text-decoration: none;
 }
@@ -1970,46 +4145,39 @@ a {
 /* -----------------------------------  
    Default classes
 ----------------------------------- */
-/* line 68, ../sass/base_styles.scss */
+/* line 75, ../sass/base_styles.scss */
 .floatleft, .left {
   float: left;
 }
 
-/* line 72, ../sass/base_styles.scss */
+/* line 79, ../sass/base_styles.scss */
 .floatright, .right {
   float: right;
 }
 
-/* line 76, ../sass/base_styles.scss */
+/* line 83, ../sass/base_styles.scss */
 .clear {
   clear: both;
 }
 
-/* line 80, ../sass/base_styles.scss */
+/* line 87, ../sass/base_styles.scss */
 .fill {
   min-height: 1px;
 }
 
-/* line 84, ../sass/base_styles.scss */
+/* line 91, ../sass/base_styles.scss */
 .normal {
   font-weight: normal;
 }
 
-/* line 88, ../sass/base_styles.scss */
+/* line 95, ../sass/base_styles.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 92, ../sass/base_styles.scss */
+/* line 99, ../sass/base_styles.scss */
 .nowrap {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-
-/* line 98, ../sass/base_styles.scss */
-.dropup {
-  -webkit-box-shadow: rgba(102, 102, 102, 0.5) 1px 1px 5px;
-  -moz-box-shadow: rgba(102, 102, 102, 0.5) 1px 1px 5px;
-  box-shadow: rgba(102, 102, 102, 0.5) 1px 1px 5px;
 }

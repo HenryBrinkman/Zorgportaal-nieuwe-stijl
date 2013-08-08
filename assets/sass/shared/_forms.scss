@@ -1,0 +1,719 @@
+/* -----------------------------------  
+  	Forms styling
+----------------------------------- */
+
+div.question {
+    margin: 0 0 10px;
+    float: left;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+
+    > label {
+        margin-top: 3px;
+        float: left;
+        width: $responsiveLabelWidth;
+        @media screen and (min-width: 1300px) {
+            width: $responsiveLabelWidthSmall;
+        }
+        cursor: default;
+        font-size: $fontSizeMedium;
+        line-height: $fontLineHeightLarge;
+        &.green {
+            font-size: $fontSizeLarge;
+            line-height: $fontLineHeightXLarge;
+            color: $mainColorDark;
+        }
+        &.clearFloat {
+        	float: none;
+        }
+    }
+
+    a {
+        color: $formButtonColor3;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    div.answer {
+        overflow: visible;
+        padding: 0 34px 0 $responsiveAnswerPadding;
+        @media screen and (min-width: 1300px) {
+            padding: 0 34px 0 $responsiveAnswerPaddingSmall;
+        }
+        width: 100%;
+        @include box-sizing(border-box);
+        &.value-only {
+            font-size: $fontSizeMedium;
+            font-weight: bold;
+            line-height: $fontLineHeightLarge;
+        }
+    }
+
+    ul.answer {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 0 0 $responsiveAnswerPadding;
+        @media screen and (min-width: 1300px) {
+            padding: 0 34px 0 $responsiveAnswerPaddingSmall;
+        }
+        outline: none;
+        &.value-only {
+            font-weight: bold;
+        }
+    }
+
+    /* Lijsten */
+    .vertical li,
+    .vertical li label { width: 100%; display: block; cursor: default; }
+    .answer li input[type=radio],
+    .answer li input[type=checkbox] { float: left; margin: 3px 5px 2px 0; overflow: hidden; font-size: $fontSizeMedium; }
+    .answer label { font-size: $fontSizeMedium; cursor: default; }
+
+    ul.answer.horizontal {
+        li {
+            margin-right: 10px;
+            float: left;
+            padding: 0;
+        }
+    }
+
+    &.input-radio,
+    &.input-checkbox {
+        label, a { font-size: $fontSizeMedium; cursor: default; }
+        > label { line-height: $fontLineHeightMedium; cursor: default;}
+        i { margin: 0 5px 0 0; }
+    }
+    &.input-checkbox {
+        .form-icon { padding: 0 0 2px 0; }
+    }
+
+    /* Breedte input velden, selects */
+    div.answer {
+        input[type=text],
+        textarea,
+        select,
+        textarea {
+            padding: 3px;
+            width: 100%;
+            @include box-sizing(border-box);
+            height: 24px;
+            font-size: $fontSizeMedium;
+
+            /* Maxlength: input width classes */
+            &[maxlength="1"] { width: 20px; }
+            &[maxlength="2"] { width: 28px; }
+            &[maxlength="3"] { width: 36px; }
+            &[maxlength="4"] { width: 44px; }
+            &[maxlength="5"] { width: 52px; }
+            &[maxlength="6"] { width: 60px; }
+            &[maxlength="7"] { width: 68px; }
+            &[maxlength="8"] { width: 76px; }
+            &[maxlength="9"] { width: 84px; }
+            &[maxlength="10"] { width: 92px; }
+            &[maxlength="26"] { width: 234px; }
+
+            /* Bootstrap: input width classes */
+            &.input-mini {
+                width: 60px;
+            }
+            &.input-small {
+                width: 90px;
+            }
+            &.input-medium {
+                width: 150px;
+            }
+            &.input-large {
+                width: 210px;
+            }
+            &.input-xlarge {
+                width: 270px;
+            }
+            &.input-xxlarge {
+                width: 530px;
+            }
+
+            &:focus {
+                z-index: auto;
+            }
+        }
+        textarea { height: auto; }
+    }
+
+    /* Verplichte velden */
+    &.invalid label { color: $formInvalidColor; }
+    &.invalid input[type=text],
+    &.invalid select {
+        border: 1px solid $formInvalidColor;
+        color: $formInvalidColor;
+    }
+}
+
+.span6 .question.small {
+    > label {
+        width: $defaultLabelWidthSmall;
+        cursor: default;
+        @media screen and ($widthName: $tableBreakpointXSmall) {
+            width: 100px;
+        }
+    }
+
+    div.answer {
+        padding: 0 34px 0 180px + 10;
+    }
+
+    ul.answer {
+        padding: 0 0 0 180px + 10;
+    }
+}
+
+.question.ExtraSmall {
+	> label {
+        cursor: default;
+		width: 100px;
+		}
+		.answer {
+			padding: 0 0 0 100px;
+		}
+		
+}
+
+div.question.no-label div.answer,
+div.question.no-icons div.answer,
+div.question.no-label ul.answer { padding: 0; }
+
+div.question.datumTotDatum {
+    > label {
+        width: 10%;
+    }
+    .answer {
+        padding: 0 34px 0 15%;
+        .input-append {
+            margin: 0 3%;
+        }
+    }
+}
+
+/* -----------------------------------
+  	Forms blokken
+----------------------------------- */
+
+input, textarea, select, .uneditable-input {
+    @include border-radius(3);
+}
+
+.btn {
+    @include border-radius(3);
+    &.btn-primary {
+        background-image: none;
+    }
+    &.btn-toevoegen {
+        margin-bottom: 15px;
+    }
+}
+
+.btn-top {
+    margin-top: 0px;
+}
+
+/* Formulier blokken */
+.formulieren {
+    margin: 20px 10px 30px 20px;
+    clear: both;
+    &.fixed-section {
+        margin-bottom: 0;
+    }
+    &.after-fixed-section {
+        margin-top: 0;
+    }
+}
+
+/* Formulier base styles */
+.form-container-base-styles {
+    border: $formSectionBorder;
+    background-color: $formBackgroundColor1;
+    @include border-radius(3px 3px 0 3px);
+    @include box-shadow(rgba($formSectionShadowColor, 0.10) 1px 1px 3px);
+}
+
+.shade-base-styles {
+    position: relative;
+    bottom: -5px;
+    width: 100%;
+    height: 5px;
+    background: url(../images/bg-shade-corner.png) no-repeat bottom right;
+}
+
+h2.form-title {
+    margin: 0 0 15px 0;
+    font: $fontSizeXLarge/$fontLineHeightMedium normal $fontFamily2;
+    color: $formTitleColor1;
+}
+
+.form-section {
+    margin: 0 5px 10px 0;
+    .form-container {
+        @extend .form-container-base-styles;
+        padding: 15px;
+        &.collapsibleContainer {
+            margin: 0 20px 0 0;
+            > .form-container {
+                padding: 10px;
+            }
+        }
+    }
+    .step-info {
+        margin: 0 0 0 5px;
+        font-weight: normal;
+    }
+    hr {
+        margin: 10px 0 15px 0;
+        border-top: 1px solid $formBorderColor3;
+        border-bottom: 1px solid transparent;
+    }
+    .shade {
+        @extend .shade-base-styles;
+        bottom: 1px;
+        &.collapseShade {
+            right: 20px;
+        }
+    }
+    .divider {
+        margin: 0;
+        height: 0;
+        border-top: solid 1px $formBorderColor1;
+        border-bottom: solid 1px $formBorderColor2;
+    }
+
+    .collapsible.open {
+        span {
+            display: block;
+        }
+    }
+
+    .collapsible {
+        span {
+            display: none;
+        }
+    }
+    .scroller-popup {
+    	max-height: 500px;
+    	overflow: hidden;
+    }
+    .grey {
+	    background-color: #E6E6E6;
+	    h3.form-sub-header {
+	        color: $formTitleColor2;
+	    }
+	    h4.form-sub-header {
+	        margin: 0 0 20px 0;
+	        color: $formTitleColor2;
+	        font-size: $fontSizeXLarge;
+	    }
+	    hr {
+	       border-top: 1px solid $formBorderColor1;
+	    }
+	}
+}
+
+.grey {
+    background-color: #E6E6E6;
+    h3.form-sub-header {
+        color: $formTitleColor2;
+    }
+    h4.form-sub-header {
+        margin: 0 0 20px 0;
+        color: $formTitleColor2;
+        font-size: $fontSizeXLarge;
+    }
+    hr {
+       border-top: 1px solid $formBorderColor1;
+    }
+}
+
+ h3.form-sub-header {
+    margin: 0 0 20px 0;
+    font-size: $fontSizeLarge;
+    line-height: $fontLineHeightMedium;
+    color: $formTitleColor1;
+}
+h4.form-sub-header {
+    margin: 0;
+    color: $formTitleColor2;
+    line-height: $fontLineHeightMedium;
+    font-size: $fontSizeXLarge;
+}
+h5.form-sub-header {
+    margin: 0 0 20px 0;
+    font-size: $fontSizeXMedium;
+    line-height: $fontLineHeightMedium;
+    color: $formTitleColor2;
+}
+
+a:hover {
+    text-decoration: none;
+    h3.form-sub-header {
+        text-decoration: none;
+    }
+    h4.form-sub-header:hover {
+        text-decoration: none;
+    }
+    h5.form-sub-header {
+        text-decoration: none;
+    }
+}
+
+/* -----------------------------------  
+	Paginering formulieren (bullets)   
+----------------------------------- */
+ul.form-steps {
+    @include inline-block-list();
+    float: right;
+    margin-right: 60px;
+
+    li {
+        margin: 10px 5px;
+    }
+    .bullet {
+        padding: 2px;
+        display: block;
+        width: 10px;
+        height: 10px;
+        @include border-radius(10px);
+        border: 1px solid $formPrimaryColor;
+
+        .inner {
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            @include border-radius(10px);
+        }
+    }
+
+    li.active .bullet .inner {
+        background-color: $formPrimaryColor;
+    }
+}
+
+/* -----------------------------------  
+   Buttons
+----------------------------------- */
+
+.buttons {
+    .btn {
+        [class^="icon-"],
+        [class*=" icon-"] {
+            margin: 1px 6px 0 -3px;
+        }
+    }
+    .btn:hover {
+        background-color: $formButtonHoverColor2; /* Old browsers */
+        @include filter-gradient($formButtonHoverColor2, $formButtonHoverColor2, vertical); /* IE6-9 */
+        @include background-image(linear-gradient(top, $formButtonHoverColor2 0%, $formButtonHoverColor2 100%));
+    }
+    .btn-primary {
+        color: $formButtonColor2;
+        border-color: $formBorderColor4;
+        @include text-shadow(rgba($formButtonColor2, 0.25) 1px 1px 0);
+        /* Generated by: colorzilla.com/gradient-editor */
+        background-color: $formButtonGradient1; /* Old browsers */
+        @include filter-gradient($formButtonGradient1, $formButtonGradient2, vertical); /* IE6-9 */
+        @include background-image(linear-gradient(top, $formButtonGradient1 0%, $formButtonGradient2 100%));
+    }
+    .btn-primary:hover {
+        color: $formButtonColor1;
+        /* Generated by: colorzilla.com/gradient-editor */
+        background-color: $formButtonHoverColor1; /* Old browsers */
+        @include filter-gradient($formButtonHoverColor1, $formButtonHoverColor1, vertical); /* IE6-9 */
+        @include background-image(linear-gradient(top, $formButtonHoverColor1 0%, $formButtonHoverColor1 100%));
+    }
+}
+
+/* -----------------------------------  
+   Formulier specifieke styling
+----------------------------------- */
+
+.profiel-foto-container {
+    margin-bottom: -10px;
+    div.question .profiel-foto-afbeelding {
+        padding: 2px;
+        width: 60px;
+        background-color: $formBackgroundColor1;
+        @include border-radius(3px);
+        @include box-shadow(rgba($formSectionShadowColor, 0.2) 1px 1px 5px);
+        img.profielfoto {
+            text-align: center;
+            @include border-radius(3px);
+        }
+    }
+    div.answer.profiel-foto-upload { margin-top: 25px; }
+}
+
+/* -----------------------------------  
+   Afwijkende invulvelden
+----------------------------------- */
+
+div.question {
+    div.answer {
+        input.number { width: 40px; margin-right: 5px; }
+        input[type=text].txt-anders { width: 240px; }
+        label.eenheid { margin-right: 10px; }
+    }
+}
+
+.bloeddruk {
+    .invoer { float: left; }
+    .multiselect {
+        float: left;
+        margin-right: 5px;
+    }
+}
+
+div.question {
+    div.answer {
+        .input-prepend,
+        .input-append {
+            margin: 0 39px 0 0;
+            input[type=text] {
+                width: $inputWidth;
+                &.datum { width: 80px; }
+                &.tijd { width: 55px; }
+                &.small { width: $select2WidthSmall; }
+                &.medium { width: $select2WidthMedium; }
+                &.large { width: $select2WidthLarge; }
+            }
+            button {
+                padding: 4px 10px 4px 10px;
+                width: 40px;
+                height: 24px;
+                line-height: 10px;
+                [class^="icon-"], [class*=" icon-"] { margin: 0 0 0 1px; }
+            }
+        }
+        .input-prepend.input-append {
+            margin: 0 78px 0 0;
+        }
+    }
+}
+
+div.question {
+    div.answer {
+        .multiselect {
+            padding: 5px 0 0 0;
+            height: auto;
+        }
+    }
+}
+
+/* Datum / tijd */
+.tijd-invoer .datum {
+    float: left;
+    margin-right: 5px !important;
+    input {
+        margin-right: 0 !important;
+    }
+}
+
+/* -----------------------------------  
+   Meerdere antwoord columns
+----------------------------------- */
+.column .heading { display: block; margin-right: 10px; border-bottom: 1px solid; padding-bottom: 3px; font-weight: bold; }
+
+/* -----------------------------------  
+   Vraag met mogelijkheid tot toevoegen van antwoorden
+----------------------------------- */
+div.answer .meerdere-antwoorden {
+    width: 100%;
+    .meerdere-antwoorden-row {
+        float: left;
+        width: 100%;
+        margin-bottom: 5px;
+
+        >input[type="text"] {
+            float: left;
+            width: 42%;
+            margin-right: 5px;
+        }
+    }
+
+    select {
+        width: 200px;
+    }
+
+    .button.small {
+        float: left;
+        margin-top: 0;
+    }
+}
+
+/* -----------------------------------  
+   Formulier onder tabel
+----------------------------------- */
+.edit-tabel-form {
+    .inner {
+        padding: 10px;
+    }
+
+    table { margin-bottom: 20px; }
+    float: left;
+    width: 100%;
+    background-color: #fefefe;
+    border: 1px dotted #bababa;
+    @include border-radius(5px);
+}
+
+/* -----------------------------------  
+   Plugin: Select2 
+----------------------------------- */
+.select2-container {
+    float: left;
+    width: $select2Width;
+    &.small { width: $select2WidthSmall; }
+    &.medium { width: $select2WidthMedium; }
+    &.large { width: $select2WidthLarge; }
+}
+
+.select2-drop {
+    color: $formTextColor;
+    .select2-search {
+        input[type="text"] {
+            font-size: $fontSizeMedium;
+            line-height: $fontLineHeightSmall;
+        }
+    }
+    &.select2-drop-active {
+        border-top: solid 1px $select2BorderColor1;
+        .select2-search { margin: 5px 0 0 0; }
+    }
+    &.select2-drop-active.select2-drop-above {
+        border-bottom: solid 1px $select2BorderColor1;
+        .select2-search { margin: 0; }
+    }
+    .select2-results .select2-highlighted {
+        background-color: $formSecondaryColor;
+    }
+    .select2-result-sub {
+        padding: 0;
+    }
+}
+
+/* -------------------------------------
+     Palette
+   ------------------------------------ */
+table.palette {
+    border: 0;
+    width: 90%;
+
+    td.header {
+        text-align: center;
+        font-weight: bold;
+        font-size: $fontSizeXMedium;
+        line-height: $fontLineHeightMedium;
+        color: $formTitleColor2;
+        padding: 2px;
+    }
+
+    td.pane {
+        width: 45%;
+
+        select {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    td.buttons {
+        text-align: center;
+        width: 60px;
+
+        .icon {
+            margin: -1px 0 -1px 0;
+        }
+    }
+}
+
+.accordion-inner {
+    table.palette {
+        width: 100%;
+    }
+}
+
+/* -------------------------------------
+    Data-selection accordion
+------------------------------------ */
+.data-selection {
+    cursor: pointer;
+    .data-selection-item:first-child {
+        border-top: 0;
+        border-bottom: $dataSelectionBottomBorder;
+        @include border-top-radius(2px);
+    }
+    .data-selection-item {
+        @include background-image(linear-gradient( top, $dataSelectionGradientColor1 0%, $dataSelectionGradientColor2 100%));
+        border-top: $dataSelectionTopBorder;
+        border-bottom: $dataSelectionBottomBorder;
+        p {
+            margin: 0.5em 0;
+            color: #FFF;
+            @include text-shadow(rgba($dialogDropshadowColor1, 0.25) 1px 1px 0);
+        }
+        i {
+            margin: 0.5em;
+        }
+    }
+    .data-selection-item:hover {
+        background: $dataSelectionHoverColor;
+    }
+    .data-selection-item:last-child {
+        @include border-bottom-radius(2px);
+        border-top: $dataSelectionTopBorder;
+        border-bottom: 0;
+    }
+    input {
+        margin: 8px;
+    }
+    .data-selection-inner {
+        border: 1px solid $darkerGrey;
+        border-bottom: 0;
+        border-top: 0;
+        @include box-shadow(rgba(0,0,0,.30) 0 1px 5px inset);
+        background: $lightGrey;
+        .data-selection-inner-item {
+            border-bottom: 1px solid $darkerGrey;
+            p {
+                margin: 0.5em 0;
+                color: $mainGrey;
+            }
+        }
+    }
+    .data-selection-pagination {
+        background: #EEEEEE;
+        .pagination {
+            margin: 8px 0 5px;
+            ul {
+                margin: 1px 0;
+                padding: 0;
+                a {
+                    background-color: #F5F5F5;
+                    @include background-image(linear-gradient( top, #FFFFFF 0%, #E6E6E6 100%));
+                    border-color: $darkerGrey;
+                    color: $mainGrey;
+                    cursor: pointer;
+                    &:hover, &:focus, &:active, &.disabled {
+                        color: $mainGrey;
+                        @include background-image(linear-gradient( top, $lightGrey 0%, $lightGrey 100%));
+                    }
+                    &.active {
+                        @include background-image(linear-gradient( top, $mainColorDark 0%, $mainColorDark 100%));;
+                        @include box-shadow(rgba(0,0,0,.15) 0 1px 2px inset);
+                    }   
+                }
+                li {
+
+                }
+            }
+        }
+    }
+}

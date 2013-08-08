@@ -385,7 +385,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{*padding-top:1px;*padding-
 .icon-heart{background-position:-96px 0;}
 .icon-star{background-position:-120px 0;}
 .icon-star-empty{background-position:-144px 0;}
-.icon-user{background-position:-168px 0;}
+/*.icon-user{background-position:-168px 0;}*/
 .icon-film{background-position:-192px 0;}
 .icon-th-large{background-position:-216px 0;}
 .icon-th{background-position:-240px 0;}
@@ -396,7 +396,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{*padding-top:1px;*padding-
 .icon-zoom-out{background-position:-360px 0;}
 .icon-off{background-position:-384px 0;}
 .icon-signal{background-position:-408px 0;}
-.icon-cog{background-position:-432px 0;}
+/*.icon-cog{background-position:-432px 0;}*/
 .icon-trash{background-position:-456px 0;}
 .icoon-home{background-position:0 -24px;}
 .icon-file{background-position:-24px -24px;}

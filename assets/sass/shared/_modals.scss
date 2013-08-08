@@ -1,0 +1,11 @@
+.modal {
+	&.largeModal {
+		margin-left: -560px;
+		width: 1120px;
+	}
+	.breadCrumbs {
+		min-height: 50px;
+		border-bottom: 1px solid #eee;
+		margin-bottom: 10px;
+	}
+}
