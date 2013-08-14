@@ -266,7 +266,7 @@
             <h3>Zorgverlener beheer</h3>
           </div>
           <div class="modal-body">
-            <div class="zorgverlenerZoeken">
+            <div class="pageOne">
                <div class="row-fluid">
                   <div class="span12">
                      <h3 class="form-sub-header">Zorgverlener zoeken</h3>
@@ -343,12 +343,12 @@
                   </div>
                </div>
             </div>
-            <div class="zorgverlenerZoekResultaten zorgVerlenerToevoegen" style="display: none;">
+            <div class="pageTwo" style="display: none;">
                <div class="row-fluid">
                   <div class="span12">
                      <div class="breadCrumbs">
-                        <div class="breadCrumbArrow first"><span>Zoeken</span></div>
-                        <div class="breadCrumbArrow active"><span>Zoekresultaten</span></div>
+                        <div class="breadCrumbArrow first zoeken"><span>Zoeken</span></div>
+                        <div class="breadCrumbArrow active zoekresultaten"><span>Zoekresultaten</span></div>
                      </div>
                   </div>
                </div>
@@ -438,7 +438,7 @@
                      </table>
                   </div>
                </div>
-               <div class="row-fluid zorgverlenerZoekResultaten" style="display: none;">
+               <div class="row-fluid">
                     <div class="span4">
                         <div class="btn-group dropup toon-aantal">
                             <button class="btn btn-label dropdown-toggle" data-toggle="dropdown">
@@ -469,13 +469,13 @@
                     </div>
                 </div>
             </div>
-             <div class="row-fluid zorgVerlenerToevoegen" style="display:none;">
+             <div class="row-fluid pageThree" style="display:none;">
                   <div class="row-fluid">
                      <div class="span12">
                         <div class="breadCrumbs">
-                           <div class="breadCrumbArrow first"><span>Zoeken</span></div>
-                           <div class="breadCrumbArrow"><span>Zoekresultaten</span></div>
-                           <div class="breadCrumbArrow active"><span>Toevoegen</span></div>
+                           <div class="breadCrumbArrow first zoeken"><span>Zoeken</span></div>
+                           <div class="breadCrumbArrow zoekresultaten"><span>Zoekresultaten</span></div>
+                           <div class="breadCrumbArrow active toevoegen"><span>Toevoegen</span></div>
                         </div>
                      </div>
                   </div>
@@ -704,15 +704,21 @@
                </div>
           </div>
           <div class="modal-footer">
-            <div class="buttons">
-               <a type="button" data-dismiss="modal" aria-hidden="true" href="#" class="btn zorgverlenerZoekResultaten pull-left">Sluiten</a>
-               <a type="button" style="display: none;"  href="#" class="btn zorgverlenerZoekResultaten  pull-left">Terug</a>
-               <a style="display: none;" type="button" href="#" class="btn btn-primary pull-right zorgverlenerZoekResultaten zorgVerlenerToevoegen" onclick="$('.zorgVerlenerToevoegen').toggle();">Toevoegen</a>
-               <a style="display: none;" type="button" href="#" class="btn btn-primary pull-right zorgVerlenerToevoegen" onclick="$('.zorgVerlenerToevoegen').toggle();">Opslaan</a>
-               <a type="button" onclick="$('.zorgverlenerZoeken').toggle(); $('.zorgverlenerZoekResultaten').toggle(); $('#zorgverlenerBeheer').addClass('largeModal');" href="#" class="btn btn-primary pull-right zorgverlenerZoekResultaten">Zoeken</a>
+            <div class="buttons pageOne">
+               <a type="button" data-dismiss="modal" aria-hidden="true" href="javascript:void(0);" class="btn pull-left">Sluiten</a>
+               <a type="button" href="javascript:void(0);" class="btn btn-primary pull-right" id="zoeken">Zoeken</a>
+            </div>
+            <div class="buttons pageTwo" style="display: none;">
+               <a type="button" href="javascript:void(0);" class="btn pull-left" id="terug">Terug</a>
+               <a type="button" href="javascript:void(0);" class="btn btn-primary pull-right" id="toevoegen">Toevoegen</a>
+            </div>
+            <div class="buttons pageThree" style="display: none;">
+               <a type="button" href="javascript:void(0);" class="btn pull-left" id="terug">Terug</a>
+               <a type="button" href="javascript:void(0);" class="btn btn-primary pull-right" id="opslaan">Opslaan</a>
             </div>
           </div>
-       </div>      
+       </div>
+
 
    <!-- Geladen javascripts -->
    <script type="text/javascript" src="assets/js/libs/jquery/jquery.mousewheel.js"></script>

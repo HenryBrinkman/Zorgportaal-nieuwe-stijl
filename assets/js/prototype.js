@@ -174,3 +174,50 @@ function loginscreenBackground(status) {
         $('body').removeClass('loginScreenBackground');
     }
 }
+
+function modalButtons(page) {
+    // Algemene variable voor geselecteerde pagina
+    var selectedModal = $('#' + page);
+
+    // Buttons
+    selectedModal.modal();
+    selectedModal.find('#zoeken').click(function(e) {
+        $('.pageOne').hide();
+        $('.pageTwo').show();
+        selectedModal.addClass('largeModal');
+    });
+    selectedModal.find('.pageTwo').find('#terug').click(function(e) {
+        $('.pageOne').show();
+        $('.pageTwo').hide();
+        selectedModal.removeClass('largeModal');
+    });
+    selectedModal.find('#toevoegen').click(function(e) {
+        $(".pageTwo").hide();
+        $('.pageThree').show();
+    });
+    selectedModal.find('.pageThree').find('#terug').click(function(e) {
+        $(".pageTwo").show();
+        $('.pageThree').hide();
+    });
+    selectedModal.find('#opslaan').click(function(e) {
+        alert('opgeslagen');
+    });
+
+    // BreadCrumbs
+    selectedModal.find('.breadCrumbs').children(".zoeken").click(function(e) {
+        $('.pageOne').show();
+        $('.pageTwo').hide();
+        $('.pageThree').hide();
+        selectedModal.removeClass('largeModal');
+    });
+    selectedModal.find('.breadCrumbs').children(".zoekresultaten").click(function(e) {
+        $('.pageOne').hide();
+        $('.pageTwo').show();
+        $('.pageThree').hide();
+    });
+    selectedModal.find('.breadCrumbs').children(".toevoegen").click(function(e) {
+        $('.pageOne').hide();
+        $('.pageTwo').hide();
+        $('.pageThree').show();
+    });
+}
