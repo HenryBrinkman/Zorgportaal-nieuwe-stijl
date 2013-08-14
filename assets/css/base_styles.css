@@ -2652,9 +2652,9 @@ h3.form-sub-header {
 /* line 341, ../sass/shared/_forms.scss */
 h4.form-sub-header {
   margin: 0;
-  color: #555555;
+  color: #666666;
   line-height: 18px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 /* line 347, ../sass/shared/_forms.scss */
@@ -3257,18 +3257,29 @@ table.palette td.buttons .icon {
 .breadCrumbArrow {
   pointer: cursor;
   float: left;
-  margin: 1px 0 10px -20px;
-  height: 40px;
+  margin: 0 0 10px -23px;
+  height: 45px;
   width: 140px;
   display: block;
   font-size: 10px;
-  background: url("../images/buttons/breadCrumb.png") no-repeat;
+  background: url("../images/buttons/breadcrumbs/Breadcrumb-nth.svg") 140px 40px no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
 }
 /* line 25, ../sass/shared/_buttons.scss */
 .breadCrumbArrow:first-child {
   margin: 0;
 }
-/* line 36, ../sass/shared/_buttons.scss */
+/* line 38, ../sass/shared/_buttons.scss */
+.breadCrumbArrow:hover {
+  background: url("../images/buttons/breadcrumbs/Breadcrumb-nthHover.svg") 140px 40px no-repeat;
+  background-position: 0 0;
+}
+/* line 41, ../sass/shared/_buttons.scss */
+.breadCrumbArrow:hover span {
+  color: #FFFFFF;
+}
+/* line 45, ../sass/shared/_buttons.scss */
 .breadCrumbArrow span {
   width: 130px;
   float: left;
@@ -3277,31 +3288,47 @@ table.palette td.buttons .icon {
   margin-top: 8px;
   margin-left: 3px;
 }
-/* line 44, ../sass/shared/_buttons.scss */
+/* line 53, ../sass/shared/_buttons.scss */
 .breadCrumbArrow.first {
-  background: url("../images/buttons/breadCrumbFirst.png") no-repeat;
+  background: url("../images/buttons/breadcrumbs/Breadcrumb-first.svg") 140px 40px no-repeat;
+  background-position: 0 0;
 }
-/* line 46, ../sass/shared/_buttons.scss */
+/* line 56, ../sass/shared/_buttons.scss */
 .breadCrumbArrow.first span {
   margin-top: 10px;
   margin-left: 0;
 }
-/* line 51, ../sass/shared/_buttons.scss */
-.breadCrumbArrow.active {
-  background: url("../images/buttons/breadCrumbActive.png") no-repeat;
-  margin-top: 1px;
+/* line 60, ../sass/shared/_buttons.scss */
+.breadCrumbArrow.first:hover {
+  background: url("../images/buttons/breadcrumbs/Breadcrumb-firstHover.svg") 140px 40px no-repeat;
+  background-position: 0 0;
 }
-/* line 54, ../sass/shared/_buttons.scss */
+/* line 65, ../sass/shared/_buttons.scss */
+.breadCrumbArrow.active {
+  background: url("../images/buttons/breadcrumbs/Breadcrumb-nthActive.svg") 140px 40px no-repeat;
+  background-position: 0 0;
+}
+/* line 68, ../sass/shared/_buttons.scss */
 .breadCrumbArrow.active span {
   color: #FFF;
 }
-/* line 57, ../sass/shared/_buttons.scss */
-.breadCrumbArrow.active.first {
-  background: url("../images/buttons/breadCrumbFirstActive.png") no-repeat;
+/* line 71, ../sass/shared/_buttons.scss */
+.breadCrumbArrow.active:hover {
+  background: url("../images/buttons/breadcrumbs/Breadcrumb-nthActiveHover.svg") 140px 40px no-repeat;
+  background-position: 0 0;
 }
-/* line 59, ../sass/shared/_buttons.scss */
+/* line 75, ../sass/shared/_buttons.scss */
+.breadCrumbArrow.active.first {
+  background: url("../images/buttons/breadcrumbs/Breadcrumb-firstActive.svg") 140px 40px no-repeat;
+  background-position: 0 0;
+}
+/* line 78, ../sass/shared/_buttons.scss */
 .breadCrumbArrow.active.first span {
   color: #FFF;
+}
+/* line 81, ../sass/shared/_buttons.scss */
+.breadCrumbArrow.active.first:hover {
+  background: url("../images/buttons/breadcrumbs/Breadcrumb-firstActiveHover.svg") no-repeat;
 }
 
 /* line 2, ../sass/shared/_modals.scss */
@@ -3314,6 +3341,13 @@ table.palette td.buttons .icon {
   min-height: 50px;
   border-bottom: 1px solid #eee;
   margin-bottom: 10px;
+}
+
+/* line 13, ../sass/shared/_modals.scss */
+hr {
+  margin: 10px 0 15px 0;
+  border-top: 1px solid #bbbbbb;
+  border-bottom: 1px solid transparent;
 }
 
 /* Load sections */

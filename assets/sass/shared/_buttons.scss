@@ -27,12 +27,21 @@
 	}
 	pointer: cursor;
 	float: left;
-	margin: 1px 0 10px -20px;
-	height: 40px;
+	margin: 0 0 10px -23px;
+	height: 45px;
 	width: 140px;
 	display: block;
 	font-size: $fontSizeMini;
-	background: url("../images/buttons/breadCrumb.png") no-repeat;
+	background: url("../images/buttons/breadcrumbs/Breadcrumb-nth.svg") 140px 40px no-repeat;
+	background-position: 0 0;
+	cursor: pointer;
+	&:hover {
+		background: url("../images/buttons/breadcrumbs/Breadcrumb-nthHover.svg") 140px 40px no-repeat;
+		background-position: 0 0;
+		span {
+			color: #FFFFFF;
+		}
+	}
 	span {
 		width: 130px;
 		float:left;
@@ -42,22 +51,35 @@
 		margin-left: 3px;
 	}
 	&.first {
-		background: url("../images/buttons/breadCrumbFirst.png") no-repeat;
+		background: url("../images/buttons/breadcrumbs/Breadcrumb-first.svg") 140px 40px no-repeat;
+		background-position: 0 0;
 		span {
 			margin-top: 10px;
 			margin-left: 0;
 		}
+		&:hover {
+			background: url("../images/buttons/breadcrumbs/Breadcrumb-firstHover.svg") 140px 40px no-repeat;
+			background-position: 0 0;
+		}
 	}
 	&.active {
-		background: url("../images/buttons/breadCrumbActive.png") no-repeat;
-		margin-top: 1px;
+		background: url("../images/buttons/breadcrumbs/Breadcrumb-nthActive.svg") 140px 40px no-repeat;
+		background-position: 0 0;
 		span {
 			color: #FFF;
 		}
+		&:hover {
+			background: url("../images/buttons/breadcrumbs/Breadcrumb-nthActiveHover.svg") 140px 40px no-repeat;
+			background-position: 0 0;
+		}
 		&.first {
-			background: url("../images/buttons/breadCrumbFirstActive.png") no-repeat;
+			background: url("../images/buttons/breadcrumbs/Breadcrumb-firstActive.svg") 140px 40px no-repeat;
+			background-position: 0 0;
 			span {
 				color: #FFF;
+			}
+			&:hover {
+				background: url("../images/buttons/breadcrumbs/Breadcrumb-firstActiveHover.svg") no-repeat;
 			}
 		}
 	}
