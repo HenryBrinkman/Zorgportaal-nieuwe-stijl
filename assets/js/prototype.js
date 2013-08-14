@@ -179,25 +179,46 @@ function modalButtons(page) {
     // Algemene variable voor geselecteerde pagina
     var selectedModal = $('#' + page);
 
-    // Buttons
+    // Algemene modal pages
+    var firstPage = selectedModal.find('.pageOne');
+    var secondPage = selectedModal.find('.pageTwo');
+    var thirdPage = selectedModal.find('.pageThree');
+
+    // Modal
     selectedModal.modal();
+
+    if (page == 'logging') {
+        selectedModal.addClass('largeModal');
+    }
+
+    //Buttons
     selectedModal.find('#zoeken').click(function(e) {
-        $('.pageOne').hide();
-        $('.pageTwo').show();
+        firstPage.hide();
+        secondPage.show();
         selectedModal.addClass('largeModal');
     });
     selectedModal.find('.pageTwo').find('#terug').click(function(e) {
-        $('.pageOne').show();
-        $('.pageTwo').hide();
-        selectedModal.removeClass('largeModal');
+        firstPage.show();
+        secondPage.hide();
+        if (page == 'logging') {
+            return false;
+        } else {
+            selectedModal.removeClass('largeModal');
+        }
     });
     selectedModal.find('#toevoegen').click(function(e) {
-        $(".pageTwo").hide();
-        $('.pageThree').show();
+        secondPage.hide();
+        thirdPage.show();
+        if (page == 'zorgaanbiederBeheer' || page == 'dienstenbeheer') {
+            selectedModal.removeClass('largeModal');
+        }
     });
     selectedModal.find('.pageThree').find('#terug').click(function(e) {
-        $(".pageTwo").show();
-        $('.pageThree').hide();
+        secondPage.show();
+        thirdPage.hide();
+        if (page == 'zorgaanbiederBeheer') {
+            selectedModal.addClass('largeModal');
+        }
     });
     selectedModal.find('#opslaan').click(function(e) {
         alert('opgeslagen');
@@ -205,19 +226,26 @@ function modalButtons(page) {
 
     // BreadCrumbs
     selectedModal.find('.breadCrumbs').children(".zoeken").click(function(e) {
-        $('.pageOne').show();
-        $('.pageTwo').hide();
-        $('.pageThree').hide();
-        selectedModal.removeClass('largeModal');
+        firstPage.show();
+        secondPage.hide();
+        thirdPage.hide();
+        if (page == 'logging') {
+            return false;
+        } else {
+            selectedModal.removeClass('largeModal');
+        }
     });
     selectedModal.find('.breadCrumbs').children(".zoekresultaten").click(function(e) {
-        $('.pageOne').hide();
-        $('.pageTwo').show();
-        $('.pageThree').hide();
+        firstPage.hide();
+        secondPage.show();
+        thirdPage.hide();
+        if (page == 'zorgaanbiederBeheer' || page == 'dienstenbeheer') {
+            selectedModal.addClass('largeModal');
+        }
     });
     selectedModal.find('.breadCrumbs').children(".toevoegen").click(function(e) {
-        $('.pageOne').hide();
-        $('.pageTwo').hide();
-        $('.pageThree').show();
+        firstPage.hide();
+        secondPage.hide();
+        thirdPage.show();
     });
 }
