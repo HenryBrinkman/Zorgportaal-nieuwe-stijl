@@ -14,14 +14,11 @@
                         <span class="notification-new" style="display: block;">5</span>
                         <i class="icon-info-sign"></i>Notificaties 
                      </button>
-                     <button id="settings" class="btn">
+                     <button id="settings" class="btn dropdown-toggle group-toggle-left" id="beheerdropdown" data-toggle="dropdown" data-target="beheerDropdownTarget">
                         <i class="icon-settings"></i>Opties
                      </button>
-                     <button class="btn dropdown-toggle group-toggle-left" id="drop2" data-toggle="dropdown">
-                        <i class="icon-help"></i>Help
-                     </button>
-                     <ul class="dropdown-menu" aria-labelledby="drop2">
-                        <li><a  href="#">Faqs</a></li>
+                     <ul class="dropdown-menu beheerDropdownTarget" aria-labelledby="drop3">
+                        <li><a href="javascript:void(0);" onclick="fullscreen('', 'aid', 'zorgverlenerbeheer');">Zorgverlener beheer</a></li>
                         <li><a href="#">Teamviewer</a></li>
                         <li><a href="#">Mail</a></li>
                         <li><a href="#" onclick="$('.instructions').show();">Instructies</a></li>

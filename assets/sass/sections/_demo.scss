@@ -7,7 +7,6 @@ html {
 
 body {
 	height: 100%;
-	overflow: hidden;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -46,9 +45,12 @@ body {
 
 #header-container {
 	margin-top: 25px;
-	> img {
+	> .protopics-logo {
 		margin: 0;
-		height: 55px;
+		height: 72px;
+		width: 272px;
+		background-size: 272px 72px;
+		background-image: url("../images/logos/protopics-logo.png");
 	}
 }
 
@@ -205,6 +207,7 @@ iframe {
 }
 
 #loadContent {
+	overflow: auto;
 	#everwijzen {
 		img {
 			margin-left: 50px;
@@ -346,6 +349,18 @@ iframe {
 }
 
 // Dropdown-toggles buttongroup
-.group-toggle-left {
+.group-toggle {
 	margin-right: -2px;
+	margin-left: -2px;
+	.btn {
+		@include border-radius(0px);
+	}
+	.ul {
+		.li {
+			a {
+				color: #333333;
+				display: block;
+			}
+		}
+	}	
 }

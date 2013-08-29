@@ -56,6 +56,7 @@ function pageReady(page){
 			initSidenav('nieuws');
 			hideSideNav('start');
 			loginscreenBackground(false);
+			scaleSideNav();
 			break;
 		case "pages/e-verwijzen":
 			// Weergave fullscreenTransitie
@@ -65,6 +66,7 @@ function pageReady(page){
 			hideSideNav('start');
 			// Weergave actieve applicaties
 			initSelected('e-verwijzen');
+			scaleSideNav();
 			break;
 		case "pages/orders":
 			// Weergave actieve applicaties
@@ -74,6 +76,7 @@ function pageReady(page){
 			// Weergave Side-nav
 			initSidenav('orders');
 			hideSideNav('start');
+			scaleSideNav();
 			break;
 		case "pages/resultaten":
 			// Weergave actieve applicaties
@@ -83,6 +86,7 @@ function pageReady(page){
 			// Weergave Side-nav
 			initSidenav('resultaten');
 			hideSideNav('start');
+			scaleSideNav();
 			break;
 		case "pages/aanvragen":
 			// Weergave actieve applicaties
@@ -92,6 +96,7 @@ function pageReady(page){
 			// Weergave Side-nav
 			initSidenav('aanvragen');
 			hideSideNav('start');
+			scaleSideNav();
 			break;
 		case "pages/homepage":			
 			// Weergave actieve applicaties
@@ -110,6 +115,27 @@ function pageReady(page){
 			hideSideNav('stop');
 			uitklappenFolder();
 			dragndrop();
+			$('body').removeClass('loginScreenBackground');
+			break;
+		case "pages/zorgverlenerbeheer":
+			// Weergave actieve applicaties
+			initSelected('zorgverlenerbeheer');
+			// Weergave fullscreenTransitie
+			hideTransition();
+			// Weergave Side-nav
+			initSidenav('zorgverlenerbeheer');
+			hideSideNav('start');
+			scaleSideNav();
+			break;
+		case "pages/zorgverlenerbeheerToevoegen":
+			// Weergave actieve applicaties
+			initSelected('zorgverlenerbeheer');
+			// Weergave fullscreenTransitie
+			hideTransition();
+			// Weergave Side-nav
+			initSidenav('zorgverlenerbeheer');
+			hideSideNav('start');
+			scaleSideNav();
 			break;
 		default:
 			hideSideNav('stop');
@@ -117,3 +143,17 @@ function pageReady(page){
 			//notifications();
 	}
 }
+
+function scaleSideNav() {
+	var contentSize = $('#loadContent').height();
+	var sideNavSize = $('.side-nav').height();
+
+	if (sideNavSize <= contentSize) {
+		$('.side-nav').css('height', contentSize + 'px');	
+	} else {
+		$('.side-nav').css('height', '100%');
+	}
+}
+$(window).resize(function() {
+	scaleSideNav();
+});

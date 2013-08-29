@@ -5,11 +5,11 @@
             <div class="span12">
                <div class="span8 collapsible">
                   <div id="header-container">
-                     <img src="assets/images/logos/protopics-logo.png" />
+                     <div class="protopics-logo"></div>
                   </div>
                </div>
                <div class="span4">
-                  <div id="top-info" class="navbarButtons pull-right btn-group dropdown">
+                  <div id="top-info" class="navbarButtons pull-right btn-group">
                      <button class="btn btn-notification" onclick="toggleNotifications();">
                         <span class="notification-new" style="display: block;">5</span>
                         <i class="icon-info-sign"></i>Notificaties 
@@ -17,16 +17,30 @@
                      <button id="settings" class="btn">
                         <i class="icon-settings"></i>Opties
                      </button>
-                     <button class="btn dropdown-toggle group-toggle-left" id="drop2" data-toggle="dropdown">
-                        <i class="icon-help"></i>Help
-                     </button>
-                     <ul class="dropdown-menu" aria-labelledby="drop2">
-                        <li><a  href="#">Faqs</a></li>
-                        <li><a href="#">Teamviewer</a></li>
-                        <li><a href="#">Mail</a></li>
-                        <li><a href="#" onclick="$('.instructions').show();">Instructies</a></li>
-                        <li><a href="#elearning" role="button" data-toggle="modal">E-learning</a></li>
+                     <ul class="dropdown dropdown-btn group-toggle">
+                        <button class="btn dropdown-toggle" id="drop2" data-toggle="dropdown">
+                           <i class="icon-cogs"></i>Beheer
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="drop2">
+                           <li><a  href="#">Faqs</a></li>
+                           <li><a href="#">Teamviewer</a></li>
+                           <li><a href="#">Mail</a></li>
+                           <li><a href="#" onclick="$('.instructions').show();">Instructies</a></li>
+                           <li><a href="#elearning" role="button" data-toggle="modal">E-learning</a></li>
+                        </ul>
                      </ul>
+                     <span class="dropdown dropdown-btn group-toggle">
+                        <button class="btn dropdown-toggle" id="drop2" data-toggle="dropdown">
+                           <i class="icon-help"></i>Help
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="drop2">
+                           <li><a  href="#">Faqs</a></li>
+                           <li><a href="#">Teamviewer</a></li>
+                           <li><a href="#">Mail</a></li>
+                           <li><a href="#" onclick="$('.instructions').show();">Instructies</a></li>
+                           <li><a href="#elearning" role="button" data-toggle="modal">E-learning</a></li>
+                        </ul>
+                     </span>
                      <button class="btn">
                         <i class="icon-exit"></i>Uitloggen
                      </button>
@@ -110,7 +124,7 @@
                               </p>
                            </div>
                         </li>
-                        <li class="tile app applicatie bg-color-blue">
+                        <li class="tile app applicatie bg-color-blue inactive">
                            <div class="tile-icon">
                               <i class="icon-lab"></i>
                               <h2>Dienst 3</h2>

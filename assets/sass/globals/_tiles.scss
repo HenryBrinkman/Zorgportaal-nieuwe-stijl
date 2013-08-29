@@ -32,7 +32,7 @@
 
 .bg-color-izit-green {
 	@include background-image(linear-gradient(top, $tileIZITGreenGradient1 0%, $tileIZITGreenGradient2 100%));
-}
+} 
 
 .bg-color-overlay {
 	background: $tileOverlayColorDarken;
@@ -66,6 +66,15 @@
 	   text-decoration: none;
 	   @include border-radius(5px);
 	   @include box-shadow(rgba(#666666, 1) 2px 2px 5px);
+	   &.inactive {
+	   		@include background-image(linear-gradient(top, $darkestGrey 0%, $darkGrey 100%));
+	   		color: $mainGrey;
+	   		cursor: default;
+	   		h2 {
+	   			font-style: italic;
+	   			color: $darkerGrey;
+	   		}
+	   }
    }
    .tile:hover {
    		outline: 0px $tileBorderMain solid;

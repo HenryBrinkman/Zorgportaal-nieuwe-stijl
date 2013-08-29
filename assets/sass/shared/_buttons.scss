@@ -65,7 +65,7 @@
 	&.active {
 		background: url("../images/buttons/breadcrumbs/Breadcrumb-nthActive.svg") 140px 40px no-repeat;
 		background-position: 0 0;
-		span {
+		> span {
 			color: #FFF;
 		}
 		&:hover {

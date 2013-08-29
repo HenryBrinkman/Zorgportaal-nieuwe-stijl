@@ -12,3 +12,39 @@
 .bg-color-izit-green {
 	background: $tileIZITGreenGradient1;
 }
+.bg-color-blue {
+   background: $tileBlueGradient1;
+}
+
+.bg-color-green {
+   background: $tileGreenGradient1;
+}
+
+.bg-color-red {
+   background: $tileRedGradient1;
+}
+
+.bg-color-orange {
+   background: $tileOrangeGradient1;
+}
+
+.bg-color-purple {
+   background: $tilePurpleGradient1;
+}
+.metro {
+   .tile {
+	   &.inactive {
+	   		background: $darkestGrey;
+	   		color: $mainGrey;
+	   		cursor: default;
+	   		h2 {
+	   			font-style: italic;
+	   			color: $darkerGrey;
+	   		}
+	   }
+   }
+}
+
+.modal-header {
+	background: $tileBlueGradient1;
+}

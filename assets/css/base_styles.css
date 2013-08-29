@@ -535,7 +535,9 @@ table {
 /* Light Blue */
 /* Dark blue */
 /* Dark greenish blue */
+/* Very dark grey */
 /* Dark grey */
+/* Darker grey */
 /* Light grey */
 /* Grey */
 /* -----------------------------------
@@ -656,6 +658,48 @@ table {
   background: #b1c541;
 }
 
+/* line 15, ../sass/globals/_ie.scss */
+.bg-color-blue {
+  background: #00bdfd;
+}
+
+/* line 19, ../sass/globals/_ie.scss */
+.bg-color-green {
+  background: #00b45b;
+}
+
+/* line 23, ../sass/globals/_ie.scss */
+.bg-color-red {
+  background: #d81d51;
+}
+
+/* line 27, ../sass/globals/_ie.scss */
+.bg-color-orange {
+  background: #fc9100;
+}
+
+/* line 31, ../sass/globals/_ie.scss */
+.bg-color-purple {
+  background: #7d4df3;
+}
+
+/* line 36, ../sass/globals/_ie.scss */
+.metro .tile.inactive, .metro .folderContent .inactive.tilefolder, .folderContent .metro .inactive.tilefolder {
+  background: #888888;
+  color: #333333;
+  cursor: default;
+}
+/* line 40, ../sass/globals/_ie.scss */
+.metro .tile.inactive h2, .metro .folderContent .inactive.tilefolder h2, .folderContent .metro .inactive.tilefolder h2 {
+  font-style: italic;
+  color: #bebebe;
+}
+
+/* line 48, ../sass/globals/_ie.scss */
+.modal-header {
+  background: #00bdfd;
+}
+
 /* Load layout */
 /* -----------------------------------  
    Zorgportaal Tiles
@@ -769,7 +813,22 @@ table {
   -moz-box-shadow: #666666 2px 2px 5px;
   box-shadow: #666666 2px 2px 5px;
 }
-/* line 70, ../sass/globals/_tiles.scss */
+/* line 69, ../sass/globals/_tiles.scss */
+.metro .tile.inactive, .metro .folderContent .inactive.tilefolder, .folderContent .metro .inactive.tilefolder {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #888888), color-stop(100%, #555555));
+  background-image: -webkit-linear-gradient(top, #888888 0%, #555555 100%);
+  background-image: -moz-linear-gradient(top, #888888 0%, #555555 100%);
+  background-image: -o-linear-gradient(top, #888888 0%, #555555 100%);
+  background-image: linear-gradient(top, #888888 0%, #555555 100%);
+  color: #333333;
+  cursor: default;
+}
+/* line 73, ../sass/globals/_tiles.scss */
+.metro .tile.inactive h2, .metro .folderContent .inactive.tilefolder h2, .folderContent .metro .inactive.tilefolder h2 {
+  font-style: italic;
+  color: #bebebe;
+}
+/* line 79, ../sass/globals/_tiles.scss */
 .metro .tile:hover, .metro .folderContent .tilefolder:hover, .folderContent .metro .tilefolder:hover {
   outline: 0px #999999 solid;
   -webkit-border-radius: 5px;
@@ -778,20 +837,20 @@ table {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 74, ../sass/globals/_tiles.scss */
+/* line 83, ../sass/globals/_tiles.scss */
 .metro .metro-sections {
   height: auto;
   position: relative;
   overflow: hidden;
   width: 10000px;
 }
-/* line 79, ../sass/globals/_tiles.scss */
+/* line 88, ../sass/globals/_tiles.scss */
 .metro .metro-sections h2 {
   margin-left: 5px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
-/* line 84, ../sass/globals/_tiles.scss */
+/* line 93, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section {
   position: relative;
   float: left;
@@ -801,7 +860,7 @@ table {
   margin-right: 75px;
 }
 
-/* line 95, ../sass/globals/_tiles.scss */
+/* line 104, ../sass/globals/_tiles.scss */
 .scroll {
   -webkit-transition: left 0.6s ease;
   /* here the animation is set on 5 seconds */
@@ -813,49 +872,49 @@ table {
 /* -----------------------------------  
    Default Metro Sections
 ----------------------------------- */
-/* line 105, ../sass/globals/_tiles.scss */
+/* line 114, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-1 {
   width: 160px;
   margin-left: 0;
 }
 
-/* line 106, ../sass/globals/_tiles.scss */
+/* line 115, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-2 {
   width: 320px;
   margin-left: 0;
 }
 
-/* line 107, ../sass/globals/_tiles.scss */
+/* line 116, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-3 {
   width: 480px;
   margin-left: 0;
 }
 
-/* line 108, ../sass/globals/_tiles.scss */
+/* line 117, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-4 {
   width: 640px;
   margin-left: 0;
 }
 
-/* line 109, ../sass/globals/_tiles.scss */
+/* line 118, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-5 {
   width: 640px;
   margin-left: 0;
 }
 
-/* line 110, ../sass/globals/_tiles.scss */
+/* line 119, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-6 {
   width: 800px;
   margin-left: 0;
 }
 
-/* line 111, ../sass/globals/_tiles.scss */
+/* line 120, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-7 {
   width: 960px;
   margin-left: 0;
 }
 
-/* line 112, ../sass/globals/_tiles.scss */
+/* line 121, ../sass/globals/_tiles.scss */
 .metro .metro-sections .metro-section.tile-span-8 {
   width: 1120px;
   margin-left: 0;
@@ -864,13 +923,13 @@ table {
 /* -----------------------------------  
    Tile templates
 ----------------------------------- */
-/* line 120, ../sass/globals/_tiles.scss */
+/* line 129, ../sass/globals/_tiles.scss */
 .metro .tile.app, .metro .folderContent .app.tilefolder, .folderContent .metro .app.tilefolder, .metro .folderContent .tilefolder.appfolder, .folderContent .metro .tilefolder.appfolder, .metro .folderContent .tile.tilefolder.appfolder, .folderContent .metro .tile.tilefolder.appfolder {
   /* Default tile */
   width: 150px;
   height: 150px;
 }
-/* line 123, ../sass/globals/_tiles.scss */
+/* line 132, ../sass/globals/_tiles.scss */
 .metro .tile.app .image-wrapper, .metro .folderContent .app.tilefolder .image-wrapper, .folderContent .metro .app.tilefolder .image-wrapper, .metro .folderContent .tilefolder.appfolder .image-wrapper, .folderContent .metro .tilefolder.appfolder .image-wrapper {
   display: block;
   margin-top: 20px;
@@ -878,13 +937,13 @@ table {
   text-align: center;
   vertical-align: middle;
 }
-/* line 129, ../sass/globals/_tiles.scss */
+/* line 138, ../sass/globals/_tiles.scss */
 .metro .tile.app .image-wrapper img, .metro .folderContent .app.tilefolder .image-wrapper img, .folderContent .metro .app.tilefolder .image-wrapper img, .metro .folderContent .tilefolder.appfolder .image-wrapper img, .folderContent .metro .tilefolder.appfolder .image-wrapper img {
   max-width: 80px;
   max-height: 80px;
   margin: 0 auto;
 }
-/* line 135, ../sass/globals/_tiles.scss */
+/* line 144, ../sass/globals/_tiles.scss */
 .metro .tile.app .tile-icon, .metro .folderContent .app.tilefolder .tile-icon, .folderContent .metro .app.tilefolder .tile-icon, .metro .folderContent .tilefolder.appfolder .tile-icon, .folderContent .metro .tilefolder.appfolder .tile-icon {
   display: block;
   width: 150px;
@@ -894,20 +953,20 @@ table {
   text-align: center;
   vertical-align: middle;
 }
-/* line 143, ../sass/globals/_tiles.scss */
+/* line 152, ../sass/globals/_tiles.scss */
 .metro .tile.app .tile-icon i, .metro .folderContent .app.tilefolder .tile-icon i, .folderContent .metro .app.tilefolder .tile-icon i, .metro .folderContent .tilefolder.appfolder .tile-icon i, .folderContent .metro .tilefolder.appfolder .tile-icon i {
   font-size: 40px;
   margin-left: -28px;
   margin-bottom: 10px;
 }
-/* line 148, ../sass/globals/_tiles.scss */
+/* line 157, ../sass/globals/_tiles.scss */
 .metro .tile.app .tile-icon h2, .metro .folderContent .app.tilefolder .tile-icon h2, .folderContent .metro .app.tilefolder .tile-icon h2, .metro .folderContent .tilefolder.appfolder .tile-icon h2, .folderContent .metro .tilefolder.appfolder .tile-icon h2 {
   font-size: 12px;
   font-weight: 300;
   margin: 0;
   padding: 0;
 }
-/* line 155, ../sass/globals/_tiles.scss */
+/* line 164, ../sass/globals/_tiles.scss */
 .metro .tile.app .tile-notification, .metro .folderContent .app.tilefolder .tile-notification, .folderContent .metro .app.tilefolder .tile-notification, .metro .folderContent .tilefolder.appfolder .tile-notification, .folderContent .metro .tilefolder.appfolder .tile-notification {
   position: absolute;
   bottom: 0;
@@ -915,23 +974,23 @@ table {
   height: 30px;
   padding: 2px 10px;
 }
-/* line 161, ../sass/globals/_tiles.scss */
+/* line 170, ../sass/globals/_tiles.scss */
 .metro .tile.app .tile-notification p, .metro .folderContent .app.tilefolder .tile-notification p, .folderContent .metro .app.tilefolder .tile-notification p, .metro .folderContent .tilefolder.appfolder .tile-notification p, .folderContent .metro .tilefolder.appfolder .tile-notification p {
   margin: 5px 0 0 0;
   padding: 0;
 }
-/* line 165, ../sass/globals/_tiles.scss */
+/* line 174, ../sass/globals/_tiles.scss */
 .metro .tile.app .tile-notification i, .metro .folderContent .app.tilefolder .tile-notification i, .folderContent .metro .app.tilefolder .tile-notification i, .metro .folderContent .tilefolder.appfolder .tile-notification i, .folderContent .metro .tilefolder.appfolder .tile-notification i {
   float: right;
   margin-right: 20px;
 }
-/* line 171, ../sass/globals/_tiles.scss */
+/* line 180, ../sass/globals/_tiles.scss */
 .metro .tile.wide, .metro .folderContent .wide.tilefolder, .folderContent .metro .wide.tilefolder {
   /* Two tiles wide */
   width: 310px;
   height: 150px;
 }
-/* line 174, ../sass/globals/_tiles.scss */
+/* line 183, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideTitle, .metro .folderContent .wide.tilefolder .sideTitle, .folderContent .metro .wide.tilefolder .sideTitle {
   width: 75px;
   height: 150px;
@@ -941,7 +1000,7 @@ table {
   -moz-box-shadow: #666666 1px 0px 4px;
   box-shadow: #666666 1px 0px 4px;
 }
-/* line 180, ../sass/globals/_tiles.scss */
+/* line 189, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideTitle h1, .metro .folderContent .wide.tilefolder .sideTitle h1, .folderContent .metro .wide.tilefolder .sideTitle h1 {
   color: white;
   text-align: center;
@@ -950,13 +1009,13 @@ table {
   margin: 5px 0 0 0;
   padding: 0;
 }
-/* line 188, ../sass/globals/_tiles.scss */
+/* line 197, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideTitle i, .metro .folderContent .wide.tilefolder .sideTitle i, .folderContent .metro .wide.tilefolder .sideTitle i {
   font-size: 40px;
   text-align: center;
   margin: 50px 0 0 20px;
 }
-/* line 194, ../sass/globals/_tiles.scss */
+/* line 203, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideBody, .metro .folderContent .wide.tilefolder .sideBody, .folderContent .metro .wide.tilefolder .sideBody {
   width: 232px;
   height: 150px;
@@ -970,7 +1029,7 @@ table {
   background-image: -o-linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
   background-image: linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
 }
-/* line 202, ../sass/globals/_tiles.scss */
+/* line 211, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideBody .SideWideItem, .metro .folderContent .wide.tilefolder .sideBody .SideWideItem, .folderContent .metro .wide.tilefolder .sideBody .SideWideItem {
   width: 215px;
   height: 35px;
@@ -979,16 +1038,16 @@ table {
   display: block;
   border-bottom: solid 1px #AAAAAA;
 }
-/* line 209, ../sass/globals/_tiles.scss */
+/* line 218, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideBody .SideWideItem p, .metro .folderContent .wide.tilefolder .sideBody .SideWideItem p, .folderContent .metro .wide.tilefolder .sideBody .SideWideItem p {
   margin: 0;
   font-size: 16px;
 }
-/* line 212, ../sass/globals/_tiles.scss */
+/* line 221, ../sass/globals/_tiles.scss */
 .metro .tile.wide .sideBody .SideWideItem p i, .metro .folderContent .wide.tilefolder .sideBody .SideWideItem p i, .folderContent .metro .wide.tilefolder .sideBody .SideWideItem p i {
   margin: 10px 0 0 0;
 }
-/* line 218, ../sass/globals/_tiles.scss */
+/* line 227, ../sass/globals/_tiles.scss */
 .metro .tile.wide .title, .metro .folderContent .wide.tilefolder .title, .folderContent .metro .wide.tilefolder .title {
   width: 310px;
   height: 40px;
@@ -999,7 +1058,7 @@ table {
   -moz-box-shadow: #666666 1px 0px 4px;
   box-shadow: #666666 1px 0px 4px;
 }
-/* line 225, ../sass/globals/_tiles.scss */
+/* line 234, ../sass/globals/_tiles.scss */
 .metro .tile.wide .title h1, .metro .folderContent .wide.tilefolder .title h1, .folderContent .metro .wide.tilefolder .title h1 {
   color: white;
   text-align: center;
@@ -1008,12 +1067,12 @@ table {
   margin: 0;
   padding: 0;
 }
-/* line 233, ../sass/globals/_tiles.scss */
+/* line 242, ../sass/globals/_tiles.scss */
 .metro .tile.wide .title i, .metro .folderContent .wide.tilefolder .title i, .folderContent .metro .wide.tilefolder .title i {
   font-size: 20px;
   margin-right: 10px;
 }
-/* line 238, ../sass/globals/_tiles.scss */
+/* line 247, ../sass/globals/_tiles.scss */
 .metro .tile.wide .body, .metro .folderContent .wide.tilefolder .body, .folderContent .metro .wide.tilefolder .body {
   width: 310px;
   height: 109px;
@@ -1026,35 +1085,35 @@ table {
   background-image: -o-linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
   background-image: linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
 }
-/* line 245, ../sass/globals/_tiles.scss */
+/* line 254, ../sass/globals/_tiles.scss */
 .metro .tile.wide .body .WideItem, .metro .folderContent .wide.tilefolder .body .WideItem, .folderContent .metro .wide.tilefolder .body .WideItem {
   color: #333333;
   padding: 0 10px;
   border-top: 1px solid #AAAAAA;
 }
-/* line 249, ../sass/globals/_tiles.scss */
+/* line 258, ../sass/globals/_tiles.scss */
 .metro .tile.wide .body .WideItem i, .metro .folderContent .wide.tilefolder .body .WideItem i, .folderContent .metro .wide.tilefolder .body .WideItem i {
   margin-left: 10px;
 }
-/* line 255, ../sass/globals/_tiles.scss */
+/* line 264, ../sass/globals/_tiles.scss */
 .metro .tile.squarepeek, .metro .folderContent .squarepeek.tilefolder, .folderContent .metro .squarepeek.tilefolder {
   /* Two tiles high */
   width: 150px;
   height: 300px;
 }
-/* line 258, ../sass/globals/_tiles.scss */
+/* line 267, ../sass/globals/_tiles.scss */
 .metro .tile.squarepeek .text-inner, .metro .folderContent .squarepeek.tilefolder .text-inner, .folderContent .metro .squarepeek.tilefolder .text-inner {
   width: 110px;
   height: 110px;
   padding: 20px;
 }
-/* line 264, ../sass/globals/_tiles.scss */
+/* line 273, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek, .metro .folderContent .widepeek.tilefolder, .folderContent .metro .widepeek.tilefolder {
   /* 2x2 tiles */
   width: 310px;
   height: 300px;
 }
-/* line 267, ../sass/globals/_tiles.scss */
+/* line 276, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .head, .metro .folderContent .widepeek.tilefolder .head, .folderContent .metro .widepeek.tilefolder .head {
   width: 310px;
   height: 50px;
@@ -1062,7 +1121,7 @@ table {
   -moz-box-shadow: #666666 0px 1px 4px;
   box-shadow: #666666 0px 1px 4px;
 }
-/* line 271, ../sass/globals/_tiles.scss */
+/* line 280, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .head h1, .metro .folderContent .widepeek.tilefolder .head h1, .folderContent .metro .widepeek.tilefolder .head h1 {
   color: white;
   text-align: center;
@@ -1072,7 +1131,7 @@ table {
   padding: 0;
   line-height: 48px;
 }
-/* line 281, ../sass/globals/_tiles.scss */
+/* line 290, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .body, .metro .folderContent .widepeek.tilefolder .body, .folderContent .metro .widepeek.tilefolder .body {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #e8e8e8));
   background-image: -webkit-linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
@@ -1085,7 +1144,7 @@ table {
   color: #333333;
   padding: 20px;
 }
-/* line 289, ../sass/globals/_tiles.scss */
+/* line 298, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideTitle, .metro .folderContent .widepeek.tilefolder .sideTitle, .folderContent .metro .widepeek.tilefolder .sideTitle {
   width: 75px;
   height: 300px;
@@ -1095,7 +1154,7 @@ table {
   -moz-box-shadow: #666666 1px 0px 4px;
   box-shadow: #666666 1px 0px 4px;
 }
-/* line 295, ../sass/globals/_tiles.scss */
+/* line 304, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideTitle h1, .metro .folderContent .widepeek.tilefolder .sideTitle h1, .folderContent .metro .widepeek.tilefolder .sideTitle h1 {
   color: white;
   text-align: center;
@@ -1104,13 +1163,13 @@ table {
   margin: 5px 0 0 0;
   padding: 0;
 }
-/* line 303, ../sass/globals/_tiles.scss */
+/* line 312, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideTitle i, .metro .folderContent .widepeek.tilefolder .sideTitle i, .folderContent .metro .widepeek.tilefolder .sideTitle i {
   font-size: 40px;
   text-align: center;
   margin: 125px 0 0 20px;
 }
-/* line 309, ../sass/globals/_tiles.scss */
+/* line 318, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideBody, .metro .folderContent .widepeek.tilefolder .sideBody, .folderContent .metro .widepeek.tilefolder .sideBody {
   width: 232px;
   height: 300px;
@@ -1124,7 +1183,7 @@ table {
   background-image: -o-linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
   background-image: linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
 }
-/* line 317, ../sass/globals/_tiles.scss */
+/* line 326, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideBody .SideWideItem, .metro .folderContent .widepeek.tilefolder .sideBody .SideWideItem, .folderContent .metro .widepeek.tilefolder .sideBody .SideWideItem {
   width: 215px;
   height: 35px;
@@ -1133,16 +1192,16 @@ table {
   display: block;
   border-bottom: solid 1px #AAAAAA;
 }
-/* line 324, ../sass/globals/_tiles.scss */
+/* line 333, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideBody .SideWideItem p, .metro .folderContent .widepeek.tilefolder .sideBody .SideWideItem p, .folderContent .metro .widepeek.tilefolder .sideBody .SideWideItem p {
   margin: 0;
   font-size: 16px;
 }
-/* line 327, ../sass/globals/_tiles.scss */
+/* line 336, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .sideBody .SideWideItem p i, .metro .folderContent .widepeek.tilefolder .sideBody .SideWideItem p i, .folderContent .metro .widepeek.tilefolder .sideBody .SideWideItem p i {
   margin: 10px 0 0 0;
 }
-/* line 333, ../sass/globals/_tiles.scss */
+/* line 342, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .title, .metro .folderContent .widepeek.tilefolder .title, .folderContent .metro .widepeek.tilefolder .title {
   width: 310px;
   height: 40px;
@@ -1153,7 +1212,7 @@ table {
   -moz-box-shadow: #666666 1px 0px 4px;
   box-shadow: #666666 1px 0px 4px;
 }
-/* line 340, ../sass/globals/_tiles.scss */
+/* line 349, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .title h1, .metro .folderContent .widepeek.tilefolder .title h1, .folderContent .metro .widepeek.tilefolder .title h1 {
   color: white;
   text-align: center;
@@ -1162,12 +1221,12 @@ table {
   margin: 0;
   padding: 0;
 }
-/* line 348, ../sass/globals/_tiles.scss */
+/* line 357, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .title i, .metro .folderContent .widepeek.tilefolder .title i, .folderContent .metro .widepeek.tilefolder .title i {
   font-size: 20px;
   margin-right: 10px;
 }
-/* line 353, ../sass/globals/_tiles.scss */
+/* line 362, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .body, .metro .folderContent .widepeek.tilefolder .body, .folderContent .metro .widepeek.tilefolder .body {
   width: 310px;
   height: 109px;
@@ -1180,49 +1239,49 @@ table {
   background-image: -o-linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
   background-image: linear-gradient(top, #fafafa 0%, #e8e8e8 100%);
 }
-/* line 360, ../sass/globals/_tiles.scss */
+/* line 369, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .body .WideItem, .metro .folderContent .widepeek.tilefolder .body .WideItem, .folderContent .metro .widepeek.tilefolder .body .WideItem {
   color: #333333;
   padding: 0 10px;
   border-top: 1px solid #AAAAAA;
 }
-/* line 364, ../sass/globals/_tiles.scss */
+/* line 373, ../sass/globals/_tiles.scss */
 .metro .tile.widepeek .body .WideItem i, .metro .folderContent .widepeek.tilefolder .body .WideItem i, .folderContent .metro .widepeek.tilefolder .body .WideItem i {
   margin-left: 10px;
 }
 
-/* line 373, ../sass/globals/_tiles.scss */
+/* line 382, ../sass/globals/_tiles.scss */
 .footer-container {
   margin-top: 5px;
 }
 
-/* line 377, ../sass/globals/_tiles.scss */
+/* line 386, ../sass/globals/_tiles.scss */
 .patient-pasfoto {
   width: 75px;
   height: 75px;
   display: block;
   float: left;
 }
-/* line 382, ../sass/globals/_tiles.scss */
+/* line 391, ../sass/globals/_tiles.scss */
 .patient-pasfoto i {
   margin: 45px 5px 5px 45px;
   text-align: right;
 }
 
-/* line 388, ../sass/globals/_tiles.scss */
+/* line 397, ../sass/globals/_tiles.scss */
 .patient-geslacht {
   width: 75px;
   height: 75px;
   display: block;
   float: left;
 }
-/* line 393, ../sass/globals/_tiles.scss */
+/* line 402, ../sass/globals/_tiles.scss */
 .patient-geslacht i {
   margin: 26px;
   text-align: center;
 }
 
-/* line 399, ../sass/globals/_tiles.scss */
+/* line 408, ../sass/globals/_tiles.scss */
 .patient-naam {
   width: 150px;
   height: 75px;
@@ -1230,11 +1289,11 @@ table {
   float: left;
   text-align: center;
 }
-/* line 405, ../sass/globals/_tiles.scss */
+/* line 414, ../sass/globals/_tiles.scss */
 .patient-naam h3 {
   margin: 4px 0 0 0;
 }
-/* line 408, ../sass/globals/_tiles.scss */
+/* line 417, ../sass/globals/_tiles.scss */
 .patient-naam p {
   margin: 0;
 }
@@ -2538,7 +2597,7 @@ input, textarea, select, .uneditable-input {
   bottom: -5px;
   width: 100%;
   height: 5px;
-  background: url(../images/bg-shade-corner.png) no-repeat bottom right;
+  background: url(../images/backgrounds/bg-shade-corner.png) no-repeat bottom right;
 }
 
 /* line 248, ../sass/shared/_forms.scss */
@@ -2550,7 +2609,7 @@ h2.form-title {
 
 /* line 254, ../sass/shared/_forms.scss */
 .form-section {
-  margin: 0 5px 10px 0;
+  margin: 10px 5px 10px 0;
 }
 /* line 256, ../sass/shared/_forms.scss */
 .form-section .form-container {
@@ -2660,7 +2719,7 @@ h4.form-sub-header {
 /* line 347, ../sass/shared/_forms.scss */
 h5.form-sub-header {
   margin: 0 0 20px 0;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 18px;
   color: #555555;
 }
@@ -3309,7 +3368,7 @@ table.palette td.buttons .icon {
   background-position: 0 0;
 }
 /* line 68, ../sass/shared/_buttons.scss */
-.breadCrumbArrow.active span {
+.breadCrumbArrow.active > span {
   color: #FFF;
 }
 /* line 71, ../sass/shared/_buttons.scss */
@@ -3717,66 +3776,68 @@ html {
 /* line 8, ../sass/sections/_demo.scss */
 body {
   height: 100%;
-  overflow: hidden;
   margin: 0 auto;
   padding: 0;
 }
 
-/* line 16, ../sass/sections/_demo.scss */
+/* line 15, ../sass/sections/_demo.scss */
 .user-information span {
   margin-left: 30px;
   text-align: left;
 }
-/* line 19, ../sass/sections/_demo.scss */
+/* line 18, ../sass/sections/_demo.scss */
 .user-information span b {
   text-align: right;
 }
 
-/* line 25, ../sass/sections/_demo.scss */
+/* line 24, ../sass/sections/_demo.scss */
 .navbarButtons {
   margin-top: 40px;
 }
-/* line 27, ../sass/sections/_demo.scss */
+/* line 26, ../sass/sections/_demo.scss */
 .navbarButtons i {
   margin-right: 10px;
 }
 
-/* line 32, ../sass/sections/_demo.scss */
+/* line 31, ../sass/sections/_demo.scss */
 #transitie {
   display: block;
   position: absolute;
   z-index: 7000;
 }
 
-/* line 38, ../sass/sections/_demo.scss */
+/* line 37, ../sass/sections/_demo.scss */
 #innerTransitie {
   position: absolute;
   left: 42%;
   top: 45%;
 }
-/* line 42, ../sass/sections/_demo.scss */
+/* line 41, ../sass/sections/_demo.scss */
 #innerTransitie i {
   font-size: 200px;
 }
 
-/* line 47, ../sass/sections/_demo.scss */
+/* line 46, ../sass/sections/_demo.scss */
 #header-container {
   margin-top: 25px;
 }
-/* line 49, ../sass/sections/_demo.scss */
-#header-container > img {
+/* line 48, ../sass/sections/_demo.scss */
+#header-container > .protopics-logo {
   margin: 0;
-  height: 55px;
+  height: 72px;
+  width: 272px;
+  background-size: 272px 72px;
+  background-image: url("../images/logos/protopics-logo.png");
 }
 
-/* line 55, ../sass/sections/_demo.scss */
+/* line 57, ../sass/sections/_demo.scss */
 #everwijzen {
   width: 90%;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 61, ../sass/sections/_demo.scss */
+/* line 63, ../sass/sections/_demo.scss */
 .side-nav {
   left: 0px;
   width: 10px;
@@ -3792,20 +3853,20 @@ body {
   -moz-box-shadow: #aaaaaa 4px 0px 5px;
   box-shadow: #aaaaaa 4px 0px 5px;
 }
-/* line 73, ../sass/sections/_demo.scss */
+/* line 75, ../sass/sections/_demo.scss */
 .side-nav i {
   color: white;
   text-align: center;
   margin: 40px 10px 0 20px;
   font-size: 30px;
 }
-/* line 79, ../sass/sections/_demo.scss */
+/* line 81, ../sass/sections/_demo.scss */
 .side-nav p {
   text-align: center;
   color: #FFFFFF;
   width: 75px;
 }
-/* line 84, ../sass/sections/_demo.scss */
+/* line 86, ../sass/sections/_demo.scss */
 .side-nav .dashboardknop {
   width: 100%;
   border-bottom: 1px solid #FFF;
@@ -3813,43 +3874,43 @@ body {
   cursor: pointer;
   display: none;
 }
-/* line 92, ../sass/sections/_demo.scss */
+/* line 94, ../sass/sections/_demo.scss */
 .side-nav .dashboardknop:hover {
   width: 100%;
   border-bottom: 1px solid #FFF;
   padding-bottom: 10px;
   background: rgba(51, 51, 51, 0.5);
 }
-/* line 98, ../sass/sections/_demo.scss */
+/* line 100, ../sass/sections/_demo.scss */
 .side-nav .home {
   display: none;
 }
-/* line 101, ../sass/sections/_demo.scss */
+/* line 103, ../sass/sections/_demo.scss */
 .side-nav .active {
   display: none;
 }
-/* line 104, ../sass/sections/_demo.scss */
+/* line 106, ../sass/sections/_demo.scss */
 .side-nav span {
   float: right;
   margin: 5px 5px;
 }
-/* line 108, ../sass/sections/_demo.scss */
+/* line 110, ../sass/sections/_demo.scss */
 .side-nav.large {
   width: 75px;
 }
-/* line 110, ../sass/sections/_demo.scss */
+/* line 112, ../sass/sections/_demo.scss */
 .side-nav.large .dashboardknop {
   display: none;
 }
-/* line 113, ../sass/sections/_demo.scss */
+/* line 115, ../sass/sections/_demo.scss */
 .side-nav.large .home {
   display: block;
 }
-/* line 116, ../sass/sections/_demo.scss */
+/* line 118, ../sass/sections/_demo.scss */
 .side-nav.large .active {
   display: block;
 }
-/* line 119, ../sass/sections/_demo.scss */
+/* line 121, ../sass/sections/_demo.scss */
 .side-nav.large .selected {
   width: 100%;
   border-bottom: 1px solid #FFF;
@@ -3857,18 +3918,18 @@ body {
   background: rgba(51, 51, 51, 0.5);
 }
 
-/* line 128, ../sass/sections/_demo.scss */
+/* line 130, ../sass/sections/_demo.scss */
 #charms {
   -webkit-box-shadow: #aaaaaa -4px 0px 5px;
   -moz-box-shadow: #aaaaaa -4px 0px 5px;
   box-shadow: #aaaaaa -4px 0px 5px;
 }
-/* line 130, ../sass/sections/_demo.scss */
+/* line 132, ../sass/sections/_demo.scss */
 #charms i {
   margin-top: 20px;
 }
 
-/* line 135, ../sass/sections/_demo.scss */
+/* line 137, ../sass/sections/_demo.scss */
 .close-charms:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00bdfd), color-stop(100%, #00a5dc));
   background-image: -webkit-linear-gradient(top, #00bdfd 0%, #00a5dc 100%);
@@ -3878,7 +3939,7 @@ body {
   margin-top: 300px;
 }
 
-/* line 140, ../sass/sections/_demo.scss */
+/* line 142, ../sass/sections/_demo.scss */
 .modal-header {
   border-bottom: 0;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00bdfd), color-stop(100%, #00a5dc));
@@ -3896,27 +3957,27 @@ body {
   -moz-box-shadow: rgba(102, 102, 102, 0.5) 0px 1px 4px;
   box-shadow: rgba(102, 102, 102, 0.5) 0px 1px 4px;
 }
-/* line 146, ../sass/sections/_demo.scss */
+/* line 148, ../sass/sections/_demo.scss */
 .modal-header h3 {
   color: #FFFFFF;
 }
 
-/* line 152, ../sass/sections/_demo.scss */
+/* line 154, ../sass/sections/_demo.scss */
 .modal-body h3 {
   margin-top: 0;
 }
-/* line 155, ../sass/sections/_demo.scss */
+/* line 157, ../sass/sections/_demo.scss */
 .modal-body p {
   padding: 10px 0 0 20px;
   border-top: 1px solid #EEEEEE;
 }
 
-/* line 164, ../sass/sections/_demo.scss */
+/* line 166, ../sass/sections/_demo.scss */
 .modal-footer {
   background-color: #F5F5F5;
 }
 
-/* line 168, ../sass/sections/_demo.scss */
+/* line 170, ../sass/sections/_demo.scss */
 .persoonsgegevens {
   width: 45%;
   margin-right: 5%;
@@ -3924,7 +3985,7 @@ body {
   float: left;
 }
 
-/* line 175, ../sass/sections/_demo.scss */
+/* line 177, ../sass/sections/_demo.scss */
 .BSN {
   width: 40%;
   padding-left: 5%;
@@ -3932,21 +3993,21 @@ body {
   float: left;
 }
 
-/* line 182, ../sass/sections/_demo.scss */
+/* line 184, ../sass/sections/_demo.scss */
 .titelBackground1 {
   color: #00a5dc;
   margin: -15px -40px 0 -15px;
   padding: 15px 25px 1px 15px;
 }
 
-/* line 188, ../sass/sections/_demo.scss */
+/* line 190, ../sass/sections/_demo.scss */
 .titelBackground2 {
   color: #00a5dc;
   margin: -15px -40px 0 -15px;
   padding: 15px 25px 1px 15px;
 }
 
-/* line 194, ../sass/sections/_demo.scss */
+/* line 196, ../sass/sections/_demo.scss */
 iframe {
   margin: 0 auto;
   padding: 0;
@@ -3961,16 +4022,20 @@ iframe {
 }
 
 /* line 209, ../sass/sections/_demo.scss */
+#loadContent {
+  overflow: auto;
+}
+/* line 212, ../sass/sections/_demo.scss */
 #loadContent #everwijzen img {
   margin-left: 50px;
   margin-top: 50px;
 }
 
-/* line 218, ../sass/sections/_demo.scss */
+/* line 221, ../sass/sections/_demo.scss */
 #elearning i {
   display: block;
 }
-/* line 222, ../sass/sections/_demo.scss */
+/* line 225, ../sass/sections/_demo.scss */
 #elearning .accordion-heading .activeElearning {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00b45b), color-stop(100%, #008641));
   background-image: -webkit-linear-gradient(top, #00b45b 0%, #008641 100%);
@@ -3979,12 +4044,12 @@ iframe {
   background-image: linear-gradient(top, #00b45b 0%, #008641 100%);
   color: #FFF;
 }
-/* line 226, ../sass/sections/_demo.scss */
+/* line 229, ../sass/sections/_demo.scss */
 #elearning .accordion-heading a {
   color: #333333;
   text-decoration: none;
 }
-/* line 231, ../sass/sections/_demo.scss */
+/* line 234, ../sass/sections/_demo.scss */
 #elearning .span6 {
   padding: 5px;
   border: 1px solid #EEEEEE;
@@ -3996,7 +4061,7 @@ iframe {
   border-radius: 5px;
 }
 
-/* line 242, ../sass/sections/_demo.scss */
+/* line 245, ../sass/sections/_demo.scss */
 .instructions {
   display: none;
   width: 100%;
@@ -4006,17 +4071,17 @@ iframe {
   top: 0;
   z-index: 5000;
 }
-/* line 251, ../sass/sections/_demo.scss */
+/* line 254, ../sass/sections/_demo.scss */
 .instructions .metro .tile, .instructions .metro .folderContent .tilefolder, .folderContent .instructions .metro .tilefolder {
   -webkit-box-shadow: rgba(255, 255, 255, 0) 4px 0px 5px;
   -moz-box-shadow: rgba(255, 255, 255, 0) 4px 0px 5px;
   box-shadow: rgba(255, 255, 255, 0) 4px 0px 5px;
 }
-/* line 256, ../sass/sections/_demo.scss */
+/* line 259, ../sass/sections/_demo.scss */
 .instructions h2 {
   visibility: hidden;
 }
-/* line 259, ../sass/sections/_demo.scss */
+/* line 262, ../sass/sections/_demo.scss */
 .instructions .instructionTooltip {
   position: absolute;
   top: -13px;
@@ -4024,42 +4089,42 @@ iframe {
   display: block;
   color: #000000;
 }
-/* line 265, ../sass/sections/_demo.scss */
+/* line 268, ../sass/sections/_demo.scss */
 .instructions .instructionTooltip img {
   float: left;
   margin-top: 10px;
 }
-/* line 269, ../sass/sections/_demo.scss */
+/* line 272, ../sass/sections/_demo.scss */
 .instructions .instructionTooltip span {
   display: block;
   float: left;
   margin-top: 5px;
   margin-left: 5px;
 }
-/* line 276, ../sass/sections/_demo.scss */
+/* line 279, ../sass/sections/_demo.scss */
 .instructions .instructionTooltipHelp {
   margin-top: 80px;
   margin-right: 140px;
   display: block;
   color: #000000;
 }
-/* line 281, ../sass/sections/_demo.scss */
+/* line 284, ../sass/sections/_demo.scss */
 .instructions .instructionTooltipHelp span {
   margin-top: 13px;
   margin-right: 5px;
   display: block;
   float: left;
 }
-/* line 288, ../sass/sections/_demo.scss */
+/* line 291, ../sass/sections/_demo.scss */
 .instructions .instructionTooltipNieuws {
   color: #000000;
 }
-/* line 290, ../sass/sections/_demo.scss */
+/* line 293, ../sass/sections/_demo.scss */
 .instructions .instructionTooltipNieuws img {
   margin-top: 13px;
 }
 
-/* line 295, ../sass/sections/_demo.scss */
+/* line 298, ../sass/sections/_demo.scss */
 .rij ul li {
   display: inline-block;
   margin: 0;
@@ -4068,19 +4133,19 @@ iframe {
   list-style: none;
 }
 
-/* line 303, ../sass/sections/_demo.scss */
+/* line 306, ../sass/sections/_demo.scss */
 .rij, .folderContent {
   width: 100%;
   padding: 5px;
   overflow: hidden;
 }
 
-/* line 308, ../sass/sections/_demo.scss */
+/* line 311, ../sass/sections/_demo.scss */
 .rij {
   height: auto;
 }
 
-/* line 312, ../sass/sections/_demo.scss */
+/* line 315, ../sass/sections/_demo.scss */
 .folderContent {
   background-image: url("../images/backgrounds/FolderContentBackground.png") repeat;
   background-color: #444444;
@@ -4098,7 +4163,7 @@ iframe {
   width: 97%;
   margin: 0 0 0 10px;
 }
-/* line 324, ../sass/sections/_demo.scss */
+/* line 327, ../sass/sections/_demo.scss */
 .folderContent .tilefolder.appfolder {
   -webkit-box-shadow: #282828 1px 0px 4px;
   -moz-box-shadow: #282828 1px 0px 4px;
@@ -4106,14 +4171,14 @@ iframe {
   margin-left: 40px;
 }
 
-/* line 332, ../sass/sections/_demo.scss */
+/* line 335, ../sass/sections/_demo.scss */
 .folderName {
   margin-left: 5px;
   color: #fff;
   font-size: 15px;
 }
 
-/* line 338, ../sass/sections/_demo.scss */
+/* line 341, ../sass/sections/_demo.scss */
 .placeholderTile {
   height: 145px;
   width: 145px;
@@ -4128,9 +4193,23 @@ iframe {
   border-radius: 5px;
 }
 
-/* line 349, ../sass/sections/_demo.scss */
-.group-toggle-left {
+/* line 352, ../sass/sections/_demo.scss */
+.group-toggle {
   margin-right: -2px;
+  margin-left: -2px;
+}
+/* line 355, ../sass/sections/_demo.scss */
+.group-toggle .btn {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 360, ../sass/sections/_demo.scss */
+.group-toggle .ul .li a {
+  color: #333333;
+  display: block;
 }
 
 /* -----------------------------------  

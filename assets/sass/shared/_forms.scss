@@ -242,7 +242,7 @@ input, textarea, select, .uneditable-input {
     bottom: -5px;
     width: 100%;
     height: 5px;
-    background: url(../images/bg-shade-corner.png) no-repeat bottom right;
+    background: url(../images/backgrounds/bg-shade-corner.png) no-repeat bottom right;
 }
 
 h2.form-title {
@@ -252,7 +252,7 @@ h2.form-title {
 }
 
 .form-section {
-    margin: 0 5px 10px 0;
+    margin: 10px 5px 10px 0;
     .form-container {
         @extend .form-container-base-styles;
         padding: 15px;
@@ -346,7 +346,7 @@ h4.form-sub-header {
 }
 h5.form-sub-header {
     margin: 0 0 20px 0;
-    font-size: $fontSizeXMedium;
+    font-size: $fontSizeMedium;
     line-height: $fontLineHeightMedium;
     color: $formTitleColor2;
 }
